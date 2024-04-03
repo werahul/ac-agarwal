@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Museo";
+  src: url("./assets/Fonts/MuseoSans_500.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  color: #161c2d;
+}
+.max-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+.check-out-btn {
+  margin-top: 10px;
+  background: #244896;
+  transition: all 0.3s linear;
+}
+
+.check-out-btn img {
+  margin-left: 10px;
+  transition: all 0.3s linear;
+}
+
+.check-out-btn:hover {
+  background: #1c4cb4d5;
+}
+
+.check-out-btn:hover img {
+  margin-left: 16px;
+}
+.check-out-btn-green {
+  margin-top: 10px;
+  background: #618d42;
+  transition: all 0.3s linear;
+}
+.check-out-btn-green img {
+  margin-left: 10px;
+  transition: all 0.3s linear;
+}
+.check-out-btn-green:hover {
+  background: #77a158;
+}
+.check-out-btn-green:hover img {
+  margin-left: 16px;
+}
+
+.twitterBg {
+  background-image: url("./assets/Images/twitterBg.png");
+}
+
+.twitterShodow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.learnMore img {
+  margin-left: 10px;
+  transition: all 0.3s linear;
+}
+.learnMore:hover img {
+  margin-left: 14px;
+}
+
+.footerBg {
+  background-image: url("./assets/Images/footerBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ctaBg {
+  background-image: url("./assets/Images/ctaBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heroBg {
+  background-image: url("./assets/Images/heroBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pressCovBg {
+  background-image: url("./assets/Images/pressCovBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gradient-btn {
+  background: linear-gradient(90deg, #c8cbcf, #8796bf);
+}
+.cta-btn {
+  background-color: #244896;
+  transition: all 0.3s linear;
+  color: white;
+}
+.cta-btn:hover {
+  background-color: rgb(255, 217, 0);
+  color: black;
+}
+
+.pricingBg {
+  background-image: url("./assets/Images/pricingHeroBg.png");
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pricingSelect {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.custom-shadow{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.animOpac{
+  transition: all 1s ease-in-out;
+  animation: supFaq 1s ease-in-out;
+
+}
+
+@keyframes supFaq {
+  from{
+    opacity: 0;
+    transform: scale(.5);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.homeNewBg{
+  background-image: url("./assets/Images/homeNewBg.png");
+}
+
+.linkImg{
+  color: #244896;
+  transition: all .1s linear;
+  width: fit-content;
+}
+.linkImg img{
+  margin-left: 12px;
+  transition: all .1s linear;
+}
+.linkImg:hover{
+  color: #283758;
+  font-weight: 600;
+}
+.linkImg:hover img{
+  margin-left: 15px;
+}
+.linkImg2{
+  color: #244896;
+  transition: all .1s linear;
+  
+}
+.linkImg2 img{
+  margin-right: 12px;
+  transition: all .1s linear;
+}
+.linkImg2:hover{
+  color: #283758;
+  font-weight: 600;
+}
+.linkImg2:hover img{
+  margin-right: 15px;
+}
+
+
+@media (max-width: 480px) {
+  .homeNewBg{
+    background-image: url("");
+  }
+  
+}
+
+
