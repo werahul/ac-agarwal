@@ -31,7 +31,7 @@ const HomeGridMobile = () => {
   const items = [
     {
       image: a1,
-      title: "Ready for Growth",
+      title: "Unmatched Capacity",
       description:
         "Our daily operations run below 30% of our server capacity, ensuring that when you're ready to expand, we're more than capable of supporting you."
     },
@@ -71,17 +71,17 @@ const HomeGridMobile = () => {
     <div className="overflow-hidden relative">
       <div className="flex transition-transform ease-in-out duration-500 transform" style={{ width: `${items.length * 100}%`, marginLeft: `-${activeIndex * (600 / items.length)}%` }}>
         {items.map((item, index) => (
-          <div key={index} className="w-full h-[310px] relative">
-            <div className={`flex items-start space-x-4 w-full h-[310px] rounded-[20px] p-6 bg-[#F1F5FF] my-8 ${index === activeIndex ? "active" : ""}`}>
+          <div key={index} className="w-full h-[250px] relative">
+            <div className={`flex items-start space-x-4 w-full h-[240px] rounded-[20px] p-6 border my-8 ${index === activeIndex ? "active" : ""}`}>
               <img src={item.image} alt="" className="w-9" />
               <div>
-                <h2 className="text-[22px] font-bold font-poppins leading-[30px] text-[#161C2D]">
+                <h2 className="text-[18px] font-bold font-poppins leading-[30px] text-[#161C2D]">
                   {item.title}
                 </h2>
-                <p className="mt-3 mb-4  text-[17px] w-full font-normal font-poppins text-[#161C2D]">
+                <p className="mt-3 mb-4  text-[15px] leading-[26px] w-full font-normal font-poppins text-[#161C2D]">
                   {item.description}
                 </p>
-                <p className="linkImg">
+                {/*<p className="linkImg">
                   <a
                     href="#"
                     className="flex font-poppins font-medium text-[17px] items-center"
@@ -90,7 +90,7 @@ const HomeGridMobile = () => {
                     <span>Click to learn more </span>
                     <img src={rightArrow} alt="" className="w-[12px]" />
                   </a>
-                </p>
+        </p>*/}
               </div>
             </div>
           </div>

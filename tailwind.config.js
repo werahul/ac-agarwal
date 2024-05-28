@@ -13,7 +13,7 @@ export default {
         dmSans: ["DM Sans", "sans-serif"],
       },
       screens: {
-      '2xl': '1440px',
+      '2xl': '1700px',
       },
 
     },

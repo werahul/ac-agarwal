@@ -1,4 +1,11 @@
 export { default as Home } from "./Home";
 export { default as Pricing } from "./Pricing";
+export { default as Product } from "./Product";
 export { default as Support } from "./Support";
 export { default as PressCoverage } from "./PressConverage";
+export { default as Bloom } from "./Bloom";
+export { default as About } from "./About";
+export { default as Math } from "./Math";
+export { default as Gullak } from "./Gullak";
+export { default as Xts } from "./Xts";
+export { default as LOC } from "./LOC";

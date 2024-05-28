@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   Hero,
@@ -9,31 +9,280 @@ import {
   Cta,
   Footer,
   PricingPlans,
-  Navbar2,
 } from "../componet";
+import {
+  pricingMain,
+  pr1,
+  pr2,
+  pr3,
+  pr4,
+  ArrowRight,
+  cross,
+} from "../assets/Images";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedTime, setSelectedTime] = useState(null);
+  const [selectedDay, setSelectedDay] = useState(null);
+
+  const handleGetOfferClick = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+  const handleTimeSelect = (time) => {
+    setSelectedTime(time);
+  };
+  const handleDaySelect = (day) => {
+    setSelectedDay(day);
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    // Aos.init({duration: 2000});
+  }, []);
+  
+  const isMobile = window.innerWidth <= 768;
+  const backColor = isMobile ? "bg-[#f8f8f8]" : "bg-[#fcfdfe]";
+  const navColor = isMobile ? "bg-[#F7F9FA99]" : "bg-[#FCFDFE]";
+
   return (
     <div>
-      <Navbar2 />
-      <sction>
-        <div className="pricingBg px-[200px] flex flex-col  justify-center items-center">
-          <h1 className="text-center font-poppins font-normal text-[48px] leading-[64px] text-[#161C2D] tracking-tight">
-            India's Most{" "}
-            <span className="font-bold">Transparent Pricing Plans.</span> Only
-            Pay For What You Use.
-          </h1>
-          <p className="font-poppins text-[26px] leading-[38px] text-center text-[#161C2D] opacity-70 mt-5">
-            No Hidden Charges.
+      <Navbar navColor={navColor} />
+      <div className=" lg:pb-20 pb-32 lg:pt-20 pt-10">
+        <section>
+          <div className="  flex flex-col lg:px-20 px-5  max-container justify-center items-center  ">
+            <img src={pricingMain} alt="" className="lg:w-[260px] w-[200px]" />
+            <h1 className="text-center font-poppins font-medium lg:text-[52px] text-[32px] lg:leading-[70px] leading-[44px] text-[#161C2DCC] tracking-tight mt-10">
+              Pricing Plans Tailored To Your Needs
+            </h1>
+            <p className="font-poppins lg:text-[38px] text-[15px] lg:leading-[54px] leading-[26px] text-center text-[#161C2D] opacity-80 mt-7">
+            Custom yet Transparent Pricing Tailored To Your
+              <br className="lg:block hidden" /> Requirements
+            </p>
+          </div>
+        </section>
+        {/* <hr className="my-20" /> */}
+        <section className="my-20 lg:px-20 px-5 py-10 lg:py-20 bg-[#F4F7FA]">
+          <p className="font-poppins w-[75%] lg:text-[24px] max-container text-[15px] lg:leading-[40px] leading-[26px] lg:text-center text-[#161C2D] opacity-70">
+            At AC Agarwal, we understand that every client is unique, with
+            specific needs and preferences, That’s why we offer customizable
+            pricing plans designed to cater to your individual requirements. Our
+            transparent pricing ensures that you know exactly what you’re paying
+            for, without any hidden fees or surprises.
           </p>
-        </div>
-      </sction>
-      <section className="bg-[#F4F7FA]">
-        <PricingCalc />
-      </section>
-      <PricingPlans />
-      <Cta />
-      <Footer />
+        </section>
+
+        <section className="mt-32 ">
+          <p className="font-poppins font-medium lg:text-[42px] text-[30px] text-center text-[#161C2DCC] tracking-tight">
+            How our Pricing Works
+          </p>
+
+          <div className="grid max-container px-5 lg:px-40 lg:grid-cols-2 grid-cols-1 lg:gap-28 gap-12 lg:mt-20 mt-[50px]">
+            <div className="flex items-start space-x-5">
+              <img src={pr1} alt="" className="w-[29px] h-auto" />
+              <div className="space-y-2 lg:space-y-4">
+                <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
+                  Customization
+                </h3>
+                <p className="font-poppins text-[15px] lg:text-[17px] text-[#161C2D] opacity-[80%]">
+                  We work with you to customize a pricing plan that meets your
+                  specific needs.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-5">
+              <img src={pr2} alt="" className="w-[29px] h-auto" />
+              <div className="space-y-2 lg:space-y-4">
+                <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
+                  Clarity
+                </h3>
+                <p className="font-poppins text-[15px] lg:text-[17px] text-[#161C2D] opacity-[80%]">
+                  Our pricing is clear and easy to understand, so you know
+                  exactly what you’re paying for.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-5">
+              <img src={pr3} alt="" className="w-[29px] h-auto" />
+              <div className="space-y-2 lg:space-y-4">
+                <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
+                  Transparency
+                </h3>
+                <p className="font-poppins text-[15px] lg:text-[17px] text-[#161C2D] opacity-[80%]">
+                  There are no hidden fees or surprises, everything is laid out
+                  upfront.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start space-x-5">
+              <img src={pr4} alt="" className="w-[29px] h-auto" />
+              <div className="space-y-2 lg:space-y-4">
+                <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
+                  Flexibility
+                </h3>
+                <p className="font-poppins text-[15px] lg:text-[17px] text-[#161C2D] opacity-[80%]">
+                  Our pricing plans are flexible and can be adjusted as your
+                  needs change over time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <section className="">
+            <div className="flex lg:space-x-10 lg:justify-center justify-between w-full mt-40 lg:mb-0 mb-0 lg:px-0 px-5">
+              <button
+                onClick={handleGetOfferClick}
+                className="lg:w-[180px] w-[150px] lg:h-[59px] h-[49px]  font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all px-8 text-white lg:font-medium text-[17px] rounded-[10px]"
+              >
+                Get Offer
+              </button>
+              <Link to="/list-of-charges">
+                <button className="lg:w-[220px] w-[180px] lg:h-[59px] h-[49px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all lg:px-8 text-white lg:font-medium text-[17px] rounded-[10px] whitespace-nowrap">
+                  List of Charges
+                </button>
+              </Link>
+            </div>
+
+            {showPopup && (
+              <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+                <div className="bg-white sm:p-8 rounded-lg shadow-lg max-w-[650px] w-full relative">
+                  <div className="flex justify-between lg:p-0 p-6">
+                    <h2 className="text-[20px] font-poppins text-[#161C2D] font-semibold mb-4">
+                      Get Offer
+                    </h2>
+                    <img
+                      src={cross}
+                      alt=""
+                      onClick={handleClosePopup}
+                      className="cursor-pointer -mt-3"
+                    />
+                  </div>
+                  <form>
+                    <div className="mb-4 lg:px-0 px-6">
+                      <input
+                        type="text"
+                        className="mt-1 tracking-wide font-poppins block w-full border border-[#EAEEF4] shadow-sm bg-[#F6FAFD] h-[54px] sm:text-[17px] text-[12px] rounded-lg px-4 outline-none"
+                        required
+                        placeholder="Full Name"
+                      />
+                    </div>
+                    <div className="mb-4 lg:px-0 px-6">
+                      <input
+                        type="tel"
+                        className="mt-1 tracking-wide font-poppins block w-full border border-[#EAEEF4] shadow-sm bg-[#F6FAFD] h-[54px] sm:text-[17px] text-[12px] rounded-lg px-4 outline-none"
+                        required
+                        placeholder="Mobile Number"
+                      />
+                    </div>
+
+                    <div className="mb-4 lg:px-0 px-6">
+                      <input
+                        type="email"
+                        className="mt-1 tracking-wide font-poppins block w-full border border-[#EAEEF4] shadow-sm bg-[#F6FAFD] h-[54px] sm:text-[17px] text-[12px] rounded-lg px-4 outline-none"
+                        required
+                        placeholder="Email ID"
+                      />
+                    </div>
+                    <div className="mb-4 lg:px-0 px-6">
+                      <label className="font-poppins block text-[18px] text-[#161C2D] mb-3">
+                        Preferred Time
+                      </label>
+                      <div className="flex items-center justify-between">
+                        <button
+                          type="button"
+                          className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
+                            selectedTime === "9 AM - 12 PM"
+                              ? "bg-blue-600 text-white"
+                              : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
+                          }`}
+                          onClick={() => handleTimeSelect("9 AM - 12 PM")}
+                        >
+                          9 AM - 12 PM
+                        </button>
+                        <button
+                          type="button"
+                          className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
+                            selectedTime === "12 PM - 3 PM"
+                              ? "bg-blue-600 text-white"
+                              : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
+                          }`}
+                          onClick={() => handleTimeSelect("12 PM - 3 PM")}
+                        >
+                          12 PM - 3 PM
+                        </button>
+                        <button
+                          type="button"
+                          className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
+                            selectedTime === "3 PM - 6 PM"
+                              ? "bg-blue-600 text-white"
+                              : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
+                          }`}
+                          onClick={() => handleTimeSelect("3 PM - 6 PM")}
+                        >
+                          3 PM - 6 PM
+                        </button>
+                      </div>
+                    </div>
+
+                    <div className="mb-4 lg:px-0 px-6">
+                      <label className="font-poppins block text-[18px] text-[#161C2D] mb-3">
+                        Preferred Day
+                      </label>
+                      <div className="flex items-center justify-between">
+                        <button
+                          type="button"
+                          className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
+                            selectedDay === "Today"
+                              ? "bg-blue-600 text-white"
+                              : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
+                          }`}
+                          onClick={() => handleDaySelect("Today")}
+                        >
+                          Today
+                        </button>
+                        <button
+                          type="button"
+                          className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
+                            selectedDay === "Tomorrow"
+                              ? "bg-blue-600 text-white"
+                              : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
+                          }`}
+                          onClick={() => handleDaySelect("Tomorrow")}
+                        >
+                          Tomorrow
+                        </button>
+                        <button
+                          type="button"
+                          className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
+                            selectedDay === "Tomorrow + 1"
+                              ? "bg-blue-600 text-white"
+                              : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
+                          }`}
+                          onClick={() => handleDaySelect("Tomorrow + 1")}
+                        >
+                          Tomorrow + 1
+                        </button>
+                      </div>
+                    </div>
+                    <button
+                      type="submit"
+                      className="w-full h-[54px] mt-4 px-4 bg-[#244896] font-poppins hover:bg-blue-700 text-white font-semibold sm:rounded-lg shadow-sm"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            )}
+          </section>
+        </section>
+      </div>
+
+      <Footer backColor={backColor} />
     </div>
   );
 };

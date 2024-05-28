@@ -10,38 +10,45 @@ import {
   playstore,
   callIcon,
   msgIcon,
+  smallLinkIcon,
+  smallXicon,
+  acSvgLogo,
 } from "../assets/Images";
+import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ backColor }) => {
   return (
-      <div className="lg:bg-[#fcfdfe] bg-[#F8F8F8]">
-      <div className="max-container lg:px-20 px-5 py-20 ">
+    <div className={`lg:pt-10 pt-0 bg-[#F7F9FA99] border-t border-[#0000001f]`}>
+      <div className="max-container lg:px-14 px-5 py-20 ">
         <div className=" lg:flex items-start lg:space-x-32">
-          <div className="lg:w-[20%] lg:block hidden">
-            <img src={acLogo} alt="" className="w-[250px]" />
-            <p className="font-poppins text-[16px] leading-6 text-[#161C2D]">
+          <div className="lg:w-[25%] block">
+            <img src={acLogo} alt="" className="lg:w-[250px] w-[210px] " />
+            {/*<p className="font-poppins text-[16px] leading-6 text-[#161C2D]">
               Your One stop solution for all the Stock broking needs.
-            </p>
+  </p>*/}
 
-            <p className="mt-7 font-semibold font-poppins text-[20px]  text-[#161C2D]">
+            <p className="mt-4 font-semibold font-poppins text-[20px]  text-[#161C2D]">
               Address
             </p>
-            <p className="mt-1 font-poppins text-[16px] leading-6 text-[#161C2D] whitespace-nowrap">
-              26 W 12th St. New York, NY 10342, NYC
+            <p className="mt-5 font-poppins lg:text-[16px] text-[14px] leading-6 text-[#161C2D] whitespace-nowrap opacity-80">
+              315, City Mall, C-Scheme, Jaipur - 302001
+            </p>
+            <p className="mt-3 lg:mb-0 mb-10 font-poppins lg:text-[16px] text-[14px] leading-6 text-[#161C2D] whitespace-nowrap opacity-80">
+              406 Payal Complex, Sayajigunj, <br /> Vadodara - 390005
             </p>
 
-            <p className="mt-7 font-semibold font-poppins text-[20px]  text-[#161C2D]">
+            {/*<p className="mt-7 font-semibold font-poppins text-[20px]  text-[#161C2D]">
               Social Media
             </p>
-            <div className="mt-1 flex items-center space-x-4">
+           * <div className="mt-1 flex items-center space-x-4">
               <img src={fbook} alt="" />
               <img src={ig} alt="" />
               <img src={twitterIcon} alt="" />
               <img src={yt} alt="" />
-            </div>
+</div>*/}
           </div>
 
-          <div className="lg:hidden block">
+          {/* <div className="lg:hidden block">
             <div className="">
               <p className="mb-3 font-semibold font-poppins text-[22px]  text-[#161C2D]">
                 Important Links
@@ -82,14 +89,16 @@ const Footer = () => {
                 Cambridge, MA. 02140
               </p>
               <p className="flex items-center mt-3 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                <img src={callIcon} alt=""  className="mr-3"/>
-               <a href="tel:+1 617-863-7821">+1 617-863-7821</a> 
+                <img src={callIcon} alt="" className="mr-3" />
+                <a href="tel:+1 617-863-7821">+1 617-863-7821</a>
               </p>
               <p className="flex items-center mt-3 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                <img src={msgIcon} alt=""  className="mr-3"/>
-                <a href="mailto:support@gullycricket.us"> support@gullycricket.us </a>
+                <img src={msgIcon} alt="" className="mr-3" />
+                <a href="mailto:support@gullycricket.us">
+                  {" "}
+                  support@gullycricket.us{" "}
+                </a>
               </p>
-              
             </div>
           </div>
           <div className="lg:hidden block mt-10">
@@ -102,78 +111,103 @@ const Footer = () => {
               <img src={twitterIcon} alt="" />
               <img src={yt} alt="" />
             </div>
-          </div>
+</div>*/}
 
           <div className="">
-            <div className="lg:flex hidden lg:space-x-20 whitespace-nowrap">
+            <div className="flex lg:flex-row flex-col  lg:space-x-32 lg:space-y-0 space-y-10 whitespace-nowrap">
               <div className="">
-                <p className="mb-3 font-semibold font-poppins text-[20px]  text-[#161C2D]">
+                <p className="mb-3 font-semibold font-poppins text-[24px]  text-[#161C2D]">
                   Company
                 </p>
-                <p className="mt-2 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  Our Legacy
+                <Link to="/about">
+                <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
+                  About Us
                 </p>
-                <p className="mt-2 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  Why Partner with us
-                </p>
-                <p className="mt-2 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  Media
-                </p>
-                <p className="mt-2 font-poppins text-[16px] leading-6 text-[#161C2D]">
+                </Link>
+                <Link to="/support">
+                <p className="lg:mt-4  mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
                   Support
                 </p>
+                </Link>
+                <Link to="/pricing">
+                <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
+                  Pricing
+                </p>
+                </Link>
               </div>
               <div className="">
-                <p className="mb-3 font-semibold font-poppins text-[20px]  text-[#161C2D]">
+                <p className="mb-3 font-semibold font-poppins text-[24px]  text-[#161C2D]">
                   Product
                 </p>
-                <p className="mt-2 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  ACA Bloom
-                </p>
-                <p className="mt-2 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  ACA Soil
-                </p>
-                <p className="mt-2 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  ACA Swift
-                </p>
-                <p className="mt-2 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  ACA Math
-                </p>
-                <p className="mt-2 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  ACA XTS
-                </p>
+                <Link to="/bloom">
+                  <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
+                    Bloom
+                  </p>
+                </Link>
+                <Link to="/math">
+                  <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
+                    Math
+                  </p>
+                </Link>
+                <Link to="/xts-api">
+                  <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
+                    XTS
+                  </p>
+                </Link>
+                <Link to="/gullak">
+                  <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
+                    Gullak
+                  </p>
+                </Link>
               </div>
               <div className="">
-                <p className="mb-3 font-semibold font-poppins text-[20px]  text-[#161C2D]">
-                  External Links
+                <p className="mb-3 font-semibold font-poppins text-[24px]  text-[#161C2D]">
+                  Download Now
                 </p>
-                <p className="mt-2 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  Terms & conditions
-                </p>
-                <p className="mt-2 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  Privacy policy
-                </p>
-              </div>
-              <div className="">
-                <p className="mb-3 font-semibold font-poppins text-[20px]  text-[#161C2D]">
-                  Company
-                </p>
-                <p className="mt-1 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  Our Legacy
-                </p>
-                <p className="mt-1 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  Why Partner with us
-                </p>
-                <p className="mt-1 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  Media
-                </p>
-                <p className="mt-1 font-poppins text-[16px] leading-6 text-[#161C2D]">
-                  Support
-                </p>
+
+                <div className="flex items-center space-x-5 lg:mt-6 mt-2">
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.wave.aca&pcampaignid=web_share"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={playstore}
+                      alt=""
+                      className="w-[132px] cursor-pointer"
+                    />
+                  </a>
+                  <a
+                    href="https://apps.apple.com/in/app/bloom-by-aca/id1281521661"
+                    target="_blank"
+                  >
+                    <img
+                      src={appStore}
+                      alt=""
+                      className="w-[120px] object-contain cursor-pointer"
+                    />
+                  </a>
+                </div>
+
+                <div className="flex items-center space-x-5 mt-6">
+                  <a
+                    href="https://x.com/acagarwal_in?s=11&mx=2"
+                    target="_blank"
+                  >
+                    <img src={smallXicon} alt="" className="w-7" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/ac-agarwal-share-brokers/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={smallLinkIcon} alt="" className="w-7" />
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div className="lg:flex items-center lg:mt-20 mt-10 lg:space-x-3">
+            {/*<div className="lg:flex items-center lg:mt-20 mt-10 lg:space-x-3">
               <p className="font-semibold text-[#161C2D] text-[20px] font-poppins">
                 {" "}
                 Download Now{" "}
@@ -190,55 +224,57 @@ const Footer = () => {
                   className="w-[160px] h-[48px] cursor-pointer"
                 />
               </div>
-            </div>
+</div>*/}
           </div>
         </div>
-        <div className="my-10 h-0  border-b-[3px] border-[#161C2D] opacity-25 lg:block hidden" />
+        <div className="my-10 h-0  border-b-[3px] border-[#161C2D] opacity-25  hidden" />
 
-        <div className="font-poppins font-normal text-[16px] text-[#161C2D] lg:mt-0 mt-20">
+        <div className="font-poppins font-normal lg:text-[16px] text-[12px] text-[#161C2D] lg:mt-20 mt-10 opacity-90">
           ATTENTION INVESTORS :- a) Prevent unauthorised transactions in your
-          account. Update your mobile numbers/email IDs with your stock brokers.
+          account. Update your mobile numbers/email IDs with your stock brokers.{" "}
+          <br />
           Receive information of your transactions directly from Exchange on
-          your mobile/email at the end of the day; b) KYC is one time exercise
-          while dealing in securities markets - once KYC is done through a SEBI
-          registered intermediary (broker, DP, Mutual Fund etc.), you need not
-          undergo the same process again when you approach another intermediary;
+          your mobile/email at the end of the day; <br /> b) KYC is one time
+          exercise while dealing in securities markets - once KYC is done
+          through a SEBI registered intermediary (broker, DP, Mutual Fund etc.),
+          you need not undergo the same process again when you approach another
+          intermediary; <br />
           c) Prevent Unauthorized Transactions in your demat account. Update
           your mobile number with your depository participant. Receive alerts on
           your registered mobile for all debit and other important transactions
           in your demat account directly from NSDL / CDSL on the same day.
           (Issued in the interest of investors). Please read the Risk Disclosure
           Document and Do's & Dont's prescribed by the Exchanges carefully
-          before investing; d)In case you want to{" "}
-          <span className="underline">
+          before investing; <br /> d)In case you want to{" "}
+          <span className="  font-medium text-[#244896] opacity-100">
             {" "}
             <a href="https://closure.acagarwal.com/closure">
               close your account
             </a>
           </span>{" "}
            , you can do it online with us. To know more, contact our customer
-          care team. <br />
-          <span className="underline mr-5">
+          care team. <br /> <br />
+          <span className="mr-5 font-medium text-[#244896] opacity-100">
             {" "}
             <a href="https://www.acagarwal.com/assets/img/Investor-Charter-of-Depository-Participant-Jan.pdf">
               Investor Charter of Depository Participant
             </a>
           </span>
                
-          <span className="underline mr-5">
+          <span className=" mr-5 font-medium text-[#244896] opacity-100">
             {" "}
             <a href="https://www.acagarwal.com/assets/img/Investor-Charter-Stock-Broker-jan.pdf">
               Investor Charter Stock Broker
             </a>
           </span>{" "}
               {" "}
-          <span className="underline">
+          <span className="font-medium text-[#244896] opacity-100">
             {" "}
             <a href="https://files.acagarwal.com/dp-dos-donts-for-investor-10.pdf">
               Information Contained In Links To The Investor Charter
             </a>
           </span>
-          <br />
+          <br /> <br />
           (1)Stock Brokers can accept securities as margin from clients only by
           way of pledge in the depository system w.e.f. September 1,
           2020.(2)Update your mobile number & email Id with your stock
@@ -251,7 +287,7 @@ const Footer = () => {
           2020 and other guidelines issued from time to time in this
           regard.(5)Check your Securities /MF/ Bonds in the consolidated account
           statement issued by NSDL/CDSL every month. 
-          <span className="underline">
+          <span className="font-medium text-[#244896]">
             {" "}
             <a href="https://www.acagarwal.com/assets/img/AP-list.pdf">
               AP list
@@ -259,39 +295,167 @@ const Footer = () => {
           </span>
           <br />
           For E-voting, kindly 
-          <span className="underline">
+          <span className="font-medium text-[#244896]">
             {" "}
             <a href="https://evoting.cdslindia.com/Evoting/EvotingLogin">
               click here
             </a>
           </span>
           <br /> <br />
-          <span className="underline">
+          <div className="overflow-x-auto p-0 border border-[#00000026] rounded-[22px]">
+            <table className="min-w-full bg-white border border-[#00000026] rounded-[22px] overflow-hidden">
+              <thead>
+                <tr>
+                  <th
+                    colSpan="2"
+                    className="font-poppins font-normal lg:text-[16px] text-[12px] text-center bg-white text-[#161C2DCC] py-4 px-4 border-b border-[#00000026]"
+                  >
+                    Our Bank Account Details
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="flex flex-col lg:table-row border-b border-gray-200">
+                  <th className="font-poppins font-normal lg:text-[16px] text-[12px] text-center py-3 px-4 border-t lg:border-t-0 border-b border-r lg:border-r border-[#00000026]">
+                    Bank name - HDFC Bank <br /> A/c No. 04290340000696 <br />{" "}
+                    IFSC Code - HDFC0000429
+                  </th>
+                  <th className="font-poppins font-normal lg:text-[16px] text-[12px] text-center py-3 px-4 border-t lg:border-t-0 border-b lg:border-b-0 border-[#00000026]">
+                    Bank name - HDFC Bank <br /> A/c No. 04290340000704 <br />{" "}
+                    IFSC Code - HDFC0000429
+                  </th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="overflow-x-auto p-0 border border-[#00000026] rounded-[22px] lg:mt-10 mt-5">
+            <table className="min-w-full bg-white border border-[#00000026] rounded-[22px] overflow-hidden">
+              <thead>
+                <tr>
+                  <th
+                    colSpan="2"
+                    className="font-poppins font-normal lg:text-[16px] text-[12px] text-center bg-white text-[#161C2DCC] py-4 px-4 border-b border-[#00000026]"
+                  >
+                    SEBI Registration No. - INZ000216930
+                  </th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <br /> <br />
+          {/*<span className="underline">
             Our Bank Account Details <br /> 1. Bank name - HDFC Bank <br />
             A/c No. 04290340000696 <br />
             IFSC Code - HDFC0000429 <br /> 2. Bank name - HDFC Bank <br />
             A/c No. 04290340000704 <br /> IFSC Code - HDFC0000429 <br />
+</span>*/}
+          A C Agarwal Share Brokers Pvt. Ltd. <br /> Please carefully read the
+          risk disclosure document as prescribed by SEBI & FMC and Do's & Don'ts
+          by MCX. Existing customers can send in their grievances to {" "}
+          <span className="font-medium text-[#244896]">
+            {" "}
+            <a href="mailto:care@acagarwal.com">care@acagarwal.com </a> 
           </span>
-          A C Agarwal Share Brokers Pvt. Ltd. Please carefully read the risk
-          disclosure document as prescribed by SEBI & FMC and Do's & Don'ts by
-          MCX. Existing customers can send in their grievances
-          to care@acagarwal.com and for DP related queries & Complaints please
-          write us to care@acagarwal.com <br />
-          <span className="underline">
-            <a href="https://acagarwal.com/#">
-              To File A Complaint on SCORES <br /> .....Click Here... <br />
+           and for DP related queries & Complaints please write us to{" "}
+          <span className="font-medium text-[#244896]">
+            {" "}
+            <a href="mailto:care@acagarwal.com">care@acagarwal.com </a> 
+          </span>{" "}
+          <br />
+          To File A Complaint on &nbsp;
+          <span className="font-medium text-[#244896]">
+            <a href="https://scores.gov.in/scores/Welcome.html">
+              SCORES &emsp; &emsp; &emsp;
             </a>
           </span>
-          <span className="underline">
+           <br className="lg:hidden block"/>
+          To File A Complaint on &nbsp;
+          <span className="font-medium text-[#244896]">
             <a href="https://www.cdslindia.com/Footer/grievances.aspx">
-              To File A Complaint on CDSL <br /> .....Click Here.... <br />
+              CDSL <br /> <br />
             </a>
           </span>
-          Disclaimer: A C Agarwal Share Brokers Pvt. Ltd. and A. C. Agarwal
+          Disclaimer: <br className="lg:hidden block"/> A C Agarwal Share Brokers Pvt. Ltd. and A. C. Agarwal
           Commodities Pvt. Ltd. are engaged in client based and proprietary
           trading on various stock and commodity exchanges. <br />
-          SEBI Registration No. - <br />
-          INZ000216930
+        </div>
+
+        <div className="font-medium lg:text-[16px] text-[12px] text-[#244896] mt-10 flex-wrap lg:justify-between lg:space-x-10 space-x-4 lg:space-y-0 leading-[30px] opacity-90">
+          <a
+            href="https://www.nseindia.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <span>NSE </span>{" "}
+          </a>
+          <a
+            href="https://www.bseindia.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <span> BSE</span>{" "}
+          </a>
+          <a
+            href="https://www.acagullak.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span> Mutual Fund</span>
+          </a>
+          <a
+            href="https://www.sebi.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <span>SEBI</span>
+          </a>
+          <a
+            href="https://www.acagarwal.com/vernacular-languages"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <span> Vernacular Languages</span>
+          </a>
+          <a
+            href="https://www.finmin.nic.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span> Ministry of Finance</span>
+          </a>
+          <a
+            href="https://www.mca.gov.in/content/mca/global/en/home.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <span>Ministry of Corporate Affairs</span>
+          </a>
+          <a
+            href="https://www.cdslindia.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>CDSL</span>
+          </a>
+          <a
+            href="https://nsdl.co.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>NSDL</span>
+          </a>
+          <a
+            href="https://www.rbi.org.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>RBI</span>
+          </a>
         </div>
       </div>
     </div>

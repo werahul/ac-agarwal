@@ -1,1 +1,11 @@
 export { default as AccountOpening } from "./AccountOpening";
+export { default as TradingAndInvesting } from "./TradingAndInvesting";
+export { default as AddingFunds } from "./AddingFunds";
+export { default as Margin } from "./Margin";
+export { default as Ipo } from "./Ipo";
+export { default as Edis } from "./Edis";
+export { default as BackOffice } from "./BackOffice";
+export { default as Api } from "./Api";
+export { default as CustomerService } from "./CustomerService";
+export { default as MarginTradingFacility } from "./MarginTradingFacility";
+export { default as ShareTransfer } from "./ShareTransfer";

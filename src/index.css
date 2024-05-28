@@ -139,6 +139,8 @@ body {
 
 .homeNewBg{
   background-image: url("./assets/Images/homeNewBg.png");
+  height: auto;
+  background-size: cover
 }
 
 .linkImg{
@@ -174,12 +176,23 @@ body {
   margin-right: 15px;
 }
 
+.peering img{
+  transition: all 0.3s ease;
+}
+
+.peering:hover img{
+  margin-left: 40px;
+}
+
+.zIndex{
+  z-index: 999;
+}
 
 @media (max-width: 480px) {
   .homeNewBg{
     background-image: url("");
+
   }
-  
 }
 
 
