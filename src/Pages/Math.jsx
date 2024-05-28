@@ -121,7 +121,7 @@ const Bloom = () => {
             <div className=" lg:w-[50%]">
               <img src={math1} alt="" className="mt-10 lg:w-[532px] lg:mt-0" />
             </div>
-            <div className="mt-2 w-[50%]">
+            <div className="mt-2 lg:w-[50%]">
               <h2 className="font-poppins font-medium text-[22px] lg:text-[42px] leading-[32px] lg:leading-[60px] tracking-tight text-[#161C2DCC]">
                 Rapid Trading:
                 <br /> Clean Interface
