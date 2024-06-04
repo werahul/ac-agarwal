@@ -2216,20 +2216,16 @@ const Support = () => {
                     onClick={() => toggleComponentVisibility(title)}
                   >
                     <div className="">
-                      <p className="font-semibold lg:text-[26px] text-[20px] leading-[35px] text-[#161c2ddc] font-poppins">
+                      <p className="font-semibold lg:text-[26px] text-[20px] leading-[35px] text-[#161c2ddc] font-poppins ">
                         {title}
                       </p>
-                      {/*{matchingQuestions > 0 && (
-                        <p className="text-[#161C2DCC] opacity-80 font-poppins lg:text-[16px] text-[15px] leading-[35px]">
-                          {matchingQuestions} matching questions
-                        </p>
-                      )}*/}
+                      
                     </div>
                     <div>
                       <img
                         src={dropDownArr} // Assuming you have dropDownArr defined
                         alt=""
-                        className="cursor-pointer min-w-5"
+                        className="cursor-pointer  lg:ml-0 ml-3 min-w-5"
                         onClick={() => toggleComponentVisibility(title)}
                       />
                     </div>
