@@ -2140,7 +2140,7 @@ const Support = () => {
                 Type your query or browse the FAQ section below
               </p>
 
-              <div className="relative w-[90%] lg:w-[50%] h-[78px] mt-14">
+              <div className="relative w-[90%] lg:w-[50%] h-[78px] lg:mt-14 mt-10">
                 <input
                   type="text"
                   placeholder="Type here"
@@ -2227,9 +2227,9 @@ const Support = () => {
                     </div>
                     <div>
                       <img
-                        src={openArr} // Assuming you have dropDownArr defined
+                        src={dropDownArr} // Assuming you have dropDownArr defined
                         alt=""
-                        className="cursor-pointer min-w-5"
+                        className="cursor-pointer w-5"
                         onClick={() => toggleComponentVisibility(title)}
                       />
                     </div>

@@ -32,7 +32,7 @@ const FlexComp = () => {
               elegant interface. Transition smoothly from mobile to desktop with
               ease.
             </p>
-            <div className="flex lg:space-x-0 space-x-2 items-center lg:mt-0 mt-4">
+            <div className="flex lg:space-x-0 space-x-2 items-center lg:mt-0 mt-5">
               <div className="flex lg:hidden space-x-3 items-center">
                 <a href="https://play.google.com/store/apps/details?id=com.wave.aca&pcampaignid=web_share" target="_blank">
                   <img src={playM} alt="" className="w-5" />
@@ -80,7 +80,7 @@ const FlexComp = () => {
               A robust trading app crafted for professional traders, powered by
               XTS. Available on mobile, web, and desktop.
             </p>
-            <div className="flex lg:space-x-0 space-x-2 items-center lg:mt-0 mt-4">
+            <div className="flex lg:space-x-0 space-x-2 items-center lg:mt-0 mt-5">
               <div className="flex lg:hidden space-x-3 items-center">
                 <a href="https://play.google.com/store/apps/details?id=com.acagarwal.xts&pcampaignid=web_share" target="_blank">
                   <img src={playM} alt="" className="w-5" />
@@ -136,7 +136,7 @@ const FlexComp = () => {
               that shapes saving into a habit and turns your financial ambitions
               into reality, one easy step after another.
             </p>
-            <div className="flex lg:space-x-0 space-x-2 items-center lg:mt-0 mt-4">
+            <div className="flex lg:space-x-0 space-x-2 items-center lg:mt-0 mt-5">
               <div className="flex lg:hidden space-x-3 items-center">
                 <a href="https://play.google.com/store/apps/details?id=com.iw.aca.gullak&pcampaignid=web_share" target="_blank">
                   <img src={playM} alt="" className="w-5" />
@@ -205,7 +205,7 @@ const FlexComp = () => {
         
       </div>
       <div className="font-poppins lg:mt-40 mt-20 max-container">
-          <h3 className="capitalize font-medium  lg:mb-[130px] mb-10 text-center lg:text-[42px] text-[30px] text-[#161C2DCC]">
+          <h3 className="capitalize font-medium  lg:mb-[130px] mb-5 text-center lg:text-[42px] text-[30px] text-[#161C2DCC]">
             and there’s more...{" "}
           </h3>
           <div className="font-poppins lg:grid hidden grid-cols-1 gap-10 lg:grid-cols-3 lg:mb-[80px]">

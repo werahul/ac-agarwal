@@ -22,7 +22,7 @@ const HomeInvo = () => {
           Innovative Tools for <br />
           Effortless Trading and Investing
         </p>
-        <div className="lg:flex items-center justify-between lg:mt-16 2xl:mt-12 mt-10 ">
+        <div className="lg:flex items-center justify-between lg:mt-16 2xl:mt-12 mt-[100px] ">
           <div className="lg:w-[40%] space-y-[60px]">
             <div className="flex space-x-4 items-start">
               <img src={SrOne} alt="" className=""/>

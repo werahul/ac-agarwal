@@ -28,7 +28,7 @@ const FlexComp = () => {
               Expert Guidance,
               <br /> Easy Investing
             </h2>
-            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 mt-3">
+            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 lg:mt-3 mt-4">
               Access expert insights for simplified mutual fund investing. From
               curated fund picks to new offers and top performers, make informed
               decisions effortlessly. Let our advisory services guide you
@@ -54,7 +54,7 @@ const FlexComp = () => {
             <h2 className="font-poppins font-medium lg:text-[42px] lg:leading-[60px]  text-[22px] leading-[32px]  tracking-tight text-[#161C2DCC]">
               Empowering Investments: Financial Calculators Suite
             </h2>
-            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 mt-3">
+            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 lg:mt-3 mt-4">
               Unlock the power of informed investing with our comprehensive
               suite of financial tools. From SIP calculators to education and
               marriage planners, make confident decisions and plan for your
@@ -87,7 +87,7 @@ const FlexComp = () => {
             <h2 className="font-poppins font-medium lg:text-[42px] text-[22px] lg:leading-[60px] leading-[32px] tracking-tight text-[#161C2DCC]">
               Seamless Mutual Fund Transactions
             </h2>
-            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 mt-3">
+            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 lg:mt-3 mt-4">
               Experience seamless mutual fund transactions with our
               user-friendly platform. Easily invest, switch between funds, start
               SIPs, initiate STPs, and redeem investments—all in just a few
@@ -114,7 +114,7 @@ const FlexComp = () => {
             <h2 className="font-poppins font-medium lg:text-[42px] text-[22px] lg:leading-[60px] leading-[40px] tracking-tight text-[#161C2DCC]">
               Simplified Portfolio Monitoring
             </h2>
-            <p className="font-poppins lg:text-[24px] text-[15px]  lg:leading-[38px] leading-[26px] opacity-80 mt-3">
+            <p className="font-poppins lg:text-[24px] text-[15px]  lg:leading-[38px] leading-[26px] opacity-80 lg:mt-3 mt-4">
               Track your investment portfolio effortlessly with our intuitive
               tool. Monitor performance, review holdings, and stay updated on
               market trends, all in one convenient platform. Simplify your
@@ -134,13 +134,13 @@ const FlexComp = () => {
           </div>
         </div>
       </div>
-      <div className="flex  justify-center  items-center lg:space-x-[30px] space-x-2 mt-40">
+      <div className="flex  justify-center  items-center lg:space-x-[30px] space-x-2 lg:mt-40 mt-16">
         <a
           href="https://kyc.acagarwal.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p className="lg:w-[220px] w-[180px] lg:h-[59px] h-[49px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all lg:px-8 text-white lg:font-medium text-[17px] rounded-[10px] whitespace-nowrap flex items-center justify-center">
+          <p className="lg:w-[220px] w-[153px] lg:h-[59px] h-[47px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all lg:px-8 text-white lg:font-medium text-[17px] rounded-[10px] whitespace-nowrap flex items-center justify-center">
             Try Demo
           </p>
         </a>
@@ -149,7 +149,7 @@ const FlexComp = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <p className="lg:w-[220px] w-[180px] lg:h-[59px] h-[49px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all lg:px-8 text-white lg:font-medium text-[17px] rounded-[10px] whitespace-nowrap flex items-center justify-center">
+          <p className="lg:w-[220px] w-[180px] lg:h-[59px] h-[47px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all lg:px-8 text-white lg:font-medium text-[17px] rounded-[10px] whitespace-nowrap flex items-center justify-center">
             Open account
           </p>
         </a>

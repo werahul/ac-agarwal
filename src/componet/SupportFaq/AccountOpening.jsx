@@ -56,7 +56,7 @@ const AccountOpening = ({ faqs, searchQuery }) => {
                         {faqVisibility[index] ? (
                           <img src={openWhiteArr} alt="Collapse" />
                         ) : (
-                          <img src={openArr} alt="Expand" />
+                          <img src={openArr} alt="Expand" className=""/>
                         )}
                       </div>
                     </div>

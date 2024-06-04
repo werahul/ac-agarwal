@@ -11,7 +11,7 @@ import {
 
 const HeroNew = () => {
   return (
-    <div className="lg:pt-[145px] lg:pb-20 pt-[62px] pb-10 lg:px-20 px-5 homeNewBg ">
+    <div className="lg:pt-[145px] lg:pb-20 pt-[62px] pb-20 lg:px-20 px-5 homeNewBg ">
       <div className="max-container">
         <div className="lg:hidden flex items-center justify-center flex-col">
          

@@ -115,7 +115,7 @@ const Pricing = () => {
         </section>
         {/* <hr className="my-20" /> */}
         <section className="my-20 lg:px-20 px-5 py-10 lg:py-20 bg-[#F4F7FA]">
-          <p className="font-poppins w-[75%] lg:text-[24px] max-container text-[15px] lg:leading-[40px] leading-[26px] lg:text-center text-[#161C2D] opacity-70">
+          <p className="font-poppins lg:w-[75%] lg:text-[24px] max-container text-[15px] lg:leading-[40px] leading-[26px] lg:text-center text-[#161C2D] opacity-70">
             At AC Agarwal, we understand that every client is unique, with
             specific needs and preferences, That’s why we offer customizable
             pricing plans designed to cater to your individual requirements. Our
@@ -124,12 +124,12 @@ const Pricing = () => {
           </p>
         </section>
 
-        <section className="mt-32 ">
+        <section className="lg:mt-32 mt-24 ">
           <p className="font-poppins font-medium lg:text-[42px] text-[30px] text-center text-[#161C2DCC] tracking-tight">
             How our Pricing Works
           </p>
 
-          <div className="grid max-container px-5 lg:px-40 lg:grid-cols-2 grid-cols-1 lg:gap-y-28 lg:gap-x-40 gap-y-12 gap-x-12 lg:mt-28 mt-[50px]">
+          <div className="grid max-container px-5 lg:px-40 lg:grid-cols-2 grid-cols-1 lg:gap-y-28 lg:gap-x-40 gap-y-12 gap-x-12 lg:mt-28 mt-[64px]">
             <div className="flex items-start space-x-3">
               <img src={pr1} alt="" className="w-[29px] h-auto lg:mt-1" />
               <div className="space-y-2 lg:space-y-4">

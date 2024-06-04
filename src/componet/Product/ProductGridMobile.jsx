@@ -102,7 +102,7 @@ const ProductGridMobile = () => {
           </div>
         ))}
       </div>
-      <div className="carousel-controls flex items-center justify-center mt-14 space-x-4">
+      <div className="carousel-controls flex items-center justify-center lg:mt-14 mt-[40px] space-x-4">
         <img
           src={leftArr}
           className="arrow left-arrow"

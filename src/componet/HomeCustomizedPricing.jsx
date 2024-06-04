@@ -78,7 +78,7 @@ const HomeCustomizedPricing = () => {
           <h2 className="text-center lg:text-[42px] text-[30px] lg:leading-[42px] leading-[42px] font-medium tracking-tighter font-poppins text-[#161C2DCC]">
             The Difference <br className="lg:hidden block" /> in Our Approach
           </h2>
-          <p className="lg:mt-5 mt-4 lg:w-[60%] text-center font-poppins lg:text-[28px] text-[15px] text-[#161C2D] lg:leading-[38px] leading-[20px] opacity-80">
+          <p className="lg:mt-5 mt-4 lg:w-[60%] text-center font-poppins lg:text-[28px] text-[15px] text-[#161C2D] lg:leading-[38px] leading-[20px] opacity-80 whitespace-nowrap">
             Ready for Growth
           </p>
         </div>

@@ -181,7 +181,7 @@ const Bloom = () => {
                 Rapid Trading:
                 <br /> Clean Interface
               </h2>
-              <p className="font-poppins lg:w-[486px] text-[15px] lg:text-[24px] leading-[26px] lg:leading-[36px] opacity-70 mt-3">
+              <p className="font-poppins lg:w-[486px] text-[15px] lg:text-[24px] leading-[26px] lg:leading-[36px] opacity-70 lg:mt-3 mt-4">
                 Experience lightning-fast trading with our streamlined
                 interface. Designed for traders who prioritize speed and
                 precision, our platform eliminates distractions to ensure
@@ -198,7 +198,7 @@ const Bloom = () => {
                 Charts: Powered by <br className="lg:hidden block" />{" "}
                 TradingView
               </h2>
-              <p className="font-poppins lg:w-[486px] text-[15px] lg:text-[24px] leading-[26px] lg:leading-[36px] opacity-70 mt-3">
+              <p className="font-poppins lg:w-[486px] text-[15px] lg:text-[24px] leading-[26px] lg:leading-[36px] opacity-70 lg:mt-3 mt-4">
                 Dive into market trends with precision using our
                 TradingView-powered charts. Access advanced tools and indicators
                 for strategic analysis and informed trading decisions. Real-time
@@ -220,7 +220,7 @@ const Bloom = () => {
               <h2 className="font-poppins font-medium text-[22px] lg:text-[42px] leading-[32px] lg:leading-[60px] tracking-tight text-[#161C2DCC]">
                 Dashboard Insights: Margin, Holdings, P/L
               </h2>
-              <p className="font-poppins lg:w-[486px] text-[15px] lg:text-[24px] leading-[26px] lg:leading-[36px] opacity-70 mt-3">
+              <p className="font-poppins lg:w-[486px] text-[15px] lg:text-[24px] leading-[26px] lg:leading-[36px] opacity-70 lg:mt-3 mt-4">
                 Gain instant clarity on your trading performance with our
                 Dashboard tab. Monitor your margin, holdings value, and
                 profit/loss effortlessly in one convenient location. Stay
@@ -236,7 +236,7 @@ const Bloom = () => {
                 XTS API Trade <br className="lg:block hidden" /> Oversight
                 Dashboard
               </h2>
-              <p className="font-poppins lg:w-[486px] text-[15px] lg:text-[24px] leading-[26px] lg:leading-[36px] opacity-70 mt-3">
+              <p className="font-poppins lg:w-[486px] text-[15px] lg:text-[24px] leading-[26px] lg:leading-[36px] opacity-70 lg:mt-3 mt-4">
                 Effortlessly track, monitor, and modify trades placed via XTS
                 APIs. Stay in control of your trading activities, make informed
                 decisions, and optimize your strategies with ease, all within a

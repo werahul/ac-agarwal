@@ -6,7 +6,6 @@ const UnleashilingProduct = () => {
   return (
     <div className="">
       <div className="lg:py-[120px] py-20 lg:px-20 font-poppins px-5  lg:bg-[#f4f7fa]">
-      <hr className="lg:hidden block mb-20"/>
         <div className="max-container">
           <div className="lg:space-y-6 space-y-4">
             <p className="text-center font-poppins font-medium text-[14px] text-[#244896] lg:tracking-normal tracking-[1.63px]">

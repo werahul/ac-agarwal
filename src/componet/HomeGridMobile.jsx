@@ -124,7 +124,7 @@ const HomeGridMobile = () => {
             <div
               key={index}
               className={`dot h-1 rounded-[5px] ${
-                index === activeIndex ? "bg-[#244896] w-5" : "bg-[#444444] w-3"
+                index === activeIndex ? "bg-[#244896] w-6" : "bg-[#4444449a] w-3"
               }`}
               onClick={() => goToSlide(index)}
             ></div>

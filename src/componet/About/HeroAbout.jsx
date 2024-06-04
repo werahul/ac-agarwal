@@ -41,7 +41,7 @@ const HeroAbout = () => {
           reflecting our belief in the importance of integrity and reliability
           in the fast-paced world of trading. <span
           onClick={() => setShowMore(!showMore)}
-          className="  lg:hidden  text-[#244896] text-[15px] font-normal font-poppins transition-all "
+          className="  lg:hidden  text-[#244896] text-[15px] font-medium font-poppins transition-all "
         >
           {showMore ? "" : "View More"}
         </span>
