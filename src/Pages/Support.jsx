@@ -2229,7 +2229,7 @@ const Support = () => {
                       <img
                         src={dropDownArr} // Assuming you have dropDownArr defined
                         alt=""
-                        className="cursor-pointer w-5"
+                        className="cursor-pointer min-w-5"
                         onClick={() => toggleComponentVisibility(title)}
                       />
                     </div>
