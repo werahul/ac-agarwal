@@ -6,8 +6,12 @@ import { Link } from "react-router-dom";
 
 const HomeCustomizedPricing = () => {
   const [showPopup, setShowPopup] = useState(false);
-  const [selectedTime, setSelectedTime] = useState(null);
-  const [selectedDay, setSelectedDay] = useState(null);
+  const [fullName, setFullName] = useState('');
+  const [mobileNumber, setMobileNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [selectedTime, setSelectedTime] = useState('');
+  const [selectedDay, setSelectedDay] = useState('');
+  const [errors, setErrors] = useState({});
 
   const handleGetOfferClick = () => {
     setShowPopup(true);
@@ -23,9 +27,53 @@ const HomeCustomizedPricing = () => {
     setSelectedDay(day);
   };
 
+  const handleNameChange = (e) => {
+    const value = e.target.value;
+    if (/^[a-zA-Z\s]*$/.test(value)) {
+      setFullName(value);
+      setErrors((prev) => ({ ...prev, fullName: '' }));
+    } else {
+      setErrors((prev) => ({ ...prev, fullName: 'Only letters and spaces are allowed.' }));
+    }
+  };
+
+  const handleMobileNumberChange = (e) => {
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setMobileNumber(value);
+      setErrors((prev) => ({ ...prev, mobileNumber: '' }));
+    } else {
+      setErrors((prev) => ({ ...prev, mobileNumber: 'Only numbers are allowed.' }));
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newErrors = {};
+
+    if (fullName.trim() === '') {
+      newErrors.fullName = 'Full Name is required.';
+    }
+    if (mobileNumber.trim() === '') {
+      newErrors.mobileNumber = 'Mobile Number is required.';
+    }
+    if (!email) {
+      newErrors.email = 'Email is required.';
+    }
+
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length === 0) {
+      // Proceed with form submission
+      console.log('Form submitted');
+    }
+  };
+
+
+
   return (
-    <div className="lg:px-20 px-5 lg:pt-20 lg:pb-28 pt-10 pb-20 lg:bg-[#fcfdfe]">
-      <div className="mt-10 max-container">
+    <div className="lg:px-20 px-5 lg:pt-10 lg:pb-28 pt-10 pb-20 lg:bg-[#fcfdfe]">
+      <div className=" mt-10 max-container">
         <div className="flex flex-col items-center justify-center">
           <h2 className="text-center lg:text-[42px] text-[30px] lg:leading-[42px] leading-[42px] font-medium tracking-tighter font-poppins text-[#161C2DCC]">
             The Difference <br className="lg:hidden block" /> in Our Approach
@@ -34,9 +82,9 @@ const HomeCustomizedPricing = () => {
             Ready for Growth
           </p>
         </div>
-        <div className="lg:grid hidden lg:grid-cols-2 px-0 justify-items-center lg:mt-20 mt-5 mb-10">
+        <div className="lg:grid hidden lg:grid-cols-2 lg:px-5 justify-items-center place-items-center lg:mt-20 mt-5 mb-10">
           <div className="relative flex items-start space-x-4 w-full h-[280px] rounded-[20px] p-7 ">
-            <img src={a1} alt="" className="w-9" />
+            <img src={a1} alt="" className="w-8" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 Unmatched Capacity
@@ -52,7 +100,7 @@ const HomeCustomizedPricing = () => {
             </div>
           </div>
           <div className="relative flex items-start space-x-4 w-full h-[280px] rounded-[20px] p-7 ">
-            <img src={a2} alt="" className="w-9" />
+            <img src={a2} alt="" className="w-8" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 Dedicated Support
@@ -65,7 +113,7 @@ const HomeCustomizedPricing = () => {
             </div>
           </div>
           <div className="relative flex items-start space-x-4 w-full h-[280px] rounded-[20px] p-7 ">
-            <img src={a3} alt="" className="w-9" />
+            <img src={a3} alt="" className="w-[30px]" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 No Sales Pressure
@@ -77,8 +125,8 @@ const HomeCustomizedPricing = () => {
               </p>
             </div>
           </div>
-          <div className="relative flex items-start space-x-4 w-full h-[280px] rounded-[20px] p-7 ">
-            <img src={a4} alt="" className="w-9" />
+          <div className="relative flex items-start space-x-4 w-fll h-[280px] rounded-[20px] p-7 ">
+            <img src={a4} alt="" className="w-6" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 Accessible Founders
@@ -91,7 +139,7 @@ const HomeCustomizedPricing = () => {
             </div>
           </div>
           <div className="relative flex items-start space-x-4 w-full h-[280px] rounded-[20px] p-7 ">
-            <img src={a5} alt="" className="w-9" />
+            <img src={a5} alt="" className="w-8" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 Reliable Tech
@@ -104,7 +152,7 @@ const HomeCustomizedPricing = () => {
             </div>
           </div>
           <div className="relative flex items-start space-x-4 w-full h-[280px] rounded-[20px] p-7 ">
-            <img src={a6} alt="" className="w-9" />
+            <img src={a6} alt="" className="w-8" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 Exclusive Benefits
@@ -130,7 +178,6 @@ const HomeCustomizedPricing = () => {
         </p>
       </div>
       <div className="max-container">
-      
         <div className="flex flex-col items-center justify-center">
           <img
             src={customizedPricing}
@@ -146,15 +193,15 @@ const HomeCustomizedPricing = () => {
             Around You
           </p>
 
-          <div className="flex lg:space-x-10 lg:justify-center justify-between w-full mt-16">
+          <div className="flex lg:space-x-[30px] space-x-3 lg:justify-center justify-center w-full mt-16">
             <button
               onClick={handleGetOfferClick}
-              className="lg:w-[180px] w-[160px] lg:h-[59px] h-[49px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all px-8 text-white font-semibold text-[17px] rounded-[10px]"
+              className="lg:w-[165px] w-[150px] lg:h-[57px] h-[49px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all text-white font-semibold text-[17px] rounded-[10px]"
             >
               Get Offer
             </button>
             <Link to="/pricing">
-              <button className="lg:w-[180px] w-[160px] lg:h-[59px] h-[49px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all px-8 text-white font-semibold text-[17px] rounded-[10px]">
+              <button className="lg:w-[165px] w-[150px] lg:h-[57px] h-[49px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all text-white font-semibold text-[17px] rounded-[10px]">
                 Know More
               </button>
             </Link>
@@ -172,18 +219,23 @@ const HomeCustomizedPricing = () => {
               <img
                 src={cross}
                 alt=""
-                onClick={handleClosePopup}
+                onClick={() => setShowPopup(false)}
                 className="cursor-pointer -mt-3"
               />
             </div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="mb-4 lg:px-0 px-6">
                 <input
                   type="text"
                   className="mt-1 tracking-wide font-poppins block w-full border border-[#EAEEF4] shadow-sm bg-[#F6FAFD] h-[54px] sm:text-[17px] text-[12px] rounded-lg px-4 outline-none"
                   required
                   placeholder="Full Name"
+                  value={fullName}
+                  onChange={handleNameChange}
                 />
+                {errors.fullName && (
+                  <span className="text-red-500 text-sm">{errors.fullName}</span>
+                )}
               </div>
               <div className="mb-4 lg:px-0 px-6">
                 <input
@@ -191,16 +243,25 @@ const HomeCustomizedPricing = () => {
                   className="mt-1 tracking-wide font-poppins block w-full border border-[#EAEEF4] shadow-sm bg-[#F6FAFD] h-[54px] sm:text-[17px] text-[12px] rounded-lg px-4 outline-none"
                   required
                   placeholder="Mobile Number"
+                  value={mobileNumber}
+                  onChange={handleMobileNumberChange}
                 />
+                {errors.mobileNumber && (
+                  <span className="text-red-500 text-sm">{errors.mobileNumber}</span>
+                )}
               </div>
-
               <div className="mb-4 lg:px-0 px-6">
                 <input
                   type="email"
                   className="mt-1 tracking-wide font-poppins block w-full border border-[#EAEEF4] shadow-sm bg-[#F6FAFD] h-[54px] sm:text-[17px] text-[12px] rounded-lg px-4 outline-none"
                   required
                   placeholder="Email ID"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
+                {errors.email && (
+                  <span className="text-red-500 text-sm">{errors.email}</span>
+                )}
               </div>
               <div className="mb-4 lg:px-0 px-6">
                 <label className="font-poppins block text-[18px] text-[#161C2D] mb-3">
@@ -211,7 +272,7 @@ const HomeCustomizedPricing = () => {
                     type="button"
                     className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                       selectedTime === "9 AM - 12 PM"
-                        ? "bg-blue-600 text-white"
+                        ? "bg-[#244896] text-white"
                         : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                     }`}
                     onClick={() => handleTimeSelect("9 AM - 12 PM")}
@@ -222,7 +283,7 @@ const HomeCustomizedPricing = () => {
                     type="button"
                     className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                       selectedTime === "12 PM - 3 PM"
-                        ? "bg-blue-600 text-white"
+                        ? "bg-[#244896] text-white"
                         : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                     }`}
                     onClick={() => handleTimeSelect("12 PM - 3 PM")}
@@ -233,7 +294,7 @@ const HomeCustomizedPricing = () => {
                     type="button"
                     className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                       selectedTime === "3 PM - 6 PM"
-                        ? "bg-blue-600 text-white"
+                        ? "bg-[#244896] text-white"
                         : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                     }`}
                     onClick={() => handleTimeSelect("3 PM - 6 PM")}
@@ -242,7 +303,6 @@ const HomeCustomizedPricing = () => {
                   </button>
                 </div>
               </div>
-
               <div className="mb-4 lg:px-0 px-6">
                 <label className="font-poppins block text-[18px] text-[#161C2D] mb-3">
                   Preferred Day
@@ -252,7 +312,7 @@ const HomeCustomizedPricing = () => {
                     type="button"
                     className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                       selectedDay === "Today"
-                        ? "bg-blue-600 text-white"
+                        ? "bg-[#244896] text-white"
                         : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                     }`}
                     onClick={() => handleDaySelect("Today")}
@@ -263,7 +323,7 @@ const HomeCustomizedPricing = () => {
                     type="button"
                     className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                       selectedDay === "Tomorrow"
-                        ? "bg-blue-600 text-white"
+                        ? "bg-[#244896] text-white"
                         : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                     }`}
                     onClick={() => handleDaySelect("Tomorrow")}
@@ -274,7 +334,7 @@ const HomeCustomizedPricing = () => {
                     type="button"
                     className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                       selectedDay === "Tomorrow + 1"
-                        ? "bg-blue-600 text-white"
+                        ? "bg-[#244896] text-white"
                         : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                     }`}
                     onClick={() => handleDaySelect("Tomorrow + 1")}

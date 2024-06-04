@@ -18,8 +18,8 @@ import ProductGridMobile from "./ProductGridMobile";
 const FlexComp = () => {
   return (
     <div className="lg:pt-20 lg:pb-20 pt-0 pb-20 lg:px-28 2xl:px-52 px-5  lg:bg-[#fcfdfe] bg-[#ffffff]">
-      <div className="max-container lg:space-y-28 space-y-20">
-        <div className="Bloom flex lg:flex-row flex-col-reverse items-center justify-center lg:space-x-24">
+      <div className="max-container lg:space-y-40 space-y-20">
+        <div className="Bloom flex lg:flex-row flex-col-reverse items-center justify-center lg:space-x-32">
           <div className="lg:mt-0 mt-10 lg:w-[50%]">
             <img src={gullak1} alt="" className=" lg:w-[580px]" />
           </div>
@@ -49,7 +49,7 @@ const FlexComp = () => {
           </div>
         </div>
 
-        <div className="Math flex lg:flex-row flex-col items-center justify-center lg:space-x-24">
+        <div className="Math flex lg:flex-row flex-col items-center justify-center lg:space-x-32">
           <div className="mt-2 lg:w-[50%]">
             <h2 className="font-poppins font-medium lg:text-[42px] lg:leading-[60px]  text-[22px] leading-[32px]  tracking-tight text-[#161C2DCC]">
               Empowering Investments: Financial Calculators Suite
@@ -79,7 +79,7 @@ const FlexComp = () => {
           </div>
         </div>
 
-        <div className="Gullak flex lg:flex-row flex-col-reverse items-center justify-center lg:space-x-24">
+        <div className="Gullak flex lg:flex-row flex-col-reverse items-center justify-center lg:space-x-32">
           <div className="lg:w-[50%] lg:mt-0 mt-10">
             <img src={gullak3} alt="" className="lg:w-[580px]" />
           </div>
@@ -109,7 +109,7 @@ const FlexComp = () => {
           </div>
         </div>
 
-        <div className="XTSApi flex lg:flex-row flex-col items-center justify-center lg:space-x-24">
+        <div className="XTSApi flex lg:flex-row flex-col items-center justify-center lg:space-x-32">
           <div className="mt-2 lg:w-[50%]">
             <h2 className="font-poppins font-medium lg:text-[42px] text-[22px] lg:leading-[60px] leading-[40px] tracking-tight text-[#161C2DCC]">
               Simplified Portfolio Monitoring
@@ -134,7 +134,7 @@ const FlexComp = () => {
           </div>
         </div>
       </div>
-      <div className="flex  justify-center  items-center space-x-2 mt-40">
+      <div className="flex  justify-center  items-center lg:space-x-[30px] space-x-2 mt-40">
         <a
           href="https://kyc.acagarwal.com/"
           target="_blank"
@@ -150,7 +150,7 @@ const FlexComp = () => {
           rel="noopener noreferrer"
         >
           <p className="lg:w-[220px] w-[180px] lg:h-[59px] h-[49px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all lg:px-8 text-white lg:font-medium text-[17px] rounded-[10px] whitespace-nowrap flex items-center justify-center">
-            Open an account
+            Open account
           </p>
         </a>
       </div>

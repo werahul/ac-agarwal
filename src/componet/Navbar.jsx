@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useRef, useEffect } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import {
   acLogo,
   accLogoMobile,
@@ -15,13 +15,33 @@ import {
 
 const Navbar = ({ navColor }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMenuOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   return (
-    <div className={` border-b border-gray-300 z-50 ${navColor}`}>
+    <div className={`border-b border-gray-300 z-50 ${navColor}`}>
       <div className="max-container relative lg:px-20 px-5 w-full lg:min-h-[16vh] h-[70px] flex items-center justify-between">
         <div>
           <Link to="/">
@@ -41,82 +61,109 @@ const Navbar = ({ navColor }) => {
         </div>
 
         <div className="ml-20 lg:flex hidden space-x-24 font-poppins font-medium text-[15px]">
-          <Link to="/about" className="list-none cursor-pointer">
+          <NavLink
+            to="/about"
+            className="list-none cursor-pointer hover:text-[#244896]"
+            activeClassName="active"
+          >
             About
-          </Link>
+          </NavLink>
           <div className="relative">
-            <Link
+            <NavLink
               to="/product"
-              className="list-none cursor-pointer flex items-center"
+              className="list-none cursor-pointer flex items-center hover:text-[#244896]"
+              activeClassName="active"
             >
               Products
               {/* <img src={downArr} alt="Dropdown Arrow" className="ml-1 w-4 h-4" /> */}
-            </Link>
+            </NavLink>
           </div>
-          <Link to="/pricing" className="list-none cursor-pointer">
+          <NavLink
+            to="/pricing"
+            className="list-none cursor-pointer hover:text-[#244896]"
+            activeClassName="active"
+          >
             Pricing
-          </Link>
-          <Link to="/support" className="list-none cursor-pointer">
+          </NavLink>
+          <NavLink
+            to="/support"
+            className="list-none cursor-pointer hover:text-[#244896]"
+            activeClassName="active"
+          >
             Support
-          </Link>
+          </NavLink>
           <div className="lg:flex hidden items-center space-x-8">
-           {/* <button  className="focus:outline-none">
-              <div className="w-[26px] h-[2px] bg-black mb-[6px]"></div>
-              <div className="w-[26px] h-[2px] bg-black mb-[6px]"></div>
-              <div className="w-[26px] h-[2px] bg-black"></div>
-  </button>*/}
-
-            <img src={hamIcon} alt="" onClick={toggleMenu} className="cursor-pointer"/>
-            
+            <img
+              src={hamIcon}
+              alt=""
+              onClick={toggleMenu}
+              className="cursor-pointer"
+            />
           </div>
         </div>
 
         <div className="lg:hidden block">
-          {/*<button onClick={toggleMenu} className="focus:outline-none">
-            <div className="w-[26px] h-[2px] bg-black mb-[5px]"></div>
-            <div className="w-[26px] h-[2px] bg-black mb-[5px]"></div>
-            <div className="w-[26px] h-[2px] bg-black"></div>
-</button>*/}
-          <img src={hamIcon} alt="" onClick={toggleMenu} className="cursor-pointer"/>
+          <img
+            src={hamIcon}
+            alt=""
+            onClick={toggleMenu}
+            className="cursor-pointer"
+          />
         </div>
+
         {isMenuOpen && (
-          <div className="absolute top-20 right-0 lg:right-20 w-fit font-poppins bg-[#ffffff] shadow-lg zIndex lg:flex lg:justify-center">
+          <div
+            ref={menuRef}
+            className="absolute top-20 right-0 lg:right-20 w-fit font-poppins bg-[#ffffff] shadow-lg zIndex lg:flex lg:justify-center"
+          >
             <div className="lg:max-w-5xl w-full p-5 lg:p-10 bg-white">
-              <div className=" grid grid-cols-2 mb-5 px-5 lg:hidden gap-6 font-poppins text-[15px]">
-                <Link to="/about" className="list-none cursor-pointer">
+              <div className="grid grid-cols-2 mb-5 px-5 lg:hidden gap-6 font-poppins text-[15px]">
+                <NavLink
+                  to="/about"
+                  className="list-none cursor-pointer"
+                  activeClassName="active"
+                >
                   About
-                </Link>
+                </NavLink>
                 <div className="relative">
-                  <Link
+                  <NavLink
                     to="/product"
                     className="list-none cursor-pointer flex items-center"
+                    activeClassName="active"
                   >
                     Products
                     {/* <img src={downArr} alt="Dropdown Arrow" className="ml-1 w-4 h-4" /> */}
-                  </Link>
+                  </NavLink>
                 </div>
-                <Link to="/pricing" className="list-none cursor-pointer">
+                <NavLink
+                  to="/pricing"
+                  className="list-none cursor-pointer"
+                  activeClassName="active"
+                >
                   Pricing
-                </Link>
-                <Link to="/support" className="list-none cursor-pointer">
+                </NavLink>
+                <NavLink
+                  to="/support"
+                  className="list-none cursor-pointer"
+                  activeClassName="active"
+                >
                   Support
-                </Link>
+                </NavLink>
                 <div className="lg:flex hidden items-center space-x-8">
-                 {/* <button onClick={toggleMenu} className="focus:outline-none">
-                    <div className="w-[26px] h-[2px] bg-black mb-[5px]"></div>
-                    <div className="w-[26px] h-[2px] bg-black mb-[5px]"></div>
-                    <div className="w-[26px] h-[2px] bg-black"></div>
-        </button>*/}
-
-                  <img src={hamIcon} alt="" onClick={toggleMenu} className="cursor-pointer"/>
+                  <img
+                    src={hamIcon}
+                    alt=""
+                    onClick={toggleMenu}
+                    className="cursor-pointer"
+                  />
                 </div>
               </div>
               <hr className="block lg:hidden" />
               <div className="grid py-5 lg:py-0 grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-8">
-                {/* <h4 className="font-bold text-lg">Products</h4> */}
-                <Link
+                <NavLink
                   to="/bloom"
                   className="flex items-start lg:block space-x-2 lg:space-x-0 px-4 py-2 lg:text-center text-[12px] lg:text-xl font-medium text-[#161C2DCC] hover:text-[#244896]"
+                  activeClassName="active"
                 >
                   <img
                     src={bNav}
@@ -129,10 +176,11 @@ const Navbar = ({ navColor }) => {
                       Trading Platform
                     </p>
                   </div>
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                   to="/math"
                   className="flex items-start justify-start lg:block px-4 py-2 lg:text-center text-[12px] lg:text-xl font-medium text-[#161C2DCC] hover:text-[#244896]"
+                  activeClassName="active"
                 >
                   <img
                     src={mNav}
@@ -141,15 +189,16 @@ const Navbar = ({ navColor }) => {
                   />
                   <div className="ml-2 lg:ml-0">
                     Math
-                    <p className="text-[8px] lg:text-[15px]  opacity-70 mt-1 lg:mt-2">
+                    <p className="text-[8px] lg:text-[15px] opacity-70 mt-1 lg:mt-2">
                       Trading Platform: <br />
                       Powered by XTS
                     </p>
                   </div>
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                   to="/gullak"
                   className="flex items-start lg:block px-4 py-2 ml-2 space-x-2 lg:space-x-0 lg:ml-0 lg:text-center text-[12px] lg:text-xl font-medium text-[#161C2DCC] hover:text-[#244896]"
+                  activeClassName="active"
                 >
                   <img
                     src={gNav}
@@ -162,10 +211,11 @@ const Navbar = ({ navColor }) => {
                       Mutual Funds
                     </p>
                   </div>
-                </Link>
-                <Link
+                </NavLink>
+                <NavLink
                   to="/xts-api"
                   className="flex items-start space-x-2 lg:space-x-0 justify-start lg:block px-4 py-2 lg:text-center text-[12px] lg:text-xl font-medium text-[#161C2DCC] hover:text-[#244896]"
+                  activeClassName="active"
                 >
                   <img
                     src={xNav}
@@ -178,12 +228,12 @@ const Navbar = ({ navColor }) => {
                       Trading API
                     </p>
                   </div>
-                </Link>
-              </div>{" "}
+                </NavLink>
+              </div>
               <hr className="block lg:hidden" />
               <div className="grid grid-cols-2 lg:grid-cols-3 mt-5 lg:mt-10 px-5 ">
                 <div className="mt-5 space-y-3 lg:mt-0">
-                  <h4 className="font-medium lg:font-semibold  text-[12px] lg:text-lg text-[#161C2DCC]">
+                  <h4 className="font-medium lg:font-semibold text-[12px] lg:text-lg text-[#161C2DCC]">
                     Back Office
                   </h4>
                   <Link
@@ -216,7 +266,7 @@ const Navbar = ({ navColor }) => {
                   </Link>
                 </div>
                 <div className="mt-5 space-y-3 lg:mt-0">
-                  <h4 className="font-medium lg:font-semibold  text-xs lg:text-lg text-[#161C2DCC]">
+                  <h4 className="font-medium lg:font-semibold text-xs lg:text-lg text-[#161C2DCC]">
                     Utilities
                   </h4>
                   <Link
@@ -227,7 +277,7 @@ const Navbar = ({ navColor }) => {
                     Apply IPO
                   </Link>
                   <Link
-                    to="/contact-us"
+                    to="/support"
                     className="block text-[10px] lg:text-base hover:text-[#244896] font-medium text-[#161C2DCC]"
                   >
                     Contact Us
@@ -242,10 +292,10 @@ const Navbar = ({ navColor }) => {
                 </div>
 
                 <div className="mt-5 flex items-start space-x-2 lg:space-x-0 lg:block lg:mt-0">
-                  <h4 className="font-medium  lg:font-semibold text-xs lg:text-lg text-[#161C2DCC] mb-4">
+                  <h4 className="font-medium lg:font-semibold text-xs lg:text-lg text-[#161C2DCC] mb-4">
                     Connect with us
                   </h4>
-                  <div className="flex  space-x-2 lg:space-x-5 items-start">
+                  <div className="flex space-x-2 lg:space-x-5 items-start">
                     <Link
                       to="https://x.com/acagarwal_in?s=11&mx=2"
                       target="_blank"
@@ -258,11 +308,7 @@ const Navbar = ({ navColor }) => {
                       target="_blank"
                       className="block"
                     >
-                      <img
-                        src={smallLinkIcon}
-                        alt=""
-                        className="w-4 lg:w-10 "
-                      />
+                      <img src={smallLinkIcon} alt="" className="w-4 lg:w-10 " />
                     </Link>
                   </div>
                 </div>

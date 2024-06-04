@@ -11,9 +11,9 @@ const KeyFeature = () => {
               Key Features
             </h2>
 
-            <div className="lg:pt-[100px] pt-[80px] grid lg:px-0 2xl:px-20  grid-cols-1 lg:gap-20 gap-10 lg:grid-cols-2 place-items-center items-center">
+            <div className="lg:pt-[100px] pt-[80px] grid lg:px-0 2xl:px-20  grid-cols-1 lg:gap-y-20 lg:gap-x-40 gap-x-10 gap-y-10 lg:grid-cols-2 place-items-center items-center">
               <div className="flex items-start space-x-5 ">
-                <img src={x1} alt="" className="w-[29px] h-auto" />
+                <img src={x1} alt="" className="w-[34px] h-auto" />
                 <div className="space-y-5">
                   <h3 className="text-[18px] lg:text-[22px] font-semibold text-[#161C2DCC]">
                     Zero Additional Cost
@@ -26,7 +26,7 @@ const KeyFeature = () => {
               </div>
 
               <div className="flex items-start space-x-5">
-                <img src={x4} alt="" className="w-[29px] h-auto mt-2" />
+                <img src={x4} alt="" className="w-[30px] h-auto mt-2" />
                 <div className="space-y-5">
                   <h3 className="text-[18px] lg:text-[22px] font-semibold text-[#161C2DCC]">
                     Fast, Secure, and Easy to Implement
@@ -41,7 +41,7 @@ const KeyFeature = () => {
               </div>
 
               <div className="flex items-start space-x-5">  
-                <img src={x3} alt="" className="w-[29px] h-auto mt-2" />
+                <img src={x3} alt="" className="w-[38px] h-auto mt-2" />
                 <div className="space-y-5">
                   <h3 className="text-[18px] lg:text-[22px] font-semibold text-[#161C2DCC] lg:leading-[32px]">
                     Test Your Program in Simulation Environment
@@ -56,7 +56,7 @@ const KeyFeature = () => {
               </div>
 
               <div className="flex items-start space-x-5">
-                <img src={x2} alt="" className="w-[29px] h-auto mt-2" />
+                <img src={x2} alt="" className="w-[32px] h-auto mt-2" />
                 <div className="space-y-5">
                   <h3 className="text-18px] lg:text-[22px] font-semibold text-[#161C2DCC]">
                     Build Your Own Trading Interface
@@ -71,7 +71,7 @@ const KeyFeature = () => {
               </div>
 
               <div className="flex items-start space-x-5">
-                <img src={x5} alt="" className="w-[29px] h-auto mt-2" />
+                <img src={x5} alt="" className="w-[33px] h-auto mt-2" />
                 <div className="space-y-5">
                   <h3 className="text-[18px] lg:text-[22px] font-semibold text-[#161C2DCC] lg:leading-[32px]">
                     Flexible REST API Compatible with Multiple Languages

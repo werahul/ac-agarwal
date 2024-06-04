@@ -9,6 +9,7 @@ import {
   SrFive,
   SrFour,
   SrSix,
+  InvoImg2Mobile,
 } from "../assets/Images";
 import { Link } from "react-router-dom";
 
@@ -21,8 +22,8 @@ const HomeInvo = () => {
           Innovative Tools for <br />
           Effortless Trading and Investing
         </p>
-        <div className="lg:flex items-center justify-between lg:mt-16 2xl:mt-12 mt-10">
-          <div className="lg:w-[40%] space-y-12">
+        <div className="lg:flex items-center justify-between lg:mt-16 2xl:mt-12 mt-10 ">
+          <div className="lg:w-[40%] space-y-[60px]">
             <div className="flex space-x-4 items-start">
               <img src={SrOne} alt="" className=""/>
               <div className="">
@@ -83,12 +84,12 @@ const HomeInvo = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-[50%]  lg:mt-0 mt-14">
+          <div className="lg:w-[50%] w-full  lg:mt-0 mt-14">
             <img src={InvoImg} alt="" className="lg:w-[600px]"/>
           </div>
         </div>
         <div className="flex lg:flex-row-reverse flex-col items-center justify-between mt-20 ">
-          <div className="lg:w-[40%] space-y-12">
+          <div className="lg:w-[40%] space-y-[60px]">
             <div className="flex lg:flex-row-reverse items-start lg:text-right ">
               <img src={SrFour} alt="" className="lg:ml-5 lg:mr-0 mr-4" />
               <div className="">
@@ -176,8 +177,9 @@ const HomeInvo = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-[60%] lg:mt-0 mt-14">
-            <img src={InvoImg2} alt="" className="lg:w-[920px]" />
+          <div className="lg:w-[60%] w-full lg:mt-0 mt-14">
+            <img src={InvoImg2} alt="" className="lg:w-[920px] lg:block hidden" />
+            <img src={InvoImg2Mobile} alt="" className="lg:hidden block -mt-20" />
           </div>
         </div>
       </div>

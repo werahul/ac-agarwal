@@ -137,6 +137,10 @@ body {
   }
 }
 
+.active{
+  color: #244896;
+}
+
 .homeNewBg{
   background-image: url("./assets/Images/homeNewBg.png");
   height: auto;

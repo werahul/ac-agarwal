@@ -30,10 +30,10 @@ const Footer = ({ backColor }) => {
             <p className="mt-4 font-semibold font-poppins text-[20px]  text-[#161C2D]">
               Address
             </p>
-            <p className="mt-5 font-poppins lg:text-[16px] text-[14px] leading-6 text-[#161C2D] whitespace-nowrap opacity-80">
+            <p className="mt-5 font-poppins lg:text-[16px] text-[14px] leading-6 text-[#161c2dbe] whitespace-nowrap ">
               315, City Mall, C-Scheme, Jaipur - 302001
             </p>
-            <p className="mt-3 lg:mb-0 mb-10 font-poppins lg:text-[16px] text-[14px] leading-6 text-[#161C2D] whitespace-nowrap opacity-80">
+            <p className="mt-3 lg:mb-0 mb-10 font-poppins lg:text-[16px] text-[14px] leading-6 text-[#161c2dbe] whitespace-nowrap ">
               406 Payal Complex, Sayajigunj, <br /> Vadodara - 390005
             </p>
 
@@ -116,56 +116,56 @@ const Footer = ({ backColor }) => {
           <div className="">
             <div className="flex lg:flex-row flex-col  lg:space-x-32 lg:space-y-0 space-y-10 whitespace-nowrap">
               <div className="">
-                <p className="mb-3 font-semibold font-poppins text-[24px]  text-[#161C2D]">
+                <p className="lg:mb-3 mb-5 font-semibold font-poppins lg:text-[24px] text-[20px]  text-[#161C2D]">
                   Company
                 </p>
                 <Link to="/about">
-                <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
-                  About Us
-                </p>
+                  <p className="lg:mt-4 mt-4 font-poppins lg:text-[20px] text-[16px] leading-6 text-[#161C2D] opacity-80">
+                    About Us
+                  </p>
                 </Link>
                 <Link to="/support">
-                <p className="lg:mt-4  mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
-                  Support
-                </p>
+                  <p className="lg:mt-4  mt-4 font-poppins lg:text-[20px] text-[16px] leading-6 text-[#161C2D] opacity-80">
+                    Support
+                  </p>
                 </Link>
                 <Link to="/pricing">
-                <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
-                  Pricing
-                </p>
+                  <p className="lg:mt-4 mt-4 font-poppins lg:text-[20px] text-[16px] leading-6 text-[#161C2D] opacity-80">
+                    Pricing
+                  </p>
                 </Link>
               </div>
               <div className="">
-                <p className="mb-3 font-semibold font-poppins text-[24px]  text-[#161C2D]">
+                <p className="lg:mb-3 mb-4 font-semibold font-poppins lg:text-[24px] text-[20px]  text-[#161C2D]">
                   Product
                 </p>
                 <Link to="/bloom">
-                  <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
+                  <p className="lg:mt-4 mt-2 font-poppins lg:text-[20px] text-[16px] leading-6 text-[#161C2D] opacity-80">
                     Bloom
                   </p>
                 </Link>
                 <Link to="/math">
-                  <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
+                  <p className="lg:mt-4 mt-2 font-poppins lg:text-[20px] text-[16px] leading-6 text-[#161C2D] opacity-80">
                     Math
                   </p>
                 </Link>
                 <Link to="/xts-api">
-                  <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
+                  <p className="lg:mt-4 mt-2 font-poppins lg:text-[20px] text-[16px] leading-6 text-[#161C2D] opacity-80">
                     XTS
                   </p>
                 </Link>
                 <Link to="/gullak">
-                  <p className="lg:mt-4 mt-2 font-poppins text-[20px] leading-6 text-[#161C2D] opacity-80">
+                  <p className="lg:mt-4 mt-2 font-poppins lg:text-[20px] text-[16px] leading-6 text-[#161C2D] opacity-80">
                     Gullak
                   </p>
                 </Link>
               </div>
               <div className="">
-                <p className="mb-3 font-semibold font-poppins text-[24px]  text-[#161C2D]">
+                <p className="mb-3 font-semibold font-poppins lg:text-[24px] text-[20px]  text-[#161C2D]">
                   Download Now
                 </p>
 
-                <div className="flex items-center space-x-5 lg:mt-6 mt-2">
+                <div className="flex items-center lg:space-x-5 space-x-4 lg:mt-6 mt-2">
                   <a
                     href="https://play.google.com/store/apps/details?id=com.wave.aca&pcampaignid=web_share"
                     target="_blank"
@@ -194,14 +194,14 @@ const Footer = ({ backColor }) => {
                     href="https://x.com/acagarwal_in?s=11&mx=2"
                     target="_blank"
                   >
-                    <img src={smallXicon} alt="" className="w-7" />
+                    <img src={smallXicon} alt="" className="w-[20px]" />
                   </a>
                   <a
                     href="https://www.linkedin.com/company/ac-agarwal-share-brokers/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={smallLinkIcon} alt="" className="w-7" />
+                    <img src={smallLinkIcon} alt="" className="w-[20px]" />
                   </a>
                 </div>
               </div>
@@ -229,7 +229,7 @@ const Footer = ({ backColor }) => {
         </div>
         <div className="my-10 h-0  border-b-[3px] border-[#161C2D] opacity-25  hidden" />
 
-        <div className="font-poppins font-normal lg:text-[16px] text-[12px] text-[#161C2D] lg:mt-20 mt-10 opacity-90">
+        <div className="font-poppins font-normal lg:text-[16px] text-[12px] text-[#161c2dc5] lg:mt-20 mt-10 ">
           ATTENTION INVESTORS :- a) Prevent unauthorised transactions in your
           account. Update your mobile numbers/email IDs with your stock brokers.{" "}
           <br />
@@ -302,25 +302,25 @@ const Footer = ({ backColor }) => {
             </a>
           </span>
           <br /> <br />
-          <div className="overflow-x-auto p-0 border border-[#00000026] rounded-[22px]">
-            <table className="min-w-full bg-white border border-[#00000026] rounded-[22px] overflow-hidden">
+          <div className="overflow-x-auto p-0 border border-[#00000026] rounded-[22px] bg-[#FCFDFE]">
+            <table className="min-w-full bg-[#FCFDFE] border border-[#00000026] rounded-[22px] overflow-hidden">
               <thead>
                 <tr>
                   <th
                     colSpan="2"
-                    className="font-poppins font-normal lg:text-[16px] text-[12px] text-center bg-white text-[#161C2DCC] py-4 px-4 border-b border-[#00000026]"
+                    className="font-poppins font-normal lg:text-[16px] text-[12px] text-center bg-[#FCFDFE] text-[#161C2DCC] py-4 px-4 border-b border-[#00000026]"
                   >
                     Our Bank Account Details
                   </th>
                 </tr>
               </thead>
               <tbody>
-                <tr className="flex flex-col lg:table-row border-b border-gray-200">
-                  <th className="font-poppins font-normal lg:text-[16px] text-[12px] text-center py-3 px-4 border-t lg:border-t-0 border-b border-r lg:border-r border-[#00000026]">
+                <tr className="flex flex-col lg:table-row lg:border-b border-b-0 border-gray-200">
+                  <th className="font-poppins font-normal lg:text-[16px] text-[12px] text-center py-3 px-4 border-t-0 lg:border-t-0 lg:border-b border-b-0 lg:border-r border-[#00000026]">
                     Bank name - HDFC Bank <br /> A/c No. 04290340000696 <br />{" "}
                     IFSC Code - HDFC0000429
                   </th>
-                  <th className="font-poppins font-normal lg:text-[16px] text-[12px] text-center py-3 px-4 border-t lg:border-t-0 border-b lg:border-b-0 border-[#00000026]">
+                  <th className="font-poppins font-normal lg:text-[16px] text-[12px] text-center py-3 px-4 border-t lg:border-t-0 lg:border-b-0 border-b-0 border-[#00000026]">
                     Bank name - HDFC Bank <br /> A/c No. 04290340000704 <br />{" "}
                     IFSC Code - HDFC0000429
                   </th>
@@ -329,12 +329,12 @@ const Footer = ({ backColor }) => {
             </table>
           </div>
           <div className="overflow-x-auto p-0 border border-[#00000026] rounded-[22px] lg:mt-10 mt-5">
-            <table className="min-w-full bg-white border border-[#00000026] rounded-[22px] overflow-hidden">
+            <table className="min-w-full bg-[#FCFDFE] border border-[#00000026] rounded-[12px] overflow-hidden">
               <thead>
                 <tr>
                   <th
                     colSpan="2"
-                    className="font-poppins font-normal lg:text-[16px] text-[12px] text-center bg-white text-[#161C2DCC] py-4 px-4 border-b border-[#00000026]"
+                    className="font-poppins font-normal lg:text-[16px] text-[12px] text-center bg-[#FCFDFE] text-[#161C2DCC] py-4 px-4 border-b border-[#00000026]"
                   >
                     SEBI Registration No. - INZ000216930
                   </th>
@@ -368,19 +368,20 @@ const Footer = ({ backColor }) => {
               SCORES &emsp; &emsp; &emsp;
             </a>
           </span>
-           <br className="lg:hidden block"/>
+          <br className="lg:hidden block" />
           To File A Complaint on &nbsp;
           <span className="font-medium text-[#244896]">
             <a href="https://www.cdslindia.com/Footer/grievances.aspx">
               CDSL <br /> <br />
             </a>
           </span>
-          Disclaimer: <br className="lg:hidden block"/> A C Agarwal Share Brokers Pvt. Ltd. and A. C. Agarwal
-          Commodities Pvt. Ltd. are engaged in client based and proprietary
-          trading on various stock and commodity exchanges. <br />
+          Disclaimer: <br className="lg:hidden block" /> A C Agarwal Share
+          Brokers Pvt. Ltd. and A. C. Agarwal Commodities Pvt. Ltd. are engaged
+          in client based and proprietary trading on various stock and commodity
+          exchanges. <br />
         </div>
 
-        <div className="font-medium lg:text-[16px] text-[12px] text-[#244896] mt-10 flex-wrap lg:justify-between lg:space-x-10 space-x-4 lg:space-y-0 leading-[30px] opacity-90">
+        <div className="font-medium lg:text-[16px] text-[12px] text-[#244896] mt-10 flex-wrap lg:justify-between lg:space-x-10 space-x-4 lg:space-y-0 leading-[30px]">
           <a
             href="https://www.nseindia.com/"
             target="_blank"

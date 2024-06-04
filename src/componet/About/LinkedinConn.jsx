@@ -5,7 +5,7 @@ import { rightArrow } from "../../assets/newImages";
 const LinkedinConn = () => {
   return (
     <div className="lg:py-28 px-5 py-20 lg:px-20 peer space-y-5 max-container text-center bg-white">
-      <img src={linkedin} alt="" className="w-[80px] lg:w-[91px]  mx-auto" />
+      <img src={linkedin} alt="" className="w-[80px] lg:w-[94px] lg:h-[94px]  mx-auto" />
       <div className="w-fit mx-auto">
         <a
           href="https://www.linkedin.com/company/ac-agarwal-share-brokers/"
@@ -20,7 +20,7 @@ const LinkedinConn = () => {
             <img
               src={rightArrow}
               alt=""
-              className="-ml-3 lg:ml-5 mb-2.5 lg:mb-0 w-[25px] lg:w-auto"
+              className="-ml-3 lg:ml-5 mb-2.5 lg:mb-0 w-[25px] lg:w-[30px]"
             />
           </div>
         </a>

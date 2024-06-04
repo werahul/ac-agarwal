@@ -27,7 +27,7 @@ const Xts = () => {
             integration and unmatched performance in the trading world.
           </p>
           <a href="https://kyc.acagarwal.com/" target="_blank">
-            <button className="lg:mt-14 mt-10 flex items-center justify-center  lg:w-[184px] w-[171px] lg:h-[57px] h-[50px] font-poppins bg-[#244896] tracking-tight hover:bg-[#6688d1] transition-all  text-white font-normal text-[17px] rounded-[10px]">
+            <button className="lg:mt-14 mt-10 flex items-center justify-center  lg:w-[184px] w-[171px] lg:h-[57px] h-[50px] font-poppins bg-[#244896] tracking-tight lg:hover:bg-[#6688d1] transition-all  text-white font-normal text-[17px] rounded-[10px]">
               {" "}
               Get Started{" "}
             </button>

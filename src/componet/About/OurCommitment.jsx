@@ -13,10 +13,10 @@ const OurCommitment = () => {
             Has Made Us Achieve Leading Milestones
           </p> */}
         </div>
-        <div className="grid grid-cols-1 text-[#161C2DCC] lg:grid-cols-2 lg:gap-28 gap-10 mt-20">
+        <div className="grid grid-cols-1 text-[#161C2DCC] lg:grid-cols-2  lg:gap-28 gap-10 mt-20">
           <div className="flex items-start  space-x-5">
             <div className="">
-              <img src={comAb1} alt="" className="" />
+              <img src={comAb1} alt="" className="lg:w-[100px]" />
             </div>
             <div className="space-y-5">
               <p className="font-poppins font-semibold text-[22px] leading-[22.65px]">
@@ -32,7 +32,7 @@ const OurCommitment = () => {
           </div>
           <div className="flex items-start  space-x-5">
             <div className="">
-              <img src={comAb2} alt="" className="" />
+              <img src={comAb2} alt="" className="lg:w-[130px]" />
             </div>
             <div className="space-y-5">
               <p className="font-poppins font-semibold text-[22px] leading-[22.65px]">
@@ -48,7 +48,7 @@ const OurCommitment = () => {
           </div>
           <div className="flex items-start  space-x-5">
             <div className="">
-              <img src={comAb3} alt="" className="" />
+              <img src={comAb3} alt="" className="lg:w-[60px]" />
             </div>
             <div className="space-y-5">
               <p className="font-poppins font-semibold text-[22px] leading-[22.65px]">
@@ -63,7 +63,7 @@ const OurCommitment = () => {
           </div>
           <div className="flex items-start  space-x-5">
             <div className="">
-              <img src={comAb4} alt="" className="" />
+              <img src={comAb4} alt="" className="lg:w-[60px]" />
             </div>
             <div className="space-y-5">
               <p className="font-poppins font-semibold text-[22px] leading-[22.65px]">

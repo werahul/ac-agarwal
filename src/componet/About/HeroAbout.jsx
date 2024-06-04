@@ -14,16 +14,19 @@ const HeroAbout = () => {
           <p className="font-poppins text-center lg:text-[28px] text-[20px] lg:leading-[28px] leading-[28px] lg:px-0 px-10 text-[#161C2D] opacity-60 lg:mt-12 mt-7">
             30 Years of Valuing Quality Relationships in Our Growth Story
           </p>
-          <a href="https://kyc.acagarwal.com/" target="_blank" rel="noopener noreferrer">
-            <button className="lg:mt-14 mt-10 flex items-center justify-center w-auto lg:h-[57px] h-[50px] font-poppins bg-[#244896] tracking-tight hover:bg-[#6688d1] transition-all lg:px-6 px-4 text-white font-normal text-[17px] rounded-[10px]">
+          <a
+            href="https://kyc.acagarwal.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="lg:mt-14 mt-10 flex items-center justify-center w-[194px] lg:h-[57px] h-[47px] font-poppins bg-[#244896] tracking-tight lg:hover:bg-[#6688d1] transition-all  text-white font-normal text-[17px] rounded-[10px]">
               Sign Up Now
             </button>
           </a>
         </div>
-       
       </div>
-      <div className="lg:flex lg:space-x-20 lg:py-20 py-10 max-container">
-        <div className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] tracking-tighter text-[#161C2D] lg:w-[50%] opacity-80">
+      <div className="lg:flex   lg:py-20  py-10 max-container  justify-between ">
+        <div className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] tracking-tighter text-[#161C2D] lg:w-[50%] opacity-80 ">
           Over the last 30 years, our journey has been marked by a steadfast
           commitment to building quality business relationships, rather than
           merely expanding our client base. At the heart of our operations lies
@@ -36,10 +39,16 @@ const HeroAbout = () => {
           of our success, enabling us to earn the trust and loyalty of our
           clients. This principle guides every interaction and decision,
           reflecting our belief in the importance of integrity and reliability
-          in the fast-paced world of trading.
+          in the fast-paced world of trading. <span
+          onClick={() => setShowMore(!showMore)}
+          className="  lg:hidden  text-[#244896] text-[15px] font-normal font-poppins transition-all "
+        >
+          {showMore ? "" : "View More"}
+        </span>
         </div>
+        <div className="w-[150px] lg:block hidden"></div>
         <div
-          className={`font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] tracking-tighter text-[#161C2D] lg:w-[50%] opacity-80 ${
+          className={`font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] tracking-tighter text-[#161C2D] lg:w-[50%] opacity-80 lg:mt-0 mt-5  ${
             showMore ? "block" : "hidden"
           } lg:block`}
         >
@@ -56,15 +65,11 @@ const HeroAbout = () => {
           mission remains unchanged: to cultivate quality relationships, uphold
           our commitments, and deliver superior technology and services. This
           enduring commitment to excellence is what sets us apart and drives us
-          forward.
+          forward.{" "}
+          
         </div>
         <div className=" text-center mt-5">
-          <button
-            onClick={() => setShowMore(!showMore)}
-            className="  lg:hidden  text-[#161C2DCC] text-[20px] font-semibold font-poppins py-2 px-4 rounded-lg transition-all "
-          >
-            {showMore ? "Show Less" : "View More"}
-          </button>
+          <button></button>
         </div>
       </div>
     </div>

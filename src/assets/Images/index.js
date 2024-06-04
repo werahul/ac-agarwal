@@ -56,6 +56,7 @@ import userFriendlyBroker from "./userFriendlyBroker.png"
 import ArrowRightBlue from "./ArrowRightBlue.svg"
 import InvoImg from "./InvoImg.png"
 import InvoImg2 from "./InvoImg2.png"
+import InvoImg2Mobile from "./InvoImg2Mobile.png"
 import customizedPricing from "./customizedPricing.png"
 import SrOne from "./SrOne.svg"
 import SrTwo from "./SrTwo.svg"
@@ -125,4 +126,4 @@ gullak1, gullak2, gullak3, gullak4, bloomMain, bloomMainMobile, blueTick2, custo
   mNav,
   gNav,
   xNav,
-mathMain, mathMainMobile, linkedin, acSvgLogo, bloomMainSvg, hamIcon}
+mathMain, mathMainMobile, linkedin, acSvgLogo, bloomMainSvg, hamIcon, InvoImg2Mobile}

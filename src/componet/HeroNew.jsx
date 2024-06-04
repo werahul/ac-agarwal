@@ -11,10 +11,10 @@ import {
 
 const HeroNew = () => {
   return (
-    <div className="lg:pt-[145px] lg:pb-20 pt-10 pb-10 lg:px-20 px-5 homeNewBg ">
+    <div className="lg:pt-[145px] lg:pb-20 pt-[62px] pb-10 lg:px-20 px-5 homeNewBg ">
       <div className="max-container">
         <div className="lg:hidden flex items-center justify-center flex-col">
-          <img src={accLogoMobile} alt="" className="w-44 mb-5" />
+         
           <img src={heroImageNew1Mobile} alt="" className="mb-10" />
         </div>
         <div className="flex flex-col items-center justify-center">
@@ -29,7 +29,7 @@ const HeroNew = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="mt-16 flex items-center justify-center  lg:w-[194px] w-[174px] lg:h-[57px] h-[47px] font-poppins bg-[#244896] tracking-tight hover:bg-[#6688d1] transition-all  text-white font-normal text-[17px] rounded-[10px]">
+            <button className="mt-16 flex items-center justify-center  lg:w-[194px] w-[174px] lg:h-[57px] h-[47px] font-poppins bg-[#244896] tracking-tight lg:hover:bg-[#6688d1] transition-all  text-white font-normal text-[17px] rounded-[10px]">
               {" "}
               Sign up now{" "}
             </button>

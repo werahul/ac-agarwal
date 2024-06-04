@@ -22,9 +22,14 @@ import {
 import { Link } from "react-router-dom";
 
 const Pricing = () => {
+
   const [showPopup, setShowPopup] = useState(false);
-  const [selectedTime, setSelectedTime] = useState(null);
-  const [selectedDay, setSelectedDay] = useState(null);
+  const [fullName, setFullName] = useState('');
+  const [mobileNumber, setMobileNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [selectedTime, setSelectedTime] = useState('');
+  const [selectedDay, setSelectedDay] = useState('');
+  const [errors, setErrors] = useState({});
 
   const handleGetOfferClick = () => {
     setShowPopup(true);
@@ -39,6 +44,49 @@ const Pricing = () => {
   const handleDaySelect = (day) => {
     setSelectedDay(day);
   };
+
+  const handleNameChange = (e) => {
+    const value = e.target.value;
+    if (/^[a-zA-Z\s]*$/.test(value)) {
+      setFullName(value);
+      setErrors((prev) => ({ ...prev, fullName: '' }));
+    } else {
+      setErrors((prev) => ({ ...prev, fullName: 'Only letters and spaces are allowed.' }));
+    }
+  };
+
+  const handleMobileNumberChange = (e) => {
+    const value = e.target.value;
+    if (/^\d*$/.test(value)) {
+      setMobileNumber(value);
+      setErrors((prev) => ({ ...prev, mobileNumber: '' }));
+    } else {
+      setErrors((prev) => ({ ...prev, mobileNumber: 'Only numbers are allowed.' }));
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newErrors = {};
+
+    if (fullName.trim() === '') {
+      newErrors.fullName = 'Full Name is required.';
+    }
+    if (mobileNumber.trim() === '') {
+      newErrors.mobileNumber = 'Mobile Number is required.';
+    }
+    if (!email) {
+      newErrors.email = 'Email is required.';
+    }
+
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length === 0) {
+      // Proceed with form submission
+      console.log('Form submitted');
+    }
+  };
+
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -81,9 +129,9 @@ const Pricing = () => {
             How our Pricing Works
           </p>
 
-          <div className="grid max-container px-5 lg:px-40 lg:grid-cols-2 grid-cols-1 lg:gap-28 gap-12 lg:mt-20 mt-[50px]">
-            <div className="flex items-start space-x-5">
-              <img src={pr1} alt="" className="w-[29px] h-auto" />
+          <div className="grid max-container px-5 lg:px-40 lg:grid-cols-2 grid-cols-1 lg:gap-y-28 lg:gap-x-40 gap-y-12 gap-x-12 lg:mt-28 mt-[50px]">
+            <div className="flex items-start space-x-3">
+              <img src={pr1} alt="" className="w-[29px] h-auto lg:mt-1" />
               <div className="space-y-2 lg:space-y-4">
                 <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
                   Customization
@@ -94,8 +142,8 @@ const Pricing = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-start space-x-5">
-              <img src={pr2} alt="" className="w-[29px] h-auto" />
+            <div className="flex items-start space-x-3">
+              <img src={pr2} alt="" className="w-[29px] h-auto lg:mt-1" />
               <div className="space-y-2 lg:space-y-4">
                 <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
                   Clarity
@@ -106,8 +154,8 @@ const Pricing = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-start space-x-5">
-              <img src={pr3} alt="" className="w-[29px] h-auto" />
+            <div className="flex items-start space-x-3">
+              <img src={pr3} alt="" className="w-[29px] h-auto lg:mt-1" />
               <div className="space-y-2 lg:space-y-4">
                 <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
                   Transparency
@@ -118,8 +166,8 @@ const Pricing = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-start space-x-5">
-              <img src={pr4} alt="" className="w-[29px] h-auto" />
+            <div className="flex items-start space-x-3">
+              <img src={pr4} alt="" className="w-[29px] h-auto lg:mt-1" />
               <div className="space-y-2 lg:space-y-4">
                 <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
                   Flexibility
@@ -133,15 +181,15 @@ const Pricing = () => {
           </div>
 
           <section className="">
-            <div className="flex lg:space-x-10 lg:justify-center justify-between w-full mt-40 lg:mb-0 mb-0 lg:px-0 px-5">
+            <div className="flex lg:space-x-10 space-x-2 lg:justify-center justify-center w-full lg:mt-40 mt-14 lg:mb-0 mb-0 lg:px-0 px-5">
               <button
                 onClick={handleGetOfferClick}
-                className="lg:w-[180px] w-[150px] lg:h-[59px] h-[49px]  font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all px-8 text-white lg:font-medium text-[17px] rounded-[10px]"
+                className="lg:w-[180px] w-[150px] lg:h-[59px] h-[47px]  font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all px-8 text-white lg:font-medium text-[17px] rounded-[10px]"
               >
                 Get Offer
               </button>
               <Link to="/list-of-charges">
-                <button className="lg:w-[220px] w-[180px] lg:h-[59px] h-[49px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all lg:px-8 text-white lg:font-medium text-[17px] rounded-[10px] whitespace-nowrap">
+                <button className="lg:w-[220px] w-[180px] lg:h-[59px] h-[47px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all lg:px-8 text-white lg:font-medium text-[17px] rounded-[10px] whitespace-nowrap">
                   List of Charges
                 </button>
               </Link>
@@ -157,18 +205,23 @@ const Pricing = () => {
                     <img
                       src={cross}
                       alt=""
-                      onClick={handleClosePopup}
+                      onClick={() => setShowPopup(false)}
                       className="cursor-pointer -mt-3"
                     />
                   </div>
-                  <form>
+                  <form onSubmit={handleSubmit}>
                     <div className="mb-4 lg:px-0 px-6">
                       <input
                         type="text"
                         className="mt-1 tracking-wide font-poppins block w-full border border-[#EAEEF4] shadow-sm bg-[#F6FAFD] h-[54px] sm:text-[17px] text-[12px] rounded-lg px-4 outline-none"
                         required
                         placeholder="Full Name"
+                        value={fullName}
+                        onChange={handleNameChange}
                       />
+                      {errors.fullName && (
+                        <span className="text-red-500 text-sm">{errors.fullName}</span>
+                      )}
                     </div>
                     <div className="mb-4 lg:px-0 px-6">
                       <input
@@ -176,16 +229,25 @@ const Pricing = () => {
                         className="mt-1 tracking-wide font-poppins block w-full border border-[#EAEEF4] shadow-sm bg-[#F6FAFD] h-[54px] sm:text-[17px] text-[12px] rounded-lg px-4 outline-none"
                         required
                         placeholder="Mobile Number"
+                        value={mobileNumber}
+                        onChange={handleMobileNumberChange}
                       />
+                      {errors.mobileNumber && (
+                        <span className="text-red-500 text-sm">{errors.mobileNumber}</span>
+                      )}
                     </div>
-
                     <div className="mb-4 lg:px-0 px-6">
                       <input
                         type="email"
                         className="mt-1 tracking-wide font-poppins block w-full border border-[#EAEEF4] shadow-sm bg-[#F6FAFD] h-[54px] sm:text-[17px] text-[12px] rounded-lg px-4 outline-none"
                         required
                         placeholder="Email ID"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
+                      {errors.email && (
+                        <span className="text-red-500 text-sm">{errors.email}</span>
+                      )}
                     </div>
                     <div className="mb-4 lg:px-0 px-6">
                       <label className="font-poppins block text-[18px] text-[#161C2D] mb-3">
@@ -196,7 +258,7 @@ const Pricing = () => {
                           type="button"
                           className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                             selectedTime === "9 AM - 12 PM"
-                              ? "bg-blue-600 text-white"
+                              ? "bg-[#244896] text-white"
                               : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                           }`}
                           onClick={() => handleTimeSelect("9 AM - 12 PM")}
@@ -207,7 +269,7 @@ const Pricing = () => {
                           type="button"
                           className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                             selectedTime === "12 PM - 3 PM"
-                              ? "bg-blue-600 text-white"
+                              ? "bg-[#244896] text-white"
                               : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                           }`}
                           onClick={() => handleTimeSelect("12 PM - 3 PM")}
@@ -218,7 +280,7 @@ const Pricing = () => {
                           type="button"
                           className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                             selectedTime === "3 PM - 6 PM"
-                              ? "bg-blue-600 text-white"
+                              ? "bg-[#244896] text-white"
                               : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                           }`}
                           onClick={() => handleTimeSelect("3 PM - 6 PM")}
@@ -227,7 +289,6 @@ const Pricing = () => {
                         </button>
                       </div>
                     </div>
-
                     <div className="mb-4 lg:px-0 px-6">
                       <label className="font-poppins block text-[18px] text-[#161C2D] mb-3">
                         Preferred Day
@@ -237,7 +298,7 @@ const Pricing = () => {
                           type="button"
                           className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                             selectedDay === "Today"
-                              ? "bg-blue-600 text-white"
+                              ? "bg-[#244896] text-white"
                               : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                           }`}
                           onClick={() => handleDaySelect("Today")}
@@ -248,7 +309,7 @@ const Pricing = () => {
                           type="button"
                           className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                             selectedDay === "Tomorrow"
-                              ? "bg-blue-600 text-white"
+                              ? "bg-[#244896] text-white"
                               : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                           }`}
                           onClick={() => handleDaySelect("Tomorrow")}
@@ -259,7 +320,7 @@ const Pricing = () => {
                           type="button"
                           className={`lg:w-[170px] w-[100px] py-3 font-poppins rounded-lg border sm:text-[17px] text-[12px] ${
                             selectedDay === "Tomorrow + 1"
-                              ? "bg-blue-600 text-white"
+                              ? "bg-[#244896] text-white"
                               : "bg-[#F6FAFD] text-[#9598a0] border-[#EAEEF4]"
                           }`}
                           onClick={() => handleDaySelect("Tomorrow + 1")}

@@ -9,11 +9,11 @@ const UnleashilingProduct = () => {
       <hr className="lg:hidden block mb-20"/>
         <div className="max-container">
           <div className="lg:space-y-6 space-y-4">
-            <p className="text-center font-poppins font-medium text-[14px] text-[#244896] lg:tracking-normal tracking-wider">
+            <p className="text-center font-poppins font-medium text-[14px] text-[#244896] lg:tracking-normal tracking-[1.63px]">
               BEHIND THE SCENES
             </p>
             <h2 className="font-poppins font-medium lg:text-[42px] text-[30px]  lg:leading-[60px] leading-[42px] tracking-tight text-center text-[#161C2DCC]">
-              Unleashing Peak Performance
+              Unleashing <br className="lg:hidden block" /> Peak Performance
             </h2>
             <p className="text-center font-poppins font-normal mx-auto lg:w-[600px] lg:text-[28px] text-[15px] opacity-70 text-[#161C2D] lg:leading-normal leading-[28px]">
               Discover the strength behind our trading platforms
