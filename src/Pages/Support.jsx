@@ -334,7 +334,7 @@ const Support = () => {
     },
     {
       question:
-        "Can I invest/trade in penny stocks? What is AC Agarwal’s policy regarding penny stocks?",
+        "Can I invest /trade in penny stocks? What is AC Agarwal’s policy regarding penny stocks?",
       answer:
         "Penny stocks are typically low-priced stocks of small companies that trade at a relatively low market price, often well below Rs 50 per share. These stocks are comparatively high-risk and more volatile than larger, more established companies. Although these stocks are more volatile and risky, they can offer high returns to investors if the investment is made after extensive research.",
       answer2:
@@ -2090,6 +2090,7 @@ const Support = () => {
 
     setSearchQuery(tempQuery);
     setSuggestions([]); // Clear suggestions on search
+    setTempQuery(""); // Reset the input field
 
     const matchingComponents = Object.keys(componentMap).filter((title) => {
       const questions = Object.keys(componentMap[title])
@@ -2170,7 +2171,7 @@ const Support = () => {
                 </button>
 
                 {suggestions.length > 0 && (
-                  <div className="w-[90%] lg:w-[100%] mt-2 absolute bg-white border rounded-lg shadow-lg z-20">
+                  <div className="w-[90%] lg:w-[100%] mt-2 absolute top-20 bg-white border rounded-lg shadow-lg z-20">
                     {suggestions.map((suggestion, index) => (
                       <div
                         key={index}
