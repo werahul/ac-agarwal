@@ -2160,10 +2160,10 @@ const Support = () => {
                     }
                   }}
                   required
-                  className="w-[100%] lg:w-[82%] bg-[#FCFDFE] h-[78px] rounded-[60px] border line-clamp-1 font-dmSans text-[18px] lg:pl-8 pl-5 pr-40 outline-none"
+                  className="w-[100%] lg:w-[82%] bg-[#FCFDFE] h-[78px] rounded-[60px] border line-clamp-1 font-dmSans text-[18px] lg:pl-8 pl-5 lg:pr-40 pr-20 outline-none"
                 />
                 <button
-                  className="lg:w-[134px] w-[114px] h-[55px] rounded-[56px] bg-[#244896] hover:bg-[#5b76af] font-medium font-dmSans text-[18px] text-white absolute top-3 lg:right-[72px] "
+                  className="lg:w-[134px] w-[114px] h-[55px] rounded-[56px] bg-[#244896] hover:bg-[#5b76af] font-medium font-dmSans text-[18px] text-white absolute top-3 lg:right-[72px] right-3 "
                   onClick={handleSearch}
                 >
                   Search
