@@ -4,7 +4,7 @@ import { rightArrow } from "../../assets/newImages";
 
 const LinkedinConn = () => {
   return (
-    <div className="lg:py-28 px-5 py-20 lg:px-20 peer space-y-5 max-container text-center bg-white">
+    <div className="lg:py-[150px] px-5 py-20 lg:px-20 peer space-y-5 max-container text-center bg-white">
       <img src={linkedin} alt="" className="w-[80px] lg:w-[94px] lg:h-[94px]  mx-auto" />
       <div className="w-fit mx-auto">
         <a
@@ -12,7 +12,7 @@ const LinkedinConn = () => {
           target="_blank"
           className=""
         >
-          <div className="flex peering text-center peer transition-transform duration-300 lg:tracking-normal tracking-tighter justify-center text-[#161C2DCC] font-medium text-[30px] lg:text-[42px] font-poppins items-end lg:items-center">
+          <div className="flex peering text-center peer transition-transform duration-300 lg:tracking-normal tracking-tighter justify-center text-[#161C2DCC] font-medium text-[30px] lg:text-[42px] font-poppins items-end lg:items-center mt-10">
             <p>
               Stay connected
               <br className="lg:hidden block" /> on LinkedIn

@@ -11,20 +11,50 @@ import {
   smallLinkIcon,
   smallXicon,
   xNav,
+  closeIcon,
 } from "../assets/Images"; // Ensure these are correctly imported
 
 const Navbar = ({ navColor }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
   const menuRef = useRef(null);
+  const menuPhoneRef = useRef(null);
+  const mainRef = useRef(null);
+
+  const hamIconRef = useRef(null); // Ref for hamburger icon
+  const closeIconRef = useRef(null); // Ref for close icon
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(true);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  // const handleClickOutside = (event) => {
+  //   if (menuRef.current && !menuRef.current.contains(event.target)) {
+  //     closeMenu();
+  //   }
+  // };
+
   const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
-      setIsMenuOpen(false);
+    // Check if the click is outside the menu and not on hamIcon or closeIcon
+    // if (
+    //   menuRef.current &&
+    //   !menuRef.current.contains(event.target) &&
+    //   !hamIconRef.current.contains(event.target) &&
+    //   !closeIconRef.current.contains(event.target)
+    // )
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target) &&
+      menuPhoneRef.current &&
+      !menuPhoneRef.current.contains(event.target) &&
+      mainRef.current &&
+      !mainRef.current.contains(event.target)
+    ) {
+      closeMenu();
     }
   };
 
@@ -92,30 +122,52 @@ const Navbar = ({ navColor }) => {
           >
             Support
           </NavLink>
-          <div className="lg:flex hidden items-center space-x-8">
+          <div
+            className="lg:flex hidden items-center space-x-9 w-[30px]"
+            ref={menuRef}
+          >
+            {isMenuOpen ? (
+              <img
+                src={closeIcon}
+                alt=""
+                onClick={closeMenu}
+                className="cursor-pointer w-[20px]"
+                ref={closeIconRef}
+              />
+            ) : (
+              <img
+                src={hamIcon}
+                alt=""
+                onClick={toggleMenu}
+                className="cursor-pointer"
+                ref={hamIconRef}
+              />
+            )}
+          </div>
+        </div>
+
+        <div className="lg:hidden block" ref={menuPhoneRef}>
+          {isMenuOpen ? (
+            <img
+              src={closeIcon}
+              alt=""
+              onClick={closeMenu}
+              className="cursor-pointer w-[20px]"
+              ref={closeIconRef}
+            />
+          ) : (
             <img
               src={hamIcon}
               alt=""
               onClick={toggleMenu}
               className="cursor-pointer"
+              ref={hamIconRef}
             />
-          </div>
-        </div>
-
-        <div className="lg:hidden block">
-          <img
-            src={hamIcon}
-            alt=""
-            onClick={toggleMenu}
-            className="cursor-pointer"
-          />
+          )}
         </div>
 
         {isMenuOpen && (
-          <div
-            ref={menuRef}
-            className="absolute top-20 right-0 lg:right-20 w-fit font-poppins bg-[#ffffff] shadow-lg zIndex lg:flex lg:justify-center"
-          >
+          <div className="absolute top-20 right-0 lg:right-20 w-fit font-poppins bg-[#ffffff] shadow-lg zIndex lg:flex lg:justify-center" ref={mainRef}>
             <div className="lg:max-w-5xl w-full p-5 lg:p-10 bg-white">
               <div className="grid grid-cols-2 mb-5 px-5 lg:hidden gap-6 font-poppins text-[15px]">
                 <NavLink
@@ -308,7 +360,11 @@ const Navbar = ({ navColor }) => {
                       target="_blank"
                       className="block"
                     >
-                      <img src={smallLinkIcon} alt="" className="w-4 lg:w-10 " />
+                      <img
+                        src={smallLinkIcon}
+                        alt=""
+                        className="w-4 lg:w-10 "
+                      />
                     </Link>
                   </div>
                 </div>

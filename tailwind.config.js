@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -13,11 +10,9 @@ export default {
         dmSans: ["DM Sans", "sans-serif"],
       },
       screens: {
-      '2xl': '1700px',
+        "2xl": "1700px",
       },
-
     },
   },
   plugins: [],
-}
-
+};

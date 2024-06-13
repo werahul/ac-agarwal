@@ -81,7 +81,7 @@ const ProductGridMobile = () => {
                 <h2 className="text-[18px] font-bold font-poppins leading-[30px] text-[#161C2DCC]">
                   {item.title}
                 </h2>
-                <p className="mt-3 mb-4 text-[15px] leading-[26px] w-full font-normal font-poppins text-[#161C2D]">
+                <p className="mt-3 mb-4 text-[15px] leading-[26px] w-full font-normal font-poppins text-[#161C2D] opacity-90">
                   {item.description}
                 </p>
                 {index === 2 && (

@@ -292,7 +292,7 @@ const Bloom = () => {
           </button>
           <a href="https://kyc.acagarwal.com/" target="_blank">
             <button className="lg:w-[220px] w-[180px] lg:h-[59px] h-[47px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all lg:px-8 text-white font-medium text-[17px] rounded-[10px] whitespace-nowrap">
-              Open account
+              Open Account
             </button>
           </a>
         </div>

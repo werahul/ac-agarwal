@@ -100,7 +100,7 @@ const ProductGridMobile2 = () => {
                 <h2 className="text-[18px] font-bold font-poppins leading-[30px] text-[#161C2DCC]">
                   {item.title}
                 </h2>
-                <p className="mt-3 mb-4 text-[15px] w-full font-normal font-poppins text-[#161C2D]">
+                <p className="mt-3 mb-4 text-[15px] w-full font-normal font-poppins text-[#161C2D] opacity-90">
                   {item.description}
                 </p>
                 {/*<p className="linkImg">

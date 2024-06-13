@@ -112,6 +112,7 @@ import linkedin from "./linkedin.png";
 import acSvgLogo from "./acSvgLogo.svg";
 import bloomMainSvg from "./bloomMain.svg";
 import hamIcon from "./hamIcon.svg";
+import closeIcon from "./closeIcon.png";
 
 
 
@@ -126,4 +127,4 @@ gullak1, gullak2, gullak3, gullak4, bloomMain, bloomMainMobile, blueTick2, custo
   mNav,
   gNav,
   xNav,
-mathMain, mathMainMobile, linkedin, acSvgLogo, bloomMainSvg, hamIcon, InvoImg2Mobile}
+mathMain, mathMainMobile, linkedin, acSvgLogo, bloomMainSvg, hamIcon, InvoImg2Mobile, closeIcon}

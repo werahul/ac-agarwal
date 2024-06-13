@@ -161,8 +161,8 @@ const Bloom = () => {
           </a>
         </div>
       </div>
-      <div className="lg:pt-0 lg:pb-20  pt-10 pb-10 lg:px-32 2xl:px-[260px] px-5  bg-[#fcfdfe]">
-        <div className="max-container lg:space-y-36 space-y-24">
+      <div className="lg:pt-0 lg:pb-20  pt-10 pb-10 lg:px-32 2xl:px-[240px] px-5  bg-[#fcfdfe]">
+        <div className="max-container lg:space-y-40 space-y-24">
           <div className="Bloom flex flex-col-reverse lg:flex-row items-center lg:justify-between  lg:space-y-0 lg:space-x-32">
             <div className="">
               <img src={b1} alt="" className="mt-10 lg:mt-0 lg:w-[570px]" />
@@ -282,7 +282,7 @@ const Bloom = () => {
           </button>
           <a href="https://kyc.acagarwal.com/" target="_blank">
             <button className="lg:w-[220px] w-[180px] lg:h-[59px] h-[47px] font-poppins bg-[#244896] hover:bg-[#6688d1] transition-all lg:px-8 text-white lg:font-medium text-[17px] rounded-[10px] whitespace-nowrap">
-              Open account
+              Open Account
             </button>
           </a>
         </div>

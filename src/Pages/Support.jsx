@@ -2050,9 +2050,12 @@ const Support = () => {
   const [activeComponent, setActiveComponent] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
   const [tempQuery, setTempQuery] = useState("");
+  const inputRef = useRef(null);
 
   const toggleComponentVisibility = (title) => {
-    setActiveComponent(title);
+    setActiveComponent((prevActiveComponent) =>
+      prevActiveComponent === title ? null : title
+    );
   };
 
   const handleInputChange = (event) => {
@@ -2081,6 +2084,10 @@ const Support = () => {
   };
 
   const handleSearch = () => {
+    if (!tempQuery.trim()) {
+      return; // Do not proceed if input is empty or contains only whitespace
+    }
+
     setSearchQuery(tempQuery);
     setSuggestions([]); // Clear suggestions on search
 
@@ -2106,7 +2113,7 @@ const Support = () => {
     }
 
     if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: "smooth" }); // Add this line
+      sectionRef.current.scrollIntoView({ behavior: "smooth" }); // Scroll only if there are matching components
     }
   };
 
@@ -2140,40 +2147,48 @@ const Support = () => {
                 Type your query or browse the FAQ section below
               </p>
 
-              <div className="relative w-[90%] lg:w-[50%] h-[78px] lg:mt-14 mt-10">
+              <div className="relative w-[90%] lg:w-[50%] h-[78px] lg:mt-14 mt-10 flex justify-center items-center">
                 <input
+                  ref={inputRef}
                   type="text"
                   placeholder="Type here"
                   value={tempQuery}
                   onChange={handleInputChange}
-                  className="w-[100%] bg-[#FCFDFE] h-[78px] rounded-[60px] border line-clamp-1 font-dmSans text-[18px] lg:pl-8 pl-5 pr-40 outline-none"
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      handleSearch();
+                    }
+                  }}
+                  required
+                  className="w-[100%] lg:w-[82%] bg-[#FCFDFE] h-[78px] rounded-[60px] border line-clamp-1 font-dmSans text-[18px] lg:pl-8 pl-5 pr-40 outline-none"
                 />
                 <button
-                  className="lg:w-[134px] w-[114px] h-[55px] rounded-[56px] bg-[#244896] hover:bg-[#5b76af] font-medium font-dmSans text-[18px] text-white absolute top-3 right-4"
+                  className="lg:w-[134px] w-[114px] h-[55px] rounded-[56px] bg-[#244896] hover:bg-[#5b76af] font-medium font-dmSans text-[18px] text-white absolute top-3 lg:right-[72px] "
                   onClick={handleSearch}
                 >
                   Search
                 </button>
+
+                {suggestions.length > 0 && (
+                  <div className="w-[90%] lg:w-[100%] mt-2 absolute bg-white border rounded-lg shadow-lg z-20">
+                    {suggestions.map((suggestion, index) => (
+                      <div
+                        key={index}
+                        className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
+                        onClick={() => {
+                          setTempQuery(suggestion);
+                          setSuggestions([]);
+                          inputRef.current.focus(); // Keep focus on the input field
+                        }}
+                      >
+                        {suggestion}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
-              {suggestions.length > 0 && (
-                <div className="w-[90%] lg:w-[50%] mt-2 bg-white border rounded-lg shadow-lg z-10">
-                  {suggestions.map((suggestion, index) => (
-                    <div
-                      key={index}
-                      className="px-4 py-2 hover:bg-gray-200 cursor-pointer"
-                      onClick={() => {
-                        setTempQuery(suggestion);
-                        setSuggestions([]);
-                      }}
-                    >
-                      {suggestion}
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              <div className="flex items-start lg:items-center justify-center text-center lg:space-x-2 w-[70%] lg:mt-6 mt-6">
+              <div className="flex items-start lg:items-center justify-center text-center lg:space-x-2 w-[70%] lg:mt-6 mt-6 z-10">
                 <img
                   src={filledChecked}
                   alt=""
@@ -2186,7 +2201,10 @@ const Support = () => {
             </div>
           </section>
 
-          <section className="FAQ px-5 w-full lg:px-20 lg:pb-40 pb-28" ref={sectionRef}>
+          <section
+            className="FAQ px-5 w-full lg:px-20 lg:pb-40 pb-28"
+            ref={sectionRef}
+          >
             {filteredComponents.map((title, index) => {
               const Component = componentMap[title].component;
               const componentProps = componentMap[title].props;
@@ -2215,17 +2233,16 @@ const Support = () => {
                     } flex items-center justify-between cursor-pointer`}
                     onClick={() => toggleComponentVisibility(title)}
                   >
-                    <div className="">
+                    <div>
                       <p className="font-semibold lg:text-[26px] text-[20px] leading-[35px] text-[#161c2ddc] font-poppins ">
                         {title}
                       </p>
-                      
                     </div>
-                    <div>
+                    <div onClick={(e) => e.stopPropagation()}>
                       <img
                         src={dropDownArr} // Assuming you have dropDownArr defined
                         alt=""
-                        className="cursor-pointer  lg:ml-0 ml-3 min-w-5"
+                        className="cursor-pointer lg:ml-0 ml-3 min-w-5"
                         onClick={() => toggleComponentVisibility(title)}
                       />
                     </div>

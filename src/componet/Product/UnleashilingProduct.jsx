@@ -7,7 +7,7 @@ const UnleashilingProduct = () => {
     <div className="">
       <div className="lg:py-[120px] py-20 lg:px-20 font-poppins px-5  lg:bg-[#f4f7fa]">
         <div className="max-container">
-          <div className="lg:space-y-6 space-y-4">
+          <div className="lg:space-y-6 space-y-4 lg:pt-0 pt-10">
             <p className="text-center font-poppins font-medium text-[14px] text-[#244896] lg:tracking-normal tracking-[1.63px]">
               BEHIND THE SCENES
             </p>
@@ -15,7 +15,7 @@ const UnleashilingProduct = () => {
               Unleashing <br className="lg:hidden block" /> Peak Performance
             </h2>
             <p className="text-center font-poppins font-normal mx-auto lg:w-[600px] lg:text-[28px] text-[15px] opacity-70 text-[#161C2D] lg:leading-normal leading-[28px]">
-              Discover the strength behind our trading platforms
+              Discover the strength behind our <br className="lg:hidden block" /> trading platforms
             </p>
             <div className="pt-[100px] lg:grid hidden  grid-cols-1 gap-20 lg:grid-cols-2">
               <div className="flex items-start space-x-5">

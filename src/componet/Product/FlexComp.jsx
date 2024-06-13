@@ -27,7 +27,7 @@ const FlexComp = () => {
             <h2 className="font-poppins font-medium lg:text-[42px] text-[22px] lg:leading-[60px] leading-[32px] tracking-tight text-[#161C2D]">
               Bloom
             </h2>
-            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 mt-3 ">
+            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 lg:mt-3 mt-4 ">
               Our flagship app offers effortless trading & investing with an
               elegant interface. Transition smoothly from mobile to desktop with
               ease.
@@ -76,7 +76,7 @@ const FlexComp = () => {
             <h2 className="font-poppins font-medium   lg:text-[42px] lg:leading-[60px]  text-[22px] leading-[32px]  tracking-tight text-[#161C2DCC]">
               Math
             </h2>
-            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 mt-3 text-[#161C2D]">
+            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 lg:mt-3 mt-4  text-[#161C2D]">
               A robust trading app crafted for professional traders, powered by
               XTS. Available on mobile, web, and desktop.
             </p>
@@ -131,7 +131,7 @@ const FlexComp = () => {
             <h2 className="font-poppins font-medium lg:text-[42px] text-[22px] lg:leading-[60px] leading-[32px] tracking-tight text-[#161C2DCC]">
               Gullak
             </h2>
-            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 mt-3 text-[#161C2D]">
+            <p className="font-poppins lg:text-[24px] text-[15px] lg:leading-[38px] leading-[26px] opacity-80 lg:mt-3 mt-4  text-[#161C2D]">
               Mutual fund investing meets mobile convenience. An intuitive app
               that shapes saving into a habit and turns your financial ambitions
               into reality, one easy step after another.
@@ -181,7 +181,7 @@ const FlexComp = () => {
             <h2 className="font-poppins font-medium lg:text-[42px] text-[22px] lg:leading-[60px] leading-[32px] tracking-tight text-[#161C2D]">
               XTS API’s
             </h2>
-            <p className="font-poppins lg:text-[24px] text-[15px]  lg:leading-[38px] leading-[26px] opacity-80 mt-3 text-[#161C2D]">
+            <p className="font-poppins lg:text-[24px] text-[15px]  lg:leading-[38px] leading-[26px] opacity-80 lg:mt-3 mt-4  text-[#161C2D]">
               Empower your trading strategies with XTS APIs, designed for
               seamless algorithmic trading. Enjoy robust, hassle-free
               integration for unmatched speed and accuracy in dynamic markets.
@@ -205,7 +205,7 @@ const FlexComp = () => {
         
       </div>
       <div className="font-poppins lg:mt-40 mt-20 max-container">
-          <h3 className="capitalize font-medium  lg:mb-[130px] mb-5 text-center lg:text-[42px] text-[30px] text-[#161C2DCC]">
+          <h3 className="capitalize font-medium  lg:mb-[130px] mb-5 text-center lg:text-[42px] tracking-[-1.8px] text-[30px] text-[#161C2DCC]">
             and there’s more...{" "}
           </h3>
           <div className="font-poppins lg:grid hidden grid-cols-1 gap-10 lg:grid-cols-3 lg:mb-[80px]">
