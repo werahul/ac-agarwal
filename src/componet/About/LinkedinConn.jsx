@@ -20,7 +20,7 @@ const LinkedinConn = () => {
             <img
               src={rightArrow}
               alt=""
-              className="-ml-3 lg:ml-5 mb-2.5 lg:mb-0 w-[25px] lg:w-[30px]"
+              className="-ml-3 lg:ml-5 mb-2.5 lg:mb-0 w-[25px]"
             />
           </div>
         </a>
