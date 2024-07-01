@@ -84,7 +84,7 @@ const HomeCustomizedPricing = () => {
         </div>
         <div className="lg:grid hidden lg:grid-cols-2 lg:px-5 justify-items-center place-items-center lg:mt-20 mt-5 mb-10">
           <div className="relative flex items-start space-x-4 w-full h-[280px] rounded-[20px] p-7 ">
-            <img src={a1} alt="" className="w-8" />
+            <img src={a1} alt="a1" className="w-8" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 Unmatched Capacity
@@ -100,7 +100,7 @@ const HomeCustomizedPricing = () => {
             </div>
           </div>
           <div className="relative flex items-start space-x-4 w-full h-[280px] rounded-[20px] p-7 ">
-            <img src={a2} alt="" className="w-8" />
+            <img src={a2} alt="a2" className="w-8" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 Dedicated Support
@@ -113,7 +113,7 @@ const HomeCustomizedPricing = () => {
             </div>
           </div>
           <div className="relative flex items-start space-x-4 w-full h-[280px] rounded-[20px] p-7 ">
-            <img src={a3} alt="" className="w-[30px]" />
+            <img src={a3} alt="a3" className="w-[30px]" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 No Sales Pressure
@@ -126,7 +126,7 @@ const HomeCustomizedPricing = () => {
             </div>
           </div>
           <div className="relative flex items-start space-x-4 w-fll h-[280px] rounded-[20px] p-7 ">
-            <img src={a4} alt="" className="w-6" />
+            <img src={a4} alt="a4" className="w-6" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 Accessible Founders
@@ -139,7 +139,7 @@ const HomeCustomizedPricing = () => {
             </div>
           </div>
           <div className="relative flex items-start space-x-4 w-full h-[280px] rounded-[20px] p-7 ">
-            <img src={a5} alt="" className="w-8" />
+            <img src={a5} alt="a5" className="w-8" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 Reliable Tech
@@ -152,7 +152,7 @@ const HomeCustomizedPricing = () => {
             </div>
           </div>
           <div className="relative flex items-start space-x-4 w-full h-[280px] rounded-[20px] p-7 ">
-            <img src={a6} alt="" className="w-8" />
+            <img src={a6} alt="a6" className="w-8" />
             <div>
               <h2 className="text-[22px] font-semibold font-poppins leading-[30px] tracking-[-0.5px] text-[#161C2DCC]">
                 Exclusive Benefits
@@ -181,7 +181,7 @@ const HomeCustomizedPricing = () => {
         <div className="flex flex-col items-center justify-center">
           <img
             src={customizedPricing}
-            alt=""
+            alt="Pricing"
             className="lg:w-[300px] w-[220px]"
           />
           <p className="font-poppins font-medium lg:text-[42px] text-[30px] text-center lg:leading-normal leading-[40px] tracking-tight text-[#161C2DCC] mt-4">
@@ -218,7 +218,7 @@ const HomeCustomizedPricing = () => {
               </h2>
               <img
                 src={cross}
-                alt=""
+                alt="cross"
                 onClick={() => setShowPopup(false)}
                 className="cursor-pointer -mt-3"
               />

@@ -16,7 +16,7 @@ const Footer2 = () => {
       <div className="max-container mt-0 px-20 py-20 ">
         <div className=" flex items-start space-x-32">
           <div className="w-[20%]">
-            <img src={acLogo} alt="" className="w-[250px]" />
+            <img src={acLogo} alt="AcLogo" className="w-[250px]" />
             <p className="font-poppins text-[16px] leading-6 text-[#161C2D]">
               Your One stop solution for all the Stock broking needs.
             </p>
@@ -32,10 +32,10 @@ const Footer2 = () => {
               Social Media
             </p>
             <div className="mt-1 flex items-center space-x-4">
-              <img src={fbook} alt="" />
-              <img src={ig} alt="" />
-              <img src={twitterIcon} alt="" />
-              <img src={yt} alt="" />
+              <img src={fbook} alt="Fb ICON" />
+              <img src={ig} alt="insta Icon" />
+              <img src={twitterIcon} alt="twitter Icon" />
+              <img src={yt} alt="youtube Icon" />
             </div>
           </div>
           <div className="">
@@ -125,12 +125,12 @@ const Footer2 = () => {
               </p>
               <img
                 src={playstore}
-                alt=""
+                alt="play"
                 className="w-[160px] cursor-pointer"
               />
               <img
                 src={appStore}
-                alt=""
+                alt="app"
                 className="w-[160px] h-[48px] cursor-pointer"
               />
             </div>

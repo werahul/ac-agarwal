@@ -123,7 +123,7 @@ const CustomerSupportAndTable = () => {
           <div className="flex flex-col items-center justify-center">
             <img
               src={customerSupport}
-              alt=""
+              alt="Customer Support"
               className="w-[150px] lg:w-auto h-auto"
             />
             <p className="font-poppins font-medium text-[32px] lg:text-[42px] lg:leading-[56px] leading-[44px]  tracking-tight text-[#161c2ddc] text-center mt-10 ">

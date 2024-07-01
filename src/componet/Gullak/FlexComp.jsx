@@ -21,7 +21,7 @@ const FlexComp = () => {
       <div className="max-container lg:space-y-40 space-y-20">
         <div className="Bloom flex lg:flex-row flex-col-reverse items-center justify-center lg:space-x-32">
           <div className="lg:mt-0 mt-10 lg:w-[50%]">
-            <img src={gullak1} alt="" className=" lg:w-[580px]" />
+            <img src={gullak1} alt="gullak1" className=" lg:w-[580px]" />
           </div>
           <div className="mt-2 lg:w-[50%]">
             <h2 className="font-poppins font-medium lg:text-[42px] text-[22px] lg:leading-[60px] leading-[32px] tracking-tight text-[#161C2DCC]">
@@ -75,13 +75,13 @@ const FlexComp = () => {
 </div>*/}
           </div>
           <div className="lg:w-[50%] lg:mt-0 mt-10">
-            <img src={gullak2} alt="" className="lg:w-[550px]" />
+            <img src={gullak2} alt="gullak2" className="lg:w-[550px]" />
           </div>
         </div>
 
         <div className="Gullak flex lg:flex-row flex-col-reverse items-center justify-center lg:space-x-32">
           <div className="lg:w-[50%] lg:mt-0 mt-10">
-            <img src={gullak3} alt="" className="lg:w-[580px]" />
+            <img src={gullak3} alt="gullak3" className="lg:w-[580px]" />
           </div>
           <div className="mt-2 lg:w-[50%] ">
             <h2 className="font-poppins font-medium lg:text-[42px] text-[22px] lg:leading-[60px] leading-[32px] tracking-tight text-[#161C2DCC]">
@@ -130,7 +130,7 @@ const FlexComp = () => {
   </div>*/}
           </div>
           <div className="lg:w-[50%] lg:mt-0 mt-10">
-            <img src={gullak4} alt="" className="lg:w-[555px]" />
+            <img src={gullak4} alt="gullak4" className="lg:w-[555px]" />
           </div>
         </div>
       </div>

@@ -136,7 +136,7 @@ const Bloom = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={playstore} alt="" className="w-40 cursor-pointer" />
+                <img src={playstore} alt="play" className="w-40 cursor-pointer" />
               </a>
               <a
                 href="https://apps.apple.com/in/app/aca-math/id6450746616"
@@ -144,7 +144,7 @@ const Bloom = () => {
               >
                 <img
                   src={appStore}
-                  alt=""
+                  alt="aapS"
                   className="w-[140px] object-contain cursor-pointer"
                 />
               </a>
@@ -159,7 +159,7 @@ const Bloom = () => {
         </h2>
         <img
           src={mathMain}
-          alt=""
+          alt="Math Main Image"
           className="block lg:-mt-[210px] -mt-[40px]"
         />
 
@@ -171,7 +171,7 @@ const Bloom = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={playstore} alt="" className="w-32 cursor-pointer" />
+            <img src={playstore} alt="play" className="w-32 cursor-pointer" />
           </a>
           <a
             href="https://apps.apple.com/in/app/aca-math/id6450746616"
@@ -179,7 +179,7 @@ const Bloom = () => {
           >
             <img
               src={appStore}
-              alt=""
+              alt="app"
               className="w-[120px] object-contain cursor-pointer"
             />
           </a>
@@ -189,7 +189,7 @@ const Bloom = () => {
         <div className="max-container lg:space-y-36 space-y-24 ">
           <div className="Bloom flex flex-col-reverse lg:flex-row items-center lg:justify-center  lg:space-y-0 lg:space-x-32">
             <div className=" lg:w-[50%]">
-              <img src={math1} alt="" className="mt-10 lg:w-[570px] lg:mt-0" />
+              <img src={math1} alt="Maht1" className="mt-10 lg:w-[570px] lg:mt-0" />
             </div>
             <div className="mt-2 lg:w-[50%]">
               <h2 className="font-poppins font-medium text-[22px] lg:text-[42px] leading-[32px] lg:leading-[60px] tracking-tight text-[#161C2DCC]">
@@ -223,13 +223,13 @@ const Bloom = () => {
               </p>
             </div>
             <div className="lg:w-[50%]">
-              <img src={math2} alt="" className="mt-10 w-[557px] lg:mt-0" />
+              <img src={math2} alt="Maht2" className="mt-10 w-[557px] lg:mt-0" />
             </div>
           </div>
 
           <div className="Bloom flex flex-col-reverse lg:flex-row items-center lg:justify-center  lg:space-y-0 lg:space-x-32">
             <div className="lg:w-[50%]">
-              <img src={math4} alt="" className="mt-10 lg:mt-0 lg:w-[558px]" />
+              <img src={math4} alt="Maht3" className="mt-10 lg:mt-0 lg:w-[558px]" />
             </div>
             <div className="mt-2 lg:w-[50%]">
               <h2 className="font-poppins font-medium text-[22px] lg:text-[42px] leading-[32px] lg:leading-[60px] tracking-tight text-[#161C2DCC]">
@@ -259,7 +259,7 @@ const Bloom = () => {
               </p>
             </div>
             <div className="lg:w-[50%]">
-              <img src={math3} alt="" className="mt-10 lg:mt-0" />
+              <img src={math3} alt="Maht3" className="mt-10 lg:mt-0" />
             </div>
           </div>
           {/* <div className="Bloom flex flex-col-reverse lg:flex-row items-start lg:justify-between  lg:space-y-0 lg:space-x-20">
@@ -321,7 +321,7 @@ const Bloom = () => {
                 </h2>
                 <img
                   src={cross}
-                  alt=""
+                  alt="Cross"
                   onClick={() => setShowPopup(false)}
                   className="cursor-pointer -mt-3"
                 />

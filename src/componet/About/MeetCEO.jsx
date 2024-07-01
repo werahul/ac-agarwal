@@ -174,7 +174,7 @@ const MeetCEO = () => {
                 className="font-poppins font-normal text-[17px] tracking-[-0.2px] text-[#244896] flex items-center mt-4 cursor-pointer"
               >
                 {showAll ? "View Less" : "Read More"}{" "}
-                <img src={ArrowRightBlue} alt="" className="ml-3" />
+                <img src={ArrowRightBlue} alt="rightArrow" className="ml-3" />
               </p>
             </div>
           )}

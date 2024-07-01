@@ -97,8 +97,8 @@ const PressCoverageGrid = () => {
             key={index}
             className="bg-white w-full h-[425px] rounded-[12px] p-4"
           >
-            <img src={item.mainPhoto} alt="" className="w-full" />
-            <img src={item.ecoBrand} alt="" className="w-auto mt-6" />
+            <img src={item.mainPhoto} alt="Main" className="w-full" />
+            <img src={item.ecoBrand} alt="Eco" className="w-auto mt-6" />
             <p className="font-poppins font-medium text-[20px] leading-[30px] text-[#161C2D] mt-8 capitalize">
               {item.title}
             </p>
@@ -118,7 +118,7 @@ const PressCoverageGrid = () => {
         <button className="mx-auto w-[190px] h-[57px] rounded-[60px] bg-[#244896] font-poppins font-bold text-[19px] text-white flex items-center justify-center check-out-btn">
           Show More
           <span>
-            <img src={ArrowRight} alt="" />
+            <img src={ArrowRight} alt="arrow" />
           </span>
         </button>
       </div>

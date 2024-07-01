@@ -34,12 +34,12 @@ const Hero = () => {
           <button className="check-out-btn flex items-center justify-center w-[176px] h-[56px] rounded-[55px] bg-[#244896] text-white font-bold text-[18px">
             Start Now{" "}
             <span className="ml-3">
-              <img src={ArrowRight} alt="" />
+              <img src={ArrowRight} alt="Arrow" />
             </span>
           </button>
         </div>
         <div className="w-[50%] py-20">
-          <img src={heroImage} alt="" className="w-[500px]" />
+          <img src={heroImage} alt="Hero Image" className="w-[500px]" />
         </div>
       </div>
 
@@ -55,7 +55,7 @@ const Hero = () => {
         <div className="flex items-center justify-center space-x-14 mt-10">
           <div className="flex items-center font-poppins">
             <div className="">
-              <img src={commit1} alt="" className="w-24" />
+              <img src={commit1} alt="commt1" className="w-24" />
             </div>
             <div className="">
               <p className="font-poppins font-semibold text-[40px] text-[#1F1F1F]">
@@ -68,7 +68,7 @@ const Hero = () => {
           </div>
           <div className="flex items-center">
             <div className="">
-              <img src={commit2} alt="" className="w-24" />
+              <img src={commit2} alt="commit2" className="w-24" />
             </div>
             <div className="">
               <p className="font-poppins font-semibold text-[40px] text-[#1F1F1F]">
@@ -81,7 +81,7 @@ const Hero = () => {
           </div>
           <div className="flex items-center">
             <div className="">
-              <img src={commit3} alt="" className="w-24" />
+              <img src={commit3} alt="commit3" className="w-24" />
             </div>
             <div className="">
               <p className="font-poppins font-semibold text-[40px] text-[#1F1F1F]">
@@ -94,7 +94,7 @@ const Hero = () => {
           </div>
           <div className="flex items-center">
             <div className="">
-              <img src={commit4} alt="" className="w-24" />
+              <img src={commit4} alt="commit4" className="w-24" />
             </div>
             <div className="">
               <p className="font-poppins font-semibold text-[40px] text-[#1F1F1F]">
@@ -153,9 +153,9 @@ const Hero = () => {
 
         <div className="grid grid-cols-3 px-20 gap-x-4 mt-16">
           <div className="w-full h-auto rounded-[30px] bg-[#fff]">
-            <img src={bloom} alt="" />
+            <img src={bloom} alt="bloom" />
             <div className="p-5">
-              <img src={moons} alt="" />
+              <img src={moons} alt="moos" />
               <p className="mt-2 font-semibold font-poppins text-[22px] text-[#161C2D]">
                 ACA Bloom
               </p>
@@ -167,15 +167,15 @@ const Hero = () => {
               <button className="check-out-btn flex items-center px-2 w-full h-[33px] rounded-[17px] text-white font-poppins text-[13px]">
                 Check it out{" "}
                 <span>
-                  <img src={ArrowRight2} alt="" />
+                  <img src={ArrowRight2} alt="arrow" />
                 </span>
               </button>
             </div>
           </div>
           <div className="w-full h-auto rounded-[30px] bg-[#fff]">
-            <img src={soil} alt="" />
+            <img src={soil} alt="soil" />
             <div className="p-4">
-              <img src={moons} alt="" />
+              <img src={moons} alt="moons" />
               <p className="mt-2 font-semibold font-poppins text-[22px] text-[#161C2D]">
                 ACA Soil
               </p>
@@ -187,17 +187,17 @@ const Hero = () => {
               <button className="check-out-btn flex items-center px-2 w-full h-[33px] rounded-[17px] text-white font-poppins text-[13px]">
                 Check it out{" "}
                 <span>
-                  <img src={ArrowRight2} alt="" />
+                  <img src={ArrowRight2} alt="arrow" />
                 </span>
               </button>
             </div>
           </div>
           <div className="w-full h-auto rounded-[30px] bg-[#fff] p-1">
             <div className="bg-[#f6f9fc] rounded-tl-[20px] rounded-tr-[20px]">
-              <img src={swift} alt="" />
+              <img src={swift} alt="swif" />
             </div>
             <div className="p-5">
-              <img src={moons} alt="" />
+              <img src={moons} alt="moons" />
               <p className="mt-2 font-semibold font-poppins text-[22px] text-[#161C2D]">
                 ACA Swift
               </p>
@@ -209,7 +209,7 @@ const Hero = () => {
               <button className="check-out-btn flex items-center px-2 w-full h-[33px] rounded-[17px] text-white font-poppins text-[13px]">
                 Check it out{" "}
                 <span>
-                  <img src={ArrowRight2} alt="" />
+                  <img src={ArrowRight2} alt="arrow" />
                 </span>
               </button>
             </div>
@@ -224,9 +224,9 @@ const Hero = () => {
 
         <div className="flex justify-center items-center space-x-5 place-items-center">
           <div className="w-[410px] h-auto rounded-[30px] bg-[#fff]">
-            <img src={bloom} alt="" />
+            <img src={bloom} alt="bloom" />
             <div className="p-5">
-              <img src={moons} alt="" />
+              <img src={moons} alt="moons" />
               <p className="mt-2 font-semibold font-poppins text-[22px] text-[#161C2D]">
                 ACA Bloom
               </p>
@@ -238,15 +238,15 @@ const Hero = () => {
               <button className="check-out-btn flex items-center px-2 w-full h-[33px] rounded-[17px] text-white font-poppins text-[13px]">
                 Check it out{" "}
                 <span>
-                  <img src={ArrowRight2} alt="" />
+                  <img src={ArrowRight2} alt="arrow" />
                 </span>
               </button>
             </div>
           </div>
           <div className="w-[410px] h-auto rounded-[30px] bg-[#fff]">
-            <img src={soil} alt="" />
+            <img src={soil} alt="soil" />
             <div className="p-4">
-              <img src={moons} alt="" />
+              <img src={moons} alt="moons" />
               <p className="mt-2 font-semibold font-poppins text-[22px] text-[#161C2D]">
                 ACA Soil
               </p>
@@ -258,7 +258,7 @@ const Hero = () => {
               <button className="check-out-btn flex items-center px-2 w-full h-[33px] rounded-[17px] text-white font-poppins text-[13px]">
                 Check it out{" "}
                 <span>
-                  <img src={ArrowRight2} alt="" />
+                  <img src={ArrowRight2} alt="arrow" />
                 </span>
               </button>
             </div>

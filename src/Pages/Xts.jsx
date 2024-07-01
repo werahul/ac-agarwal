@@ -31,7 +31,7 @@ const Xts = () => {
       <Navbar navColor={navColor} />
       <section className="lg:px-20 lg:pt-32 px-5 pt-20">
         <div className="flex flex-col items-center justify-center">
-          <img src={xtsMain} alt="" className="lg:w-[450px] w-[240px]" />
+          <img src={xtsMain} alt="xts Main" className="lg:w-[450px] w-[240px]" />
           <p className="font-poppins font-medium lg:text-[52px] text-[32px] lg:leading-[66px] leading-[44px] text-center text-[#161C2DCC] mt-20">
             Effortless Trading <br />
             with Super Simple API's

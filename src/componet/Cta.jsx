@@ -5,7 +5,7 @@ const Cta = () => {
   return (
     <div className="px-20 py-20 ctaBg">
       <div className="max-container flex items-center space-x-5">
-        <img src={ctaImg} alt="" className="w-32" />
+        <img src={ctaImg} alt="CTA" className="w-32" />
 
         <div className="">
           <p className="font-poppins font-bold text-[40px] text-[#161C2D]">
@@ -20,7 +20,7 @@ const Cta = () => {
         <button className="flex items-center justify-center w-auto px-5 h-[56px] rounded-[55px] bg-[#244896] text-white font-bold text-[18px] whitespace-nowrap font-poppins check-out-btn">
           Sign Up Now{" "}
           <span className="ml-3">
-            <img src={ArrowRight} alt="" />
+            <img src={ArrowRight} alt="arrow" />
           </span>
         </button>
       </div>

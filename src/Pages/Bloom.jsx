@@ -131,7 +131,7 @@ const Bloom = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={playstore} alt="" className="w-40 cursor-pointer" />
+                <img src={playstore} alt="playStore" className="w-40 cursor-pointer" />
               </a>
               <a
                 href="https://apps.apple.com/in/app/bloom-by-aca/id1281521661"
@@ -139,7 +139,7 @@ const Bloom = () => {
               >
                 <img
                   src={appStore}
-                  alt=""
+                  alt="appStore"
                   className="w-[140px] object-contain cursor-pointer"
                 />
               </a>
@@ -154,7 +154,7 @@ const Bloom = () => {
         </h2>
         <img
           src={bloomMain}
-          alt=""
+          alt="bloomImage"
           className="block  lg:-mt-[170px] -mt-[50px] 2xl:w-[70%]"
         />
 
@@ -166,7 +166,7 @@ const Bloom = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={playstore} alt="" className="w-32 cursor-pointer" />
+            <img src={playstore} alt="playStore" className="w-32 cursor-pointer" />
           </a>
           <a
             href="https://apps.apple.com/in/app/bloom-by-aca/id1281521661"
@@ -174,7 +174,7 @@ const Bloom = () => {
           >
             <img
               src={appStore}
-              alt=""
+              alt="appStore"
               className="w-[120px] object-contain cursor-pointer"
             />
           </a>
@@ -184,7 +184,7 @@ const Bloom = () => {
         <div className="max-container lg:space-y-40 space-y-24">
           <div className="Bloom flex flex-col-reverse lg:flex-row items-center lg:justify-between  lg:space-y-0 lg:space-x-32">
             <div className="">
-              <img src={b1} alt="" className="mt-10 lg:mt-0 lg:w-[570px]" />
+              <img src={b1} alt="Bloom1" className="mt-10 lg:mt-0 lg:w-[570px]" />
             </div>
             <div className="mt-2">
               <h2 className="font-poppins font-medium text-[22px] lg:text-[42px] leading-[32px] lg:leading-[60px] tracking-tight text-[#161C2DCC]">
@@ -214,13 +214,13 @@ const Bloom = () => {
               </p>
             </div>
             <div className="lg:w-[50%]">
-              <img src={b2} alt="" className="mt-10 lg:mt-0 lg:w-[530px]" />
+              <img src={b2} alt="Bloom1" className="mt-10 lg:mt-0 lg:w-[530px]" />
             </div>
           </div>
 
           <div className="Bloom flex flex-col-reverse lg:flex-row items-center lg:justify-between  lg:space-y-0 lg:space-x-32">
             <div className="">
-              <img src={b3} alt="" className="mt-10 lg:mt-0 lg:w-[560px]" />
+              <img src={b3} alt="Bloom1" className="mt-10 lg:mt-0 lg:w-[560px]" />
             </div>
             <div className="mt-2">
               <h2 className="font-poppins font-medium text-[22px] lg:text-[42px] leading-[32px] lg:leading-[60px] tracking-tight text-[#161C2DCC]">
@@ -252,13 +252,13 @@ const Bloom = () => {
               </p>
             </div>
             <div className="lg:w-[50%]">
-              <img src={b4} alt="" className="mt-10 lg:mt-0 lg:w-[560px]" />
+              <img src={b4} alt="Bloom4" className="mt-10 lg:mt-0 lg:w-[560px]" />
             </div>
           </div>
 
           <div className="Bloom flex flex-col-reverse lg:flex-row items-center lg:justify-between  lg:space-y-0 lg:space-x-32">
             <div className="">
-              <img src={b5} alt="" className="mt-10 lg:mt-0 lg:w-[600px]" />
+              <img src={b5} alt="Bloom5" className="mt-10 lg:mt-0 lg:w-[600px]" />
             </div>
             <div className="mt-2">
               <h2 className="font-poppins font-medium text-[22px] lg:text-[42px] leading-[32px] lg:leading-[60px] tracking-tight text-[#161C2DCC]">
@@ -315,7 +315,7 @@ const Bloom = () => {
                 </h2>
                 <img
                   src={cross}
-                  alt=""
+                  alt="cross"
                   onClick={() => setShowPopup(false)}
                   className="cursor-pointer -mt-3"
                 />

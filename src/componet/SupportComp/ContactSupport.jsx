@@ -29,7 +29,7 @@ const ContactSupport = () => {
           <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 items-center space-x-4 mt-8 lg:mt-20">
             <a href="mailto:support@acagarwal.com">
               <div className="flex items-center  space-x-2 bg-[#244896] rounded-[62px] bg-opacity-20 text-[#244896] px-5 py-1">
-                <img src={blueTick2} alt="" className="lg:w-auto w-5" />
+                <img src={blueTick2} alt="Tick" className="lg:w-auto w-5" />
                 <p className="font-poppins font-medium text-[20px] lg:text-[24px]">
                   Support@acagarwal.com
                 </p>
@@ -37,7 +37,7 @@ const ContactSupport = () => {
             </a>
             <a href="tel:+911414920999">
               <div className="flex items-center space-x-2 bg-[#244896] rounded-[62px] bg-opacity-20 text-[#244896] px-5 py-1">
-                <img src={blueTick2} alt="" className="lg:w-auto w-5" />
+                <img src={blueTick2} alt="Tick" className="lg:w-auto w-5" />
                 <p className="font-poppins font-medium text-[20px] lg:text-[24px]">
                   +91 141 4920999
                 </p>

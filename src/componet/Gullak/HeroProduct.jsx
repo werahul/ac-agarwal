@@ -31,7 +31,7 @@ const HeroProduct = () => {
               href="https://play.google.com/store/apps/details?id=com.iw.aca.gullak&pcampaignid=web_share"
               target="_blank"
             >
-              <img src={playstore} alt="" className="lg:w-40 w-32 cursor-pointer" />
+              <img src={playstore} alt="play" className="lg:w-40 w-32 cursor-pointer" />
             </a>
 
             <a
@@ -41,7 +41,7 @@ const HeroProduct = () => {
               {" "}
               <img
                 src={appStore}
-                alt=""
+                alt="play"
                 className="lg:w-[140px] w-[120px] object-contain cursor-pointer"
               />
             </a>

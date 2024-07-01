@@ -121,7 +121,7 @@ const Pricing = () => {
       <div className=" lg:pb-20 pb-32 lg:pt-20 pt-10">
         <section>
           <div className="  flex flex-col lg:px-20 px-5  max-container justify-center items-center  ">
-            <img src={pricingMain} alt="" className="lg:w-[260px] w-[200px]" />
+            <img src={pricingMain} alt="Pricing Main Images" className="lg:w-[260px] w-[200px]" />
             <h1 className="text-center font-poppins font-medium lg:text-[52px] text-[32px] lg:leading-[70px] leading-[44px] text-[#161C2DCC] tracking-tight mt-10">
               Pricing Plans Tailored To Your Needs
             </h1>
@@ -149,7 +149,7 @@ const Pricing = () => {
 
           <div className="grid max-container px-5 lg:px-40 lg:grid-cols-2 grid-cols-1 lg:gap-y-28 lg:gap-x-40 gap-y-12 gap-x-12 lg:mt-28 mt-[64px]">
             <div className="flex items-start space-x-3">
-              <img src={pr1} alt="" className="w-[29px] h-auto lg:mt-1" />
+              <img src={pr1} alt="pricing1" className="w-[29px] h-auto lg:mt-1" />
               <div className="space-y-2 lg:space-y-4">
                 <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
                   Customization
@@ -161,7 +161,7 @@ const Pricing = () => {
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <img src={pr2} alt="" className="w-[29px] h-auto lg:mt-1" />
+              <img src={pr2} alt="pricing1" className="w-[29px] h-auto lg:mt-1" />
               <div className="space-y-2 lg:space-y-4">
                 <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
                   Clarity
@@ -173,7 +173,7 @@ const Pricing = () => {
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <img src={pr3} alt="" className="w-[29px] h-auto lg:mt-1" />
+              <img src={pr3} alt="pricing3" className="w-[29px] h-auto lg:mt-1" />
               <div className="space-y-2 lg:space-y-4">
                 <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
                   Transparency
@@ -185,7 +185,7 @@ const Pricing = () => {
               </div>
             </div>
             <div className="flex items-start space-x-3">
-              <img src={pr4} alt="" className="w-[29px] h-auto lg:mt-1" />
+              <img src={pr4} alt="pricing4" className="w-[29px] h-auto lg:mt-1" />
               <div className="space-y-2 lg:space-y-4">
                 <h3 className="font-poppins text-[18px] lg:text-[22px] font-semibold text-[#161C2D]">
                   Flexibility
@@ -222,7 +222,7 @@ const Pricing = () => {
                     </h2>
                     <img
                       src={cross}
-                      alt=""
+                      alt="pricing5"
                       onClick={() => setShowPopup(false)}
                       className="cursor-pointer -mt-3"
                     />

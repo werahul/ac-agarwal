@@ -15,7 +15,7 @@ const HeroNew = () => {
       <div className="max-container">
         <div className="lg:hidden flex items-center justify-center flex-col">
          
-          <img src={heroImageNew1Mobile} alt="" className="mb-10" />
+          <img src={heroImageNew1Mobile} alt="Hero Images" className="mb-10" />
         </div>
         <div className="flex flex-col items-center justify-center">
           <h1 className="font-poppins text-center font-medium lg:text-[52px] text-[30px] leading-[56px] tracking-tight text-[#161C2DCC]">
@@ -36,12 +36,12 @@ const HeroNew = () => {
           </a>
         </div>
         <div className="lg:flex hidden relative justify-center lg:mt-20 lg:px-20 px-5">
-          <img src={heroImageNew1} alt="" className="" />
+          <img src={heroImageNew1} alt="HeroImages" className="" />
         </div>
         <div className="flex flex-col text-center items-center justify-center lg:mt-20 mt-28">
           <img
             src={userFriendlyBroker}
-            alt=""
+            alt="UserFriendly"
             className="lg:w-[300px] w-[200px]"
           />
 

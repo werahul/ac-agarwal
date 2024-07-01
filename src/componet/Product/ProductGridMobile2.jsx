@@ -95,7 +95,7 @@ const ProductGridMobile2 = () => {
                 index === activeIndex ? "active" : ""
               }`}
             >
-              <img src={item.image} alt="" className="w-9" />
+              <img src={item.image} alt="product" className="w-9" />
               <div>
                 <h2 className="text-[18px] font-bold font-poppins leading-[30px] text-[#161C2DCC]">
                   {item.title}

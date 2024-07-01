@@ -25,7 +25,7 @@ const HomeInvo = () => {
         <div className="lg:flex items-center justify-between lg:mt-16 2xl:mt-12 mt-[100px] ">
           <div className="lg:w-[40%] space-y-[60px]">
             <div className="flex space-x-4 items-start">
-              <img src={SrOne} alt="" className=""/>
+              <img src={SrOne} alt="one" className=""/>
               <div className="">
                 <p className="font-poppins font-semibold lg:text-[22px] text-[18px]  tracking-[-0.5px] text-[#161C2DCC]">
                   Bloom
@@ -37,14 +37,14 @@ const HomeInvo = () => {
 
                 <Link to="/bloom">
                   <p className="font-poppins font-medium text-[17px] tracking-[-0.2px] flex items-center mt-4 cursor-pointer linkImg ">
-                    Know More <img src={ArrowRightBlue} alt="" className="" />
+                    Know More <img src={ArrowRightBlue} alt="rightArrow" className="" />
                   </p>
                 </Link>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
-              <img src={SrTwo} alt="" />
+              <img src={SrTwo} alt="two" />
               <div className="">
               <p className="font-poppins font-semibold lg:text-[22px] text-[18px]  tracking-[-0.5px] text-[#161C2DCC]">
                   Math
@@ -57,14 +57,14 @@ const HomeInvo = () => {
                 <Link to="/math">
                   <p className="font-poppins font-medium text-[17px] tracking-[-0.2px] text-[#244896] flex items-center mt-4 cursor-pointer linkImg">
                     Know More{" "}
-                    <img src={ArrowRightBlue} alt="" className="ml-3" />
+                    <img src={ArrowRightBlue} alt="rightArrow" className="ml-3" />
                   </p>
                 </Link>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
-              <img src={SrThree} alt="" />
+              <img src={SrThree} alt="three" />
               <div className="">
               <p className="font-poppins font-semibold lg:text-[22px] text-[18px]  tracking-[-0.5px] text-[#161C2DCC]">
                   Gullak
@@ -78,20 +78,20 @@ const HomeInvo = () => {
                 <Link to="/gullak">
                   <p className="font-poppins font-medium text-[17px] tracking-[-0.2px] text-[#244896] flex items-center mt-4 cursor-pointer linkImg">
                     Know More{" "}
-                    <img src={ArrowRightBlue} alt="" className="ml-3" />
+                    <img src={ArrowRightBlue} alt="rightArrow" className="ml-3" />
                   </p>
                 </Link>
               </div>
             </div>
           </div>
           <div className="lg:w-[50%] w-full  lg:mt-0 mt-14">
-            <img src={InvoImg} alt="" className="lg:w-[600px]"/>
+            <img src={InvoImg} alt="Inovation" className="lg:w-[600px]"/>
           </div>
         </div>
         <div className="flex lg:flex-row-reverse flex-col items-center justify-between mt-20 ">
           <div className="lg:w-[40%] space-y-[60px]">
             <div className="flex lg:flex-row-reverse items-start lg:text-right ">
-              <img src={SrFour} alt="" className="lg:ml-5 lg:mr-0 mr-4" />
+              <img src={SrFour} alt="four" className="lg:ml-5 lg:mr-0 mr-4" />
               <div className="">
               <p className="font-poppins font-semibold lg:text-[22px] text-[18px]  tracking-[-0.5px] text-[#161C2DCC]">
                   GreekSoft
@@ -119,7 +119,7 @@ const HomeInvo = () => {
               </div>
             </div>
             <div className="flex lg:flex-row-reverse items-start lg:text-right ">
-              <img src={SrFive} alt="" className="lg:ml-5 lg:mr-0 mr-4" />
+              <img src={SrFive} alt="five" className="lg:ml-5 lg:mr-0 mr-4" />
 
               <div className="">
               <p className="font-poppins font-semibold lg:text-[22px] text-[18px]  tracking-[-0.5px] text-[#161C2DCC]">
@@ -135,13 +135,13 @@ const HomeInvo = () => {
                   <p className="font-poppins font-medium text-[17px] tracking-[-0.2px] text-[#244896] flex items-center  lg:justify-end mt-4 cursor-pointer linkImg2">
                     <img
                       src={ArrowRightBlue}
-                      alt=""
+                      alt="rightArrow"
                       className=" rotate-180 lg:block hidden"
                     />{" "}
                     Know More
                     <img
                       src={ArrowRightBlue}
-                      alt=""
+                      alt="rightArrow"
                       className="lg:hidden block ml-3"
                     />{" "}
                   </p>
@@ -149,7 +149,7 @@ const HomeInvo = () => {
               </div>
             </div>
             <div className="flex lg:flex-row-reverse items-start lg:text-right">
-              <img src={SrSix} alt="" className="lg:ml-5 lg:mr-0 mr-4" />
+              <img src={SrSix} alt="six" className="lg:ml-5 lg:mr-0 mr-4" />
 
               <div className="">
               <p className="font-poppins font-semibold lg:text-[22px] text-[18px]  tracking-[-0.5px] text-[#161C2DCC]">
@@ -178,8 +178,8 @@ const HomeInvo = () => {
             </div>
           </div>
           <div className="lg:w-[60%] w-full lg:mt-0 mt-14">
-            <img src={InvoImg2} alt="" className="lg:w-[920px] lg:block hidden" />
-            <img src={InvoImg2Mobile} alt="" className="lg:hidden block -mt-20" />
+            <img src={InvoImg2} alt="Inovation" className="lg:w-[920px] lg:block hidden" />
+            <img src={InvoImg2Mobile} alt="Inovation" className="lg:hidden block -mt-20" />
           </div>
         </div>
       </div>

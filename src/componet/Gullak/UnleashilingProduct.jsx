@@ -20,7 +20,7 @@ const UnleashilingProduct = () => {
             </p>
             <div className="pt-[100px] lg:grid hidden  grid-cols-1 gap-20 lg:grid-cols-2">
               <div className="flex items-start space-x-5">
-                <img src={p1} alt="" className="w-[29px] h-auto" />
+                <img src={p1} alt="Product" className="w-[29px] h-auto" />
                 <div className="space-y-5">
                   <h3 className="text-[22px] font-semibold text-[#161C2D]">
                     Optimized Capacity
@@ -33,7 +33,7 @@ const UnleashilingProduct = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-5">
-                <img src={p2} alt="" className="w-[29px] h-auto" />
+                <img src={p2} alt="Product" className="w-[29px] h-auto" />
                 <div className="space-y-5">
                   <h3 className="text-[22px] font-semibold text-[#161C2D]">
                     Multiple Lease Lines
@@ -46,7 +46,7 @@ const UnleashilingProduct = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-5">
-                <img src={p3} alt="" className="w-[29px] h-auto" />
+                <img src={p3} alt="Product" className="w-[29px] h-auto" />
                 <div className="space-y-5">
                   <h3 className="text-[22px] font-semibold text-[#161C2D]">
                     Dual Geographical Locations
@@ -59,7 +59,7 @@ const UnleashilingProduct = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-5">
-                <img src={p4} alt="" className="w-[29px] h-auto" />
+                <img src={p4} alt="Product" className="w-[29px] h-auto" />
                 <div className="space-y-5">
                   <h3 className="text-[22px] font-semibold text-[#161C2D]">
                     Tailored for Speed Trading
@@ -72,7 +72,7 @@ const UnleashilingProduct = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-5">
-                <img src={p5} alt="" className="w-[29px] h-auto" />
+                <img src={p5} alt="Product" className="w-[29px] h-auto" />
                 <div className="space-y-5">
                   <h3 className="text-[22px] font-semibold text-[#161C2D]">
                     Backup Systems
@@ -84,7 +84,7 @@ const UnleashilingProduct = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-5">
-                <img src={p6} alt="" className="w-[29px] h-auto" />
+                <img src={p6} alt="Product" className="w-[29px] h-auto" />
                 <div className="space-y-5">
                   <h3 className="text-[22px] font-semibold text-[#161C2D]">
                     Enhanced Resilience
@@ -97,7 +97,7 @@ const UnleashilingProduct = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-5">
-                <img src={p7} alt="" className="w-[29px] h-auto" />
+                <img src={p7} alt="Product" className="w-[29px] h-auto" />
                 <div className="space-y-5">
                   <h3 className="text-[22px] font-semibold text-[#161C2D]">
                     24/7 Monitoring

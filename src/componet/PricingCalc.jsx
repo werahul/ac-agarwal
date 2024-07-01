@@ -27,7 +27,7 @@ const PricingCalc = () => {
             {" "}
             Explore
             <span>
-              <img src={ArrowRight} alt="" />
+              <img src={ArrowRight} alt="arrow" />
             </span>
           </button>
         </div>
@@ -44,7 +44,7 @@ const PricingCalc = () => {
             {" "}
             Explore
             <span>
-              <img src={ArrowRight} alt="" />
+              <img src={ArrowRight} alt="arrow" />
             </span>
           </button>
         </div>

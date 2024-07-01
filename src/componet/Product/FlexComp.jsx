@@ -21,7 +21,7 @@ const FlexComp = () => {
       <div className="max-container lg:space-y-32 space-y-24 lg:px-10 2xl:px-0">
         <div className="Bloom flex lg:flex-row flex-col-reverse justify-center items-center lg:space-x-32 2xl:space-x-10 ">
           <div className="lg:mt-0 mt-10 lg:w-[50%] 2xl:w-[60%]">
-            <img src={bloomProduct} alt="" className="lg:w-[600px] 2xl:w-[660px]" />
+            <img src={bloomProduct} alt="Bloom" className="lg:w-[600px] 2xl:w-[660px]" />
           </div>
           <div className="mt-2 lg:w-[40%] 2xl:w-[50%] ">
             <h2 className="font-poppins font-medium lg:text-[42px] text-[22px] lg:leading-[60px] leading-[32px] tracking-tight text-[#161C2D]">
@@ -35,16 +35,16 @@ const FlexComp = () => {
             <div className="flex lg:space-x-0 space-x-2 items-center lg:mt-0 mt-5">
               <div className="flex lg:hidden space-x-3 items-center">
                 <a href="https://play.google.com/store/apps/details?id=com.wave.aca&pcampaignid=web_share" target="_blank">
-                  <img src={playM} alt="" className="w-5" />
+                  <img src={playM} alt="play" className="w-5" />
                 </a>
                 <a href="https://apps.apple.com/in/app/bloom-by-aca/id1281521661" target="_blank">
-                  <img src={appM} alt="" className="w-5" />
+                  <img src={appM} alt="play" className="w-5" />
                 </a>
-                <img src={bar} alt="" className="w-5 h-6" />
+                <img src={bar} alt="bar" className="w-5 h-6" />
               </div>
               <Link to="/bloom">
                 <p className="font-poppins font-medium text-[17px] tracking-[-0.2px] flex items-center lg:mt-4 cursor-pointer linkImg ">
-                  Know More <img src={ArrowRightBlue} alt="" className="" />
+                  Know More <img src={ArrowRightBlue} alt="ArrowRight" className="" />
                 </p>
               </Link>
             </div>
@@ -55,7 +55,7 @@ const FlexComp = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              <img src={playstore} alt="" className="w-[180] h-[47px] cursor-pointer" />
+              <img src={playstore} alt="play" className="w-[180] h-[47px] cursor-pointer" />
               </a>
               <a
                 href="https://apps.apple.com/in/app/bloom-by-aca/id1281521661"
@@ -63,7 +63,7 @@ const FlexComp = () => {
               >
                 <img
                   src={appStore}
-                  alt=""
+                  alt="app"
                   className="w-[145px] object-contain cursor-pointer"
                 />
               </a>
@@ -83,16 +83,16 @@ const FlexComp = () => {
             <div className="flex lg:space-x-0 space-x-2 items-center lg:mt-0 mt-5">
               <div className="flex lg:hidden space-x-3 items-center">
                 <a href="https://play.google.com/store/apps/details?id=com.acagarwal.xts&pcampaignid=web_share" target="_blank">
-                  <img src={playM} alt="" className="w-5" />
+                  <img src={playM} alt="play" className="w-5" />
                 </a>
                 <a href="https://apps.apple.com/in/app/aca-math/id6450746616" target="_blank">
-                  <img src={appM} alt="" className="w-5" />
+                  <img src={appM} alt="app" className="w-5" />
                 </a>
-                <img src={bar} alt="" className="w-5 h-6" />
+                <img src={bar} alt="bar" className="w-5 h-6" />
               </div>
               <Link to="/math">
                 <p className="font-poppins font-medium text-[17px] tracking-[-0.2px] flex items-center lg:mt-4 cursor-pointer linkImg ">
-                  Know More <img src={ArrowRightBlue} alt="" className="" />
+                  Know More <img src={ArrowRightBlue} alt="ArrowRight" className="" />
                 </p>
               </Link>
             </div>
@@ -103,7 +103,7 @@ const FlexComp = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={playstore} alt="" className="w-[180] h-[47px] cursor-pointer" />
+                <img src={playstore} alt="play" className="w-[180] h-[47px] cursor-pointer" />
               </a>
               <a
                 href="https://apps.apple.com/in/app/aca-math/id6450746616"
@@ -112,20 +112,20 @@ const FlexComp = () => {
               >
                 <img
                   src={appStore}
-                  alt=""
+                  alt="app"
                   className="w-[145px] object-contain cursor-pointer"
                 />
               </a>
             </div>
           </div>
           <div className="lg:w-[50%]  lg:mt-0 mt-10">
-            <img src={MathProduct} alt="" className="lg:w-[580px] 2xl:[650px]" />
+            <img src={MathProduct} alt="Math" className="lg:w-[580px] 2xl:[650px]" />
           </div>
         </div>
 
         <div className="Gullak flex lg:flex-row flex-col-reverse items-center lg:space-x-32 2xl:space-x-32 justify-center">
           <div className="lg:w-[50%] lg:mt-0 mt-10">
-            <img src={gullakProduct} alt="" className="lg:w-[520px] 2xl:w-[670px]" />
+            <img src={gullakProduct} alt="gullak" className="lg:w-[520px] 2xl:w-[670px]" />
           </div>
           <div className="mt-2 lg:w-[55%] 2xl:w-[40%] ">
             <h2 className="font-poppins font-medium lg:text-[42px] text-[22px] lg:leading-[60px] leading-[32px] tracking-tight text-[#161C2DCC]">
@@ -139,16 +139,16 @@ const FlexComp = () => {
             <div className="flex lg:space-x-0 space-x-2 items-center lg:mt-0 mt-5">
               <div className="flex lg:hidden space-x-3 items-center">
                 <a href="https://play.google.com/store/apps/details?id=com.iw.aca.gullak&pcampaignid=web_share" target="_blank">
-                  <img src={playM} alt="" className="w-5" />
+                  <img src={playM} alt="play" className="w-5" />
                 </a>
                 <a href="https://apps.apple.com/in/app/aca-gullak/id1466198281" target="_blank">
-                  <img src={appM} alt="" className="w-5" />
+                  <img src={appM} alt="app" className="w-5" />
                 </a>
-                <img src={bar} alt="" className="w-5 h-6" />
+                <img src={bar} alt="bar" className="w-5 h-6" />
               </div>
               <Link to="/gullak">
                 <p className="font-poppins font-medium text-[17px] tracking-[-0.2px] flex items-center lg:mt-4 cursor-pointer linkImg ">
-                  Know More <img src={ArrowRightBlue} alt="" className="" />
+                  Know More <img src={ArrowRightBlue} alt="ArrowRight" className="" />
                 </p>
               </Link>
             </div>
@@ -159,7 +159,7 @@ const FlexComp = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-              <img src={playstore} alt="" className="w-[180] h-[47px] cursor-pointer" />
+              <img src={playstore} alt="play" className="w-[180] h-[47px] cursor-pointer" />
               </a>
               <a
                 href="https://apps.apple.com/in/app/aca-gullak/id1466198281"
@@ -168,7 +168,7 @@ const FlexComp = () => {
               >
                 <img
                   src={appStore}
-                  alt=""
+                  alt="app"
                   className="w-[145px] object-contain cursor-pointer"
                 />
               </a>
@@ -188,7 +188,7 @@ const FlexComp = () => {
             </p>
             <Link to="/xts-api">
               <p className="font-poppins font-medium text-[17px] tracking-[-0.2px] flex items-center mt-4 cursor-pointer linkImg ">
-                Know More <img src={ArrowRightBlue} alt="" className="" />
+                Know More <img src={ArrowRightBlue} alt="ArrowRight" className="" />
               </p>
             </Link>
 
@@ -198,7 +198,7 @@ const FlexComp = () => {
   </div>*/}
           </div>
           <div className="lg:w-[50%] lg:mt-0 mt-10">
-            <img src={xtsProduct} alt="" className="lg:w-[670px]" />
+            <img src={xtsProduct} alt="xts" className="lg:w-[670px]" />
           </div>
         </div>
        
@@ -210,7 +210,7 @@ const FlexComp = () => {
           </h3>
           <div className="font-poppins lg:grid hidden grid-cols-1 gap-10 lg:grid-cols-3 lg:mb-[80px]">
             <div className="w-full lg:min-w-[370px] flex border items-start space-x-5 p-6 rounded-[22px] border-black border-opacity-15">
-              <img src={greeksoft} alt="" className="w-[27px] h-auto" />
+              <img src={greeksoft} alt="greek" className="w-[27px] h-auto" />
               <div className="text-[#161C2d]  space-y-4">
                 <h2 className="font-semibold text-[22px] text-[#161C2DCC]">
                   Greeksoft
@@ -227,7 +227,7 @@ const FlexComp = () => {
               </div>
             </div>
             <div className="w-full lg:min-w-[370px] flex border items-start space-x-5 p-6 rounded-[22px] border-black border-opacity-15">
-              <img src={TradingView} alt="" className="w-[35px] h-auto" />
+              <img src={TradingView} alt="TradingView" className="w-[35px] h-auto" />
               <div className="text-[#161C2d]  space-y-4">
                 <h2 className="font-semibold text-[22px] text-[#161C2DCC]">
                   Trading View
@@ -245,7 +245,7 @@ const FlexComp = () => {
               </div>
             </div>
             <div className="w-full lg:min-w-[370px] flex border items-start space-x-5 p-6 rounded-[22px] border-black border-opacity-15">
-              <img src={IPO} alt="" className="w-[37px] h-auto" />
+              <img src={IPO} alt="ipo" className="w-[37px] h-auto" />
               <div className="text-[#161C2d]  space-y-3">
                 <h2 className="font-semibold text-[22px] text-[#161C2DCC]">
                   IPOs
@@ -262,7 +262,7 @@ const FlexComp = () => {
                 >
                   <p className="font-poppins font-medium text-[17px] tracking-[-0.2px] flex items-center mt-3 cursor-pointer linkImg ">
                     Apply IPO
-                    <img src={ArrowRightBlue} alt="" className="" />
+                    <img src={ArrowRightBlue} alt="ArrowRight" className="" />
                   </p>
                 </a>
               </div>

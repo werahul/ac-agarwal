@@ -2206,7 +2206,7 @@ const Support = () => {
               <div className="flex items-start lg:items-center justify-center text-center lg:space-x-2 w-[70%] lg:mt-6 mt-6 z-10">
                 <img
                   src={filledChecked}
-                  alt=""
+                  alt="Filled"
                   className="lg:ml-0 ml-2 lg:mt-0 mt-1"
                 />
                 <p className="font-poppins lg:text-[16px] text-[15px] text-[#161C2DCC] opacity-80">
@@ -2256,7 +2256,7 @@ const Support = () => {
                     <div onClick={(e) => e.stopPropagation()}>
                       <img
                         src={dropDownArr} // Assuming you have dropDownArr defined
-                        alt=""
+                        alt="Dropdown"
                         className="cursor-pointer lg:ml-0 ml-3 min-w-5"
                         onClick={() => toggleComponentVisibility(title)}
                       />

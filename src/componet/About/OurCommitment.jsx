@@ -16,7 +16,7 @@ const OurCommitment = () => {
         <div className="grid grid-cols-1 text-[#161C2DCC] lg:grid-cols-2  lg:gap-[120px] gap-10 lg:mt-32 mt-20">
           <div className="flex items-start  space-x-5">
             <div className="">
-              <img src={comAb1} alt="" className="lg:w-[100px] w-[120px]" />
+              <img src={comAb1} alt="About1" className="lg:w-[100px] w-[120px]" />
             </div>
             <div className="space-y-5">
               <p className="font-poppins font-semibold lg:text-[22px] text-[18px] lg:leading-[22.65px] leading-[18px]">
@@ -32,7 +32,7 @@ const OurCommitment = () => {
           </div>
           <div className="flex items-start  space-x-5">
             <div className="">
-              <img src={comAb2} alt="" className="lg:w-[130px] w-[140px]" />
+              <img src={comAb2} alt="about2" className="lg:w-[130px] w-[140px]" />
             </div>
             <div className="space-y-5">
               <p className="font-poppins font-semibold lg:text-[22px] text-[18px] lg:leading-[22.65px] leading-[18px]">
@@ -48,7 +48,7 @@ const OurCommitment = () => {
           </div>
           <div className="flex items-start  space-x-5">
             <div className="">
-              <img src={comAb3} alt="" className="lg:w-[60px] w-[70px]" />
+              <img src={comAb3} alt="about3" className="lg:w-[60px] w-[70px]" />
             </div>
             <div className="space-y-5">
               <p className="font-poppins font-semibold lg:text-[22px] text-[18px] lg:leading-[22.65px] leading-[18px]">
@@ -63,7 +63,7 @@ const OurCommitment = () => {
           </div>
           <div className="flex items-start  space-x-5">
             <div className="">
-              <img src={comAb4} alt="" className="lg:w-[60px] w-[70px]" />
+              <img src={comAb4} alt="about4" className="lg:w-[60px] w-[70px]" />
             </div>
             <div className="space-y-5">
               <p className="font-poppins font-semibold lg:text-[22px] text-[18px] lg:leading-[22.65px] leading-[18px]">

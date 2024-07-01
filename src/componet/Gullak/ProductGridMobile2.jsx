@@ -84,7 +84,7 @@ const ProductGridMobile2 = () => {
         {items.map((item, index) => (
           <div key={index} className="w-full h-[310px] relative">
             <div className={`flex items-start space-x-4 w-full h-[310px] rounded-[20px] p-6 bg-transparent border my-16 ${index === activeIndex ? "active" : ""}`}>
-              <img src={item.image} alt="" className="w-9" />
+              <img src={item.image} alt="Product" className="w-9" />
               <div>
                 <h2 className="text-[22px] font-bold font-poppins leading-[30px] text-[#161C2D]">
                   {item.title}
@@ -99,7 +99,7 @@ const ProductGridMobile2 = () => {
                     onClick={handleLearnMore}
                   >
                     <span>Click to learn more </span>
-                    <img src={rightArrow} alt="" className="w-[12px]" />
+                    <img src={rightArrow} alt="rightArrow" className="w-[12px]" />
                   </a>
                 </p>
               </div>

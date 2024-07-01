@@ -76,7 +76,7 @@ const ProductGridMobile = () => {
                 index === activeIndex ? "active" : ""
               }`}
             >
-              <img src={item.image} alt="" className="w-9" />
+              <img src={item.image} alt="Product" className="w-9" />
               <div>
                 <h2 className="text-[18px] font-bold font-poppins leading-[30px] text-[#161C2DCC]">
                   {item.title}
@@ -93,7 +93,7 @@ const ProductGridMobile = () => {
                       onClick={handleLearnMore}
                     >
                       <span>Apply IPO </span>
-                      <img src={rightArrow} alt="" className="w-[12px]" />
+                      <img src={rightArrow} alt="ArrowRight" className="w-[12px]" />
                     </a>
                   </p>
                 )}

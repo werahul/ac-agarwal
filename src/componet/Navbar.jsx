@@ -129,7 +129,7 @@ const Navbar = ({ navColor }) => {
             {isMenuOpen ? (
               <img
                 src={closeIcon}
-                alt=""
+                alt="close"
                 onClick={closeMenu}
                 className="cursor-pointer w-[20px]"
                 ref={closeIconRef}
@@ -137,7 +137,7 @@ const Navbar = ({ navColor }) => {
             ) : (
               <img
                 src={hamIcon}
-                alt=""
+                alt="ham"
                 onClick={toggleMenu}
                 className="cursor-pointer"
                 ref={hamIconRef}
@@ -150,7 +150,7 @@ const Navbar = ({ navColor }) => {
           {isMenuOpen ? (
             <img
               src={closeIcon}
-              alt=""
+              alt="close"
               onClick={closeMenu}
               className="cursor-pointer w-[20px]"
               ref={closeIconRef}
@@ -158,7 +158,7 @@ const Navbar = ({ navColor }) => {
           ) : (
             <img
               src={hamIcon}
-              alt=""
+              alt="ham"
               onClick={toggleMenu}
               className="cursor-pointer"
               ref={hamIconRef}
@@ -204,7 +204,7 @@ const Navbar = ({ navColor }) => {
                 <div className="lg:flex hidden items-center space-x-8">
                   <img
                     src={hamIcon}
-                    alt=""
+                    alt="ham"
                     onClick={toggleMenu}
                     className="cursor-pointer"
                   />
@@ -219,7 +219,7 @@ const Navbar = ({ navColor }) => {
                 >
                   <img
                     src={bNav}
-                    alt=""
+                    alt="Nav"
                     className="w-[35px] lg:w-[58px] lg:mb-4 lg:mx-auto"
                   />
                   <div>
@@ -236,7 +236,7 @@ const Navbar = ({ navColor }) => {
                 >
                   <img
                     src={mNav}
-                    alt=""
+                    alt="Nav"
                     className="w-[35px] lg:w-[59px] mb-4 lg:mx-auto"
                   />
                   <div className="ml-2 lg:ml-0">
@@ -254,7 +254,7 @@ const Navbar = ({ navColor }) => {
                 >
                   <img
                     src={gNav}
-                    alt=""
+                    alt="Nav"
                     className="w-[30px] lg:w-[42px] mb-4 lg:mx-auto"
                   />
                   <div>
@@ -271,7 +271,7 @@ const Navbar = ({ navColor }) => {
                 >
                   <img
                     src={xNav}
-                    alt=""
+                    alt="Nav"
                     className="w-[35px] lg:w-[58px] mb-4 lg:mx-auto"
                   />
                   <div>
@@ -353,7 +353,7 @@ const Navbar = ({ navColor }) => {
                       target="_blank"
                       className="block text-black "
                     >
-                      <img src={smallXicon} alt="" className="w-4 lg:w-10 " />
+                      <img src={smallXicon} alt="X icon" className="w-4 lg:w-10 " />
                     </Link>
                     <Link
                       to="https://www.linkedin.com/company/ac-agarwal-share-brokers/"
@@ -362,7 +362,7 @@ const Navbar = ({ navColor }) => {
                     >
                       <img
                         src={smallLinkIcon}
-                        alt=""
+                        alt="Link icon"
                         className="w-4 lg:w-10 "
                       />
                     </Link>

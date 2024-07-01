@@ -22,7 +22,7 @@ const Footer = ({ backColor }) => {
       <div className="max-container lg:px-14 px-5 py-20 ">
         <div className=" lg:flex items-start lg:space-x-32">
           <div className="lg:w-[25%] block">
-            <img src={acLogo} alt="" className="lg:w-[250px] w-[210px] " />
+            <img src={acLogo} alt="AC Logo" className="lg:w-[250px] w-[210px] " />
             {/*<p className="font-poppins text-[16px] leading-6 text-[#161C2D]">
               Your One stop solution for all the Stock broking needs.
   </p>*/}
@@ -173,7 +173,7 @@ const Footer = ({ backColor }) => {
                   >
                     <img
                       src={playstore}
-                      alt=""
+                      alt="play"
                       className="w-[132px] cursor-pointer"
                     />
                   </a>
@@ -183,7 +183,7 @@ const Footer = ({ backColor }) => {
                   >
                     <img
                       src={appStore}
-                      alt=""
+                      alt="app"
                       className="w-[120px] object-contain cursor-pointer"
                     />
                   </a>
@@ -194,14 +194,14 @@ const Footer = ({ backColor }) => {
                     href="https://x.com/acagarwal_in?s=11&mx=2"
                     target="_blank"
                   >
-                    <img src={smallXicon} alt="" className="w-[20px]" />
+                    <img src={smallXicon} alt="xICON" className="w-[20px]" />
                   </a>
                   <a
                     href="https://www.linkedin.com/company/ac-agarwal-share-brokers/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={smallLinkIcon} alt="" className="w-[20px]" />
+                    <img src={smallLinkIcon} alt="LinkIcon" className="w-[20px]" />
                   </a>
                 </div>
               </div>
