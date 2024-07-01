@@ -17,6 +17,7 @@ import {
 } from "../assets/Images";
 import { b1, b2, b3, b4, b5, bloomer } from "../assets/newImages";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Bloom = () => {
   useEffect(() => {
@@ -100,6 +101,20 @@ const Bloom = () => {
 
   return (
     <div className="bg-[#fcfdfe]">
+      <Helmet>
+        <meta
+          name="title"
+          content="Math - AC Agarwal"
+          data-react-helmet="true"
+        />
+        <meta
+          name="description"
+          content="Designed for the Dedicated Trader, Engineered for Efficiency. Swift, Focused Trading Across All Devices."
+        />
+
+        <link rel="canonical" href="https://acagarwal.com/math" />
+      </Helmet>
+
       <Navbar navColor={navColor} />
 
       <div className="lg:pt-32 lg:pb-0 pt-[62px] pb-0 lg:px-20 px-5 bg-[#fcfdfe]">

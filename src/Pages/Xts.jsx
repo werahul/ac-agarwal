@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Footer, Footer2, Navbar} from "../componet";
 import { ArrowRight, xtsMain } from "../assets/Images";
 import KeyFeature from "../componet/Xts/KeyFeature";
+import { Helmet } from "react-helmet";
 
 const Xts = () => {
   useEffect(() => {
@@ -14,6 +15,19 @@ const Xts = () => {
   const navColor = isMobile ? "bg-[#F7F9FA99]" : "bg-[#FCFDFE]";
   return (
     <div>
+    <Helmet>
+        <meta
+          name="title"
+          content="XTS API - AC Agarwal"
+          data-react-helmet="true"
+        />
+        <meta
+          name="description"
+          content="Effortless Trading with Super Simple API's Empower your strategies with the ultimate tool for seamless integration and unmatched performance in the trading world."
+        />
+
+        <link rel="canonical" href="https://acagarwal.com/xts-api" />
+      </Helmet>
       <Navbar navColor={navColor} />
       <section className="lg:px-20 lg:pt-32 px-5 pt-20">
         <div className="flex flex-col items-center justify-center">

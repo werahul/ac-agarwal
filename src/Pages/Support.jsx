@@ -37,6 +37,7 @@ import {
   CustomerSupportAndTable,
   Welcome,
 } from "../componet/SupportComp";
+import { Helmet } from "react-helmet";
 
 const Support = () => {
   useEffect(() => {
@@ -2136,6 +2137,19 @@ const Support = () => {
 
   return (
     <div>
+      <Helmet>
+        <meta
+          name="title"
+          content="Support- AC Agarwal"
+          data-react-helmet="true"
+        />
+        <meta
+          name="description"
+          content="At AC Agarwal, we value your satisfaction and strive to deliver exceptional customer support. Our team of knowledgeable and friendly  support representatives is dedicated to addressing your inquiries and ensuring your trading experience is smooth and successful."
+        />
+
+        <link rel="canonical" href="https://acagarwal.com/support" />
+      </Helmet>
       <Navbar navColor={navColor} />
       <div className="">
         <div className="max-container">

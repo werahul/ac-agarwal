@@ -1,5 +1,5 @@
 import React from "react";
-import { Home, Product, Pricing, Support, PressCoverage, Bloom, About , Math, Gullak, Xts, LOC } from "./Pages";
+import { Home, Product, Pricing, Support, Bloom, About , Math, Gullak, Xts, LOC } from "./Pages";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {

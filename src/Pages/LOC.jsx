@@ -1,6 +1,7 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Footer, Navbar } from "../componet";
 import { ExchangeRates } from "../componet/LOC";
+import { Helmet } from "react-helmet";
 
 const LOC = () => {
   const charges = [
@@ -121,7 +122,21 @@ const LOC = () => {
   const navColor = isMobile ? "bg-[#F7F9FA99]" : "bg-[#FCFDFE]";
   return (
     <div>
-      <Navbar navColor={navColor}/>
+      <Helmet>
+        <meta
+          name="title"
+          content="List of Charges - AC Agarwal"
+          data-react-helmet="true"
+        />
+        <meta
+          name="description"
+          content="Find your personal wealth manager from India’s leading Advisors to help you grow and manage your Investments"
+        />
+
+        <link rel="canonical" href="https://acagarwal.com/list-of-charges" />
+      </Helmet>
+
+      <Navbar navColor={navColor} />
       <div className="container font-poppins max-w-[1440px] mx-auto p-4 lg:p-20">
         <h1 className="text-[15px] lg:text-[28px] text-[#161C2D] opacity-70 text-center mb-4 mt-10 lg:mt-0">
           Pricing & Plans
@@ -196,7 +211,7 @@ const LOC = () => {
           </button>
         </a>
       </div>
-      <Footer backColor={backColor}/>
+      <Footer backColor={backColor} />
     </div>
   );
 };

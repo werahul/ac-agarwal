@@ -14,6 +14,7 @@ import {
 } from "../assets/Images";
 import { b1, b2, b3, b4, b5, bloomer } from "../assets/newImages";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Bloom = () => {
   useEffect(() => {
@@ -26,11 +27,11 @@ const Bloom = () => {
   const navColor = isMobile ? "bg-[#F7F9FA99]" : "bg-[#FCFDFE]";
 
   const [showPopup, setShowPopup] = useState(false);
-  const [fullName, setFullName] = useState('');
-  const [mobileNumber, setMobileNumber] = useState('');
-  const [email, setEmail] = useState('');
-  const [selectedTime, setSelectedTime] = useState('');
-  const [selectedDay, setSelectedDay] = useState('');
+  const [fullName, setFullName] = useState("");
+  const [mobileNumber, setMobileNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [selectedTime, setSelectedTime] = useState("");
+  const [selectedDay, setSelectedDay] = useState("");
   const [errors, setErrors] = useState({});
 
   const handleGetOfferClick = () => {
@@ -51,9 +52,12 @@ const Bloom = () => {
     const value = e.target.value;
     if (/^[a-zA-Z\s]*$/.test(value)) {
       setFullName(value);
-      setErrors((prev) => ({ ...prev, fullName: '' }));
+      setErrors((prev) => ({ ...prev, fullName: "" }));
     } else {
-      setErrors((prev) => ({ ...prev, fullName: 'Only letters and spaces are allowed.' }));
+      setErrors((prev) => ({
+        ...prev,
+        fullName: "Only letters and spaces are allowed.",
+      }));
     }
   };
 
@@ -61,9 +65,12 @@ const Bloom = () => {
     const value = e.target.value;
     if (/^\d*$/.test(value)) {
       setMobileNumber(value);
-      setErrors((prev) => ({ ...prev, mobileNumber: '' }));
+      setErrors((prev) => ({ ...prev, mobileNumber: "" }));
     } else {
-      setErrors((prev) => ({ ...prev, mobileNumber: 'Only numbers are allowed.' }));
+      setErrors((prev) => ({
+        ...prev,
+        mobileNumber: "Only numbers are allowed.",
+      }));
     }
   };
 
@@ -71,27 +78,39 @@ const Bloom = () => {
     e.preventDefault();
     const newErrors = {};
 
-    if (fullName.trim() === '') {
-      newErrors.fullName = 'Full Name is required.';
+    if (fullName.trim() === "") {
+      newErrors.fullName = "Full Name is required.";
     }
-    if (mobileNumber.trim() === '') {
-      newErrors.mobileNumber = 'Mobile Number is required.';
+    if (mobileNumber.trim() === "") {
+      newErrors.mobileNumber = "Mobile Number is required.";
     }
     if (!email) {
-      newErrors.email = 'Email is required.';
+      newErrors.email = "Email is required.";
     }
 
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
       // Proceed with form submission
-      console.log('Form submitted');
+      console.log("Form submitted");
     }
   };
 
-
   return (
     <div className="bg-[#fcfdfe]">
+      <Helmet>
+        <meta
+          name="title"
+          content="Bloom - AC Agarwal"
+          data-react-helmet="true"
+        />
+        <meta
+          name="description"
+          content="Trade effortlessly with Bloom's sleek interface. Whether on mobile or desktop, experience investing with grace and simplicity."
+        />
+
+        <link rel="canonical" href="https://acagarwal.com/bloom" />
+      </Helmet>
       <Navbar navColor={navColor} />
       <div className="lg:pt-[145px] lg:pb-0 pt-[62px] pb-10 lg:px-20 px-5 bg-[#fcfdfe]">
         <div className="max-container">
@@ -130,7 +149,7 @@ const Bloom = () => {
       </div>
       <div className="flex flex-col justify-center items-center bg-[#fcfdfe]">
         <h2 className="pt-10 lg:pt-[200px] block font-poppins text-center font-medium lg:text-[42px] lg:leading-[42px] text-[22px] tracking-tight text-[#161C2DCC]">
-          Trade Anywhere: <br className="lg:hidden block"/>
+          Trade Anywhere: <br className="lg:hidden block" />
           App, Web, Desktop
         </h2>
         <img
@@ -139,7 +158,7 @@ const Bloom = () => {
           className="block  lg:-mt-[170px] -mt-[50px] 2xl:w-[70%]"
         />
 
-       {/* <img src={bloomMainMobile} alt="" className="lg:hidden block -mt-10" />*/}
+        {/* <img src={bloomMainMobile} alt="" className="lg:hidden block -mt-10" />*/}
 
         <div className="flex lg:hidden items-center space-x-2 mt-0 mb-20">
           <a
@@ -312,7 +331,9 @@ const Bloom = () => {
                     onChange={handleNameChange}
                   />
                   {errors.fullName && (
-                    <span className="text-red-500 text-sm">{errors.fullName}</span>
+                    <span className="text-red-500 text-sm">
+                      {errors.fullName}
+                    </span>
                   )}
                 </div>
                 <div className="mb-4 lg:px-0 px-6">
@@ -325,7 +346,9 @@ const Bloom = () => {
                     onChange={handleMobileNumberChange}
                   />
                   {errors.mobileNumber && (
-                    <span className="text-red-500 text-sm">{errors.mobileNumber}</span>
+                    <span className="text-red-500 text-sm">
+                      {errors.mobileNumber}
+                    </span>
                   )}
                 </div>
                 <div className="mb-4 lg:px-0 px-6">

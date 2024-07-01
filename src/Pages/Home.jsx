@@ -12,6 +12,7 @@ import {
   HomeInvo,
   HomeCustomizedPricing,
 } from "../componet";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   useEffect(() => {
@@ -24,6 +25,20 @@ const Home = () => {
   const navColor = isMobile ? "bg-[#F7F9FA99]" : "bg-[#FCFDFE]";
   return (
     <div>
+      <Helmet>
+        <meta
+          name="title"
+          content="Trade, Invest, Grow - AC Agarwal"
+          data-react-helmet="true"
+        />
+        <meta
+          name="description"
+          content="Find your personal wealth manager from India’s leading Advisors to help you grow and manage your Investments"
+        />
+
+        <link rel="canonical" href="https://acagarwal.com/" />
+      </Helmet>
+
       <Navbar navColor={navColor} />
       <HeroNew />
       <HomeInvo />

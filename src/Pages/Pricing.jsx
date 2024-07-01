@@ -20,15 +20,15 @@ import {
   cross,
 } from "../assets/Images";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Pricing = () => {
-
   const [showPopup, setShowPopup] = useState(false);
-  const [fullName, setFullName] = useState('');
-  const [mobileNumber, setMobileNumber] = useState('');
-  const [email, setEmail] = useState('');
-  const [selectedTime, setSelectedTime] = useState('');
-  const [selectedDay, setSelectedDay] = useState('');
+  const [fullName, setFullName] = useState("");
+  const [mobileNumber, setMobileNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [selectedTime, setSelectedTime] = useState("");
+  const [selectedDay, setSelectedDay] = useState("");
   const [errors, setErrors] = useState({});
 
   const handleGetOfferClick = () => {
@@ -49,9 +49,12 @@ const Pricing = () => {
     const value = e.target.value;
     if (/^[a-zA-Z\s]*$/.test(value)) {
       setFullName(value);
-      setErrors((prev) => ({ ...prev, fullName: '' }));
+      setErrors((prev) => ({ ...prev, fullName: "" }));
     } else {
-      setErrors((prev) => ({ ...prev, fullName: 'Only letters and spaces are allowed.' }));
+      setErrors((prev) => ({
+        ...prev,
+        fullName: "Only letters and spaces are allowed.",
+      }));
     }
   };
 
@@ -59,9 +62,12 @@ const Pricing = () => {
     const value = e.target.value;
     if (/^\d*$/.test(value)) {
       setMobileNumber(value);
-      setErrors((prev) => ({ ...prev, mobileNumber: '' }));
+      setErrors((prev) => ({ ...prev, mobileNumber: "" }));
     } else {
-      setErrors((prev) => ({ ...prev, mobileNumber: 'Only numbers are allowed.' }));
+      setErrors((prev) => ({
+        ...prev,
+        mobileNumber: "Only numbers are allowed.",
+      }));
     }
   };
 
@@ -69,36 +75,48 @@ const Pricing = () => {
     e.preventDefault();
     const newErrors = {};
 
-    if (fullName.trim() === '') {
-      newErrors.fullName = 'Full Name is required.';
+    if (fullName.trim() === "") {
+      newErrors.fullName = "Full Name is required.";
     }
-    if (mobileNumber.trim() === '') {
-      newErrors.mobileNumber = 'Mobile Number is required.';
+    if (mobileNumber.trim() === "") {
+      newErrors.mobileNumber = "Mobile Number is required.";
     }
     if (!email) {
-      newErrors.email = 'Email is required.';
+      newErrors.email = "Email is required.";
     }
 
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
       // Proceed with form submission
-      console.log('Form submitted');
+      console.log("Form submitted");
     }
   };
-
 
   useEffect(() => {
     window.scrollTo(0, 0);
     // Aos.init({duration: 2000});
   }, []);
-  
+
   const isMobile = window.innerWidth <= 768;
   const backColor = isMobile ? "bg-[#f8f8f8]" : "bg-[#fcfdfe]";
   const navColor = isMobile ? "bg-[#F7F9FA99]" : "bg-[#FCFDFE]";
 
   return (
     <div>
+      <Helmet>
+        <meta
+          name="title"
+          content="Pricing - AC Agarwal"
+          data-react-helmet="true"
+        />
+        <meta
+          name="description"
+          content="Pricing Plans Tailored To Your Needs Custom yet Transparent Pricing Tailored To Your Requirements"
+        />
+
+        <link rel="canonical" href="https://acagarwal.com/pricing" />
+      </Helmet>
       <Navbar navColor={navColor} />
       <div className=" lg:pb-20 pb-32 lg:pt-20 pt-10">
         <section>
@@ -108,7 +126,7 @@ const Pricing = () => {
               Pricing Plans Tailored To Your Needs
             </h1>
             <p className="font-poppins lg:text-[38px] text-[15px] lg:leading-[54px] leading-[26px] text-center text-[#161C2D] opacity-80 mt-7">
-            Custom yet Transparent Pricing Tailored To Your
+              Custom yet Transparent Pricing Tailored To Your
               <br className="lg:block hidden" /> Requirements
             </p>
           </div>
@@ -220,7 +238,9 @@ const Pricing = () => {
                         onChange={handleNameChange}
                       />
                       {errors.fullName && (
-                        <span className="text-red-500 text-sm">{errors.fullName}</span>
+                        <span className="text-red-500 text-sm">
+                          {errors.fullName}
+                        </span>
                       )}
                     </div>
                     <div className="mb-4 lg:px-0 px-6">
@@ -233,7 +253,9 @@ const Pricing = () => {
                         onChange={handleMobileNumberChange}
                       />
                       {errors.mobileNumber && (
-                        <span className="text-red-500 text-sm">{errors.mobileNumber}</span>
+                        <span className="text-red-500 text-sm">
+                          {errors.mobileNumber}
+                        </span>
                       )}
                     </div>
                     <div className="mb-4 lg:px-0 px-6">
@@ -246,7 +268,9 @@ const Pricing = () => {
                         onChange={(e) => setEmail(e.target.value)}
                       />
                       {errors.email && (
-                        <span className="text-red-500 text-sm">{errors.email}</span>
+                        <span className="text-red-500 text-sm">
+                          {errors.email}
+                        </span>
                       )}
                     </div>
                     <div className="mb-4 lg:px-0 px-6">
